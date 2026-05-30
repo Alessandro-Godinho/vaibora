@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guias de viagem curados para destinos brasileiros. Restaurantes, atrações, hospedagem e roteiros prontos. Vaibora!">
+  <title>Vaibora — Guias de Viagem pelo Brasil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #1a6b3c;
+      --verde-claro: #e8f5ed;
+      --amarelo: #f5c842;
+      --laranja: #e85d26;
+      --cinza: #f4f2ee;
+      --texto: #1a1a18;
+      --texto-muted: #6b6b65;
+      --borda: #e0ddd6;
+      --branco: #fafaf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--branco); color: var(--texto); }
+
+    /* NAV */
+    nav { position: sticky; top: 0; z-index: 100; background: var(--branco); border-bottom: 1px solid var(--borda); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--verde); letter-spacing: -0.5px; }
+    .logo span { color: var(--laranja); }
+    nav a { font-size: 0.85rem; color: var(--texto-muted); text-decoration: none; margin-left: 1.5rem; }
+    nav a:hover { color: var(--verde); }
+
+    /* HERO */
+    .hero { background: var(--verde); color: white; padding: 5rem 2rem 4rem; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -60px; right: -60px; width: 300px; height: 300px; background: var(--amarelo); opacity: 0.12; border-radius: 50%; }
+    .hero::after { content: ''; position: absolute; bottom: -40px; left: 30%; width: 200px; height: 200px; background: var(--laranja); opacity: 0.1; border-radius: 50%; }
+    .hero-inner { max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-tag { display: inline-block; background: var(--amarelo); color: var(--texto); font-size: 0.75rem; font-weight: 500; padding: 4px 12px; border-radius: 20px; margin-bottom: 1.2rem; letter-spacing: 0.5px; text-transform: uppercase; }
+    .hero h1 { font-family: 'Syne', sans-serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.1; margin-bottom: 1rem; }
+    .hero h1 span { color: var(--amarelo); }
+    .hero p { font-size: 1rem; opacity: 0.85; line-height: 1.7; max-width: 520px; margin-bottom: 2rem; }
+    .hero-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+    .chip { display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: white; font-size: 0.8rem; padding: 5px 12px; border-radius: 20px; }
+
+    /* CONTAINER */
+    .container { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* FILTROS */
+    .filtros { background: var(--branco); border-bottom: 1px solid var(--borda); padding: 1rem 1.5rem; position: sticky; top: 56px; z-index: 90; }
+    .filtros-inner { max-width: 760px; margin: 0 auto; display: flex; gap: 6px; flex-wrap: wrap; }
+    .fbtn { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; padding: 5px 14px; border-radius: 20px; border: 1px solid var(--borda); background: white; color: var(--texto-muted); cursor: pointer; transition: all .15s; white-space: nowrap; }
+    .fbtn:hover { border-color: var(--verde); color: var(--verde); }
+    .fbtn.ativo { background: var(--verde); color: white; border-color: var(--verde); }
+
+    /* SEÇÃO */
+    .secao { padding: 2.5rem 0 0; }
+    .secao-titulo { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--texto-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--amarelo); display: inline-block; }
+
+    /* CARDS */
+    .card { background: white; border: 1px solid var(--borda); border-radius: 12px; padding: 1.1rem 1.2rem; margin-bottom: 10px; transition: border-color .15s, transform .15s; }
+    .card:hover { border-color: var(--verde); transform: translateY(-1px); }
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap; }
+    .card-nome { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--texto); margin-bottom: 3px; }
+    .card-meta { font-size: 0.75rem; color: var(--texto-muted); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .estrelas { color: #d4900a; font-size: 0.75rem; }
+    .badge { display: inline-block; font-size: 0.68rem; font-weight: 500; padding: 2px 8px; border-radius: 20px; }
+    .badge-coral { background: #fde8e0; color: #c0390f; }
+    .badge-verde { background: #e0f0e8; color: #1a6b3c; }
+    .badge-azul { background: #e0edf8; color: #1a4f8a; }
+    .badge-amber { background: #fef3d0; color: #8a5c00; }
+    .badge-cinza { background: #eeece6; color: #555551; }
+    .card-preco { font-size: 0.85rem; font-weight: 500; color: var(--texto); text-align: right; white-space: nowrap; }
+    .preco-dica { font-size: 0.65rem; background: var(--verde-claro); color: var(--verde); padding: 2px 7px; border-radius: 4px; margin-top: 3px; display: inline-block; }
+    .card-desc { font-size: 0.83rem; color: var(--texto-muted); line-height: 1.6; margin-top: 8px; }
+    .card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; flex-wrap: wrap; gap: 6px; }
+    .card-endereco { font-size: 0.72rem; color: var(--texto-muted); }
+    .btn-maps { font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; background: var(--verde-claro); color: var(--verde); border: none; cursor: pointer; font-weight: 500; text-decoration: none; white-space: nowrap; }
+    .btn-maps:hover { background: var(--verde); color: white; }
+
+    /* CARD GRID */
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 10px; }
+
+    /* DICA BOX */
+    .dica-box { background: var(--cinza); border-radius: 12px; padding: 1.1rem 1.3rem; margin: 2.5rem 0; border-left: 3px solid var(--verde); }
+    .dica-box strong { font-family: 'Syne', sans-serif; font-size: 0.85rem; color: var(--verde); display: block; margin-bottom: 4px; }
+    .dica-box p { font-size: 0.82rem; color: var(--texto-muted); line-height: 1.6; }
+
+    /* HOTEIS CTA */
+    .hoteis-cta { background: linear-gradient(135deg, var(--verde) 0%, #0f4a28 100%); border-radius: 16px; padding: 2rem; margin: 2.5rem 0; color: white; text-align: center; }
+    .hoteis-cta h3 { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .hoteis-cta p { font-size: 0.85rem; opacity: 0.85; margin-bottom: 1.2rem; }
+    .btn-booking { display: inline-block; background: var(--amarelo); color: var(--texto); font-weight: 700; font-size: 0.9rem; padding: 10px 24px; border-radius: 8px; text-decoration: none; transition: opacity .15s; }
+    .btn-booking:hover { opacity: 0.9; }
+
+    /* FOOTER */
+    footer { background: var(--texto); color: white; padding: 2.5rem 1.5rem; margin-top: 4rem; }
+    .footer-inner { max-width: 760px; margin: 0 auto; }
+    .footer-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .footer-logo span { color: var(--amarelo); }
+    footer p { font-size: 0.78rem; color: rgba(255,255,255,0.5); line-height: 1.7; margin-top: 0.5rem; }
+    footer a { color: rgba(255,255,255,0.5); text-decoration: underline; }
+    .hidden { display: none !important; }
+
+    @media (max-width: 600px) {
+      .hero { padding: 3rem 1.2rem 2.5rem; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">vai<span>bora</span>.com.br</div>
+  <div>
+    <a href="#restaurantes">Comer</a>
+    <a href="#atracoes">Atrações</a>
+    <a href="#noite">Noite</a>
+    <a href="#hoteis">Hotéis</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Guia completo</div>
+    <h1>Olímpia, SP<br><span>Tudo que você precisa saber</span></h1>
+    <p>Setembro é perfeito: 22°C a 30°C, baixa temporada, sem fila nos parques e preços menores. A cidade fica a ~440 km de São Paulo.</p>
+    <div class="hero-chips">
+      <div class="chip">🌡 22–30°C em setembro</div>
+      <div class="chip">🚗 ~440 km de SP</div>
+      <div class="chip">👨‍👩‍👧 Família e casal</div>
+      <div class="chip">📅 2 a 4 dias ideais</div>
+    </div>
+  </div>
+</div>
+
+<div class="filtros">
+  <div class="filtros-inner">
+    <span style="font-size:0.78rem;color:var(--texto-muted);margin-right:4px">Filtrar:</span>
+    <button class="fbtn ativo" onclick="filtrar('todos',this)">Tudo</button>
+    <button class="fbtn" onclick="filtrar('restaurante',this)">Restaurantes</button>
+    <button class="fbtn" onclick="filtrar('atracao',this)">Atrações</button>
+    <button class="fbtn" onclick="filtrar('noite',this)">Noite</button>
+    <button class="fbtn" onclick="filtrar('sorvete',this)">Sorveterias</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- RESTAURANTES -->
+  <div class="secao" id="restaurantes" data-cat="restaurante">
+    <div class="secao-titulo">Restaurantes</div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Villa da Vó <span class="badge badge-coral">Premium</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> 4.5 &middot; Só jantar</div>
+        </div>
+        <div class="card-preco">~R$ 80/pessoa</div>
+      </div>
+      <div class="card-desc">Arquitetura rústica, 4 salões para até 170 pessoas. Pratos fartos que servem 2. Opções vegetarianas e sem glúten. Muito elogiado pelo ambiente e atendimento.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Rua Bruno Riscali, 285</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Villa+da+Vó+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Misu Sushi Bar <span class="badge badge-azul">Rodízio japonês</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> 5.0 &middot; Traveller's Choice 2023</div>
+        </div>
+        <div class="card-preco">~R$ 35–45/pessoa</div>
+      </div>
+      <div class="card-desc">Melhor avaliado da cidade. Camarão e peixes frescos, ambiente limpo e confortável. Casal sai por ~R$ 70. Almoço e jantar.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. Aurora Forti Neves, 358</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Misu+Sushi+Bar+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Haragano's Churrascaria <span class="badge badge-coral">Rodízio</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> 4.5 &middot; Certificado TripAdvisor</div>
+        </div>
+        <div class="card-preco">~R$ 75/pessoa</div>
+      </div>
+      <div class="card-desc">Rodízio de carnes com opções de sushi incluso. Variedade grande, ambiente confortável. Casal ~R$ 150.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. Constitucionalistas de 32, 255</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Haraganos+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Dat Badan <span class="badge badge-amber">Multiétnico</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> 4.5 &middot; Almoço e jantar</div>
+        </div>
+        <div class="card-preco">~R$ 55–70/pessoa</div>
+      </div>
+      <div class="card-desc">Brasileira, italiana e japonesa no mesmo lugar. Destaque para o macarrão com Grana Padano e a caipirinha de lima da Pérsia.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. Maria Tereza Breda, 216 — Jd. Glória</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Dat+Badan+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Dedo de Moça <span class="badge badge-verde">Buffet livre</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> 4.5 &middot; Espaço kids</div>
+        </div>
+        <div class="card-preco">R$ 20–42/pessoa</div>
+      </div>
+      <div class="card-desc">Italiana, brasileira e pizzas. Buffet com opção à vontade. Espaço kids, ambiente amplo. Ótimo custo-benefício para famílias.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Rua Diógenes Breda, 718</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Dedo+de+Moça+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SORVETERIAS -->
+  <div class="secao" id="sorveterias" data-cat="sorvete">
+    <div class="secao-titulo">Sorveterias</div>
+    <div class="card-grid">
+      <div class="card" data-cat="sorvete" style="margin-bottom:0">
+        <div class="card-nome">Pazzi Per Gelato <span class="badge badge-amber">Artesanal</span></div>
+        <div class="card-meta" style="margin-top:4px"><span class="estrelas">★★★★★</span> Melhor da cidade</div>
+        <div class="card-desc" style="margin-top:6px">Gelato artesanal com casquinha feita na hora. Destaques: Camafeu de Nozes e Mascarpone com frutas vermelhas.</div>
+        <div style="font-size:0.72rem;color:var(--texto-muted);margin-top:8px">Av. Aurora Forti Neves, 1030</div>
+        <div class="card-preco" style="margin-top:4px;text-align:left">~R$ 15–25</div>
+      </div>
+      <div class="card" data-cat="sorvete" style="margin-bottom:0">
+        <div class="card-nome">La Princy Gelateria <span class="badge badge-amber">Gelateria</span></div>
+        <div class="card-meta" style="margin-top:4px"><span class="estrelas">★★★★★</span> 2ª melhor avaliada</div>
+        <div class="card-desc" style="margin-top:6px">Gelatos com boa variedade de sabores, ambiente agradável. Duas unidades na cidade.</div>
+        <div style="font-size:0.72rem;color:var(--texto-muted);margin-top:8px">Av. Aurora Forti Neves, 65</div>
+        <div class="card-preco" style="margin-top:4px;text-align:left">~R$ 12–22</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATRAÇÕES -->
+  <div class="secao" id="atracoes" data-cat="atracao">
+    <div class="secao-titulo">Atrações</div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Thermas dos Laranjais <span class="badge badge-coral">2° do mundo</span></div>
+          <div class="card-meta">60+ atrações &middot; Todos os dias 8h–20h</div>
+        </div>
+        <div>
+          <div class="card-preco">~R$ 150–250</div>
+          <div class="preco-dica">Online sai mais barato</div>
+        </div>
+      </div>
+      <div class="card-desc">Toboáguas radicais, piscina de surf, piscina de ondas, rio de correnteza e ofurôs a 40°C. Em setembro: sem fila e preço menor.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. do Folclore</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Thermas+dos+Laranjais+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Hot Beach <span class="badge badge-azul">Parque aquático</span></div>
+          <div class="card-meta">9° mais visitado da América Latina</div>
+        </div>
+        <div class="card-preco">A partir de R$ 130</div>
+      </div>
+      <div class="card-desc">Praia artificial, piscina de ondas, atrações para todas as idades. Santa Carolina Lounge com drinks e bangalôs VIP.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Olímpia SP</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Hot+Beach+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Vale dos Dinossauros <span class="badge badge-verde">Família</span></div>
+          <div class="card-meta">Maior da América Latina &middot; 9h–21h</div>
+        </div>
+        <div>
+          <div class="card-preco">~R$ 100–140</div>
+          <div class="preco-dica">Grátis até 3 anos</div>
+        </div>
+      </div>
+      <div class="card-desc">38 dinossauros animatrônicos incluindo T-Rex de 15m. Cinema, brinquedoteca, área de escavação. Crianças 4–11 pagam meia.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Olímpia SP</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Vale+dos+Dinossauros+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Orionverso RV <span class="badge badge-azul">Realidade virtual</span></div>
+          <div class="card-meta">1° parque de RV da América Latina</div>
+        </div>
+      </div>
+      <div class="card-desc">Investimento de R$ 38 mi, 6000 m². Montanha-russa 360°. Dom–Qua: 10h–20h30 / Qui–Sáb: 10h–22h.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. Aurora Forti Neves, 123</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Orionverso+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDA NOTURNA -->
+  <div class="secao" id="noite" data-cat="noite">
+    <div class="secao-titulo">Vida noturna</div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Olimpia Food Park <span class="badge badge-amber">Food trucks</span></div>
+          <div class="card-meta">Shows ao vivo &middot; Sextas e Sábados</div>
+        </div>
+      </div>
+      <div class="card-desc">~14 food trucks com pastel, sanduíches, açaí e artesanato. Shows ao vivo nas sextas e sábados. Passear no estilo barraquinha à noite.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. Aurora Forti Neves, 188</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Olimpia+Food+Park+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">H2A Bar & Boliche <span class="badge badge-azul">Entretenimento</span></div>
+          <div class="card-meta">Ter–Dom a partir das 18h</div>
+        </div>
+      </div>
+      <div class="card-desc">Boliche, bilhar, fliperama, Xbox, basquete e pebolim. Lanches, pizzas e petiscos. Programa noturno completo para casais e grupos.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. Aurora Forti Neves, 188</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=H2A+Bar+Boliche+Olímpia+SP" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- DICA -->
+  <div class="dica-box">
+    <strong>💡 Dica de ouro para setembro</strong>
+    <p>Reserve os ingressos dos parques online com antecedência — sai mais barato e evita fila. O Thermas e Hot Beach não permitem entrada de comida ou cooler. Se hospedar perto da Av. Aurora Forti Neves e você vai a pé em tudo.</p>
+  </div>
+
+  <!-- HOTEIS CTA -->
+  <div class="hoteis-cta" id="hoteis">
+    <h3>Onde ficar em Olímpia?</h3>
+    <p>Compare hotéis e resorts perto dos parques. Reservando com antecedência você economiza até 30%.</p>
+    <a class="btn-booking" href="https://www.booking.com/searchresults.pt-br.html?ss=Ol%C3%ADmpia%2C+S%C3%A3o+Paulo" target="_blank">Ver hotéis disponíveis →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">vai<span>bora</span>.com.br</div>
+    <p>Guias de viagem curados para destinos brasileiros. Conteúdo atualizado e verificado.<br>
+    Este site contém links de afiliados. Se você reservar um hotel por aqui, recebo uma pequena comissão sem custo adicional para você.<br>
+    <a href="/privacidade.html">Política de privacidade</a></p>
+  </div>
+</footer>
+
+<script>
+function filtrar(cat, btn) {
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  document.querySelectorAll('.card[data-cat]').forEach(c => {
+    c.classList.toggle('hidden', cat !== 'todos' && c.dataset.cat !== cat);
+  });
+  document.querySelectorAll('.secao[data-cat]').forEach(s => {
+    const visíveis = s.querySelectorAll('.card:not(.hidden)').length;
+    s.style.display = (cat !== 'todos' && visíveis === 0) ? 'none' : '';
+  });
+  document.querySelectorAll('#sorveterias').forEach(s => {
+    if (cat !== 'todos' && cat !== 'sorvete') s.style.display = 'none';
+    else s.style.display = '';
+  });
+}
+</script>
+</body>
+</html>
