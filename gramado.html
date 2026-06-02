@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia completo Gramado e Canela RS 2026 — Snowland, Skyglass, Natal Luz, fondue, chocolates, Lago Negro, vinícolas, restaurantes e onde ficar. Tudo verificado.">
+  <title>Gramado e Canela RS — Guia Completo | Vaibora</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8EFW81MN6"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K8EFW81MN6');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--vinho:#6b1a2a;--vinho-claro:#f5e8eb;--azul:#2a4a6b;--verde:#1a5a2a;--neve:#f0f4f8;--cinza:#f4f2ee;--texto:#1a1a18;--texto-muted:#6b6b65;--borda:#e0ddd6;--branco:#fafaf8;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'DM Sans',sans-serif;background:var(--branco);color:var(--texto);}
+    nav{position:sticky;top:0;z-index:100;background:var(--branco);border-bottom:1px solid var(--borda);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:56px;}
+    .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#1a6b3c;text-decoration:none;}
+    .logo span{color:#e85d26;}
+    nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
+    nav a:hover{color:var(--vinho);}
+    .hero{background:linear-gradient(135deg,#2a3a6b 0%,#1a2a4a 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
+    .hero::before{content:'❄';position:absolute;top:20px;right:60px;font-size:120px;opacity:0.06;}
+    .hero::after{content:'';position:absolute;bottom:-40px;left:20%;width:250px;height:250px;background:rgba(255,255,255,0.04);border-radius:50%;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero-tag{display:inline-block;background:rgba(255,255,255,0.15);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);}
+    .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
+    .hero h1 span{color:#a8d8f0;}
+    .hero p{font-size:1rem;opacity:0.85;line-height:1.7;max-width:520px;margin-bottom:2rem;}
+    .hero-chips{display:flex;gap:8px;flex-wrap:wrap;}
+    .chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:white;font-size:0.8rem;padding:5px 12px;border-radius:20px;}
+    .container{max-width:760px;margin:0 auto;padding:0 1.5rem;}
+    .filtros{background:var(--branco);border-bottom:1px solid var(--borda);padding:0.8rem 1.5rem;position:sticky;top:56px;z-index:90;overflow-x:auto;}
+    .filtros-inner{max-width:760px;margin:0 auto;display:flex;gap:6px;align-items:center;white-space:nowrap;}
+    .fbtn{font-family:'DM Sans',sans-serif;font-size:0.78rem;padding:5px 13px;border-radius:20px;border:1px solid var(--borda);background:white;color:var(--texto-muted);cursor:pointer;transition:all .15s;white-space:nowrap;}
+    .fbtn:hover{border-color:var(--vinho);color:var(--vinho);}
+    .fbtn.ativo{background:var(--vinho);color:white;border-color:var(--vinho);}
+    .secao{padding:2.5rem 0 0;}
+    .secao-titulo{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--texto-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:2px solid #a8d8f0;display:inline-block;}
+    .card{background:white;border:1px solid var(--borda);border-radius:12px;padding:1.1rem 1.2rem;margin-bottom:10px;transition:border-color .15s,transform .15s;}
+    .card:hover{border-color:var(--vinho);transform:translateY(-1px);}
+    .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;}
+    .card-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;color:var(--texto);margin-bottom:3px;}
+    .card-meta{font-size:0.75rem;color:var(--texto-muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+    .estrelas{color:#d4900a;font-size:0.75rem;}
+    .badge{display:inline-block;font-size:0.68rem;font-weight:500;padding:2px 8px;border-radius:20px;}
+    .badge-neve{background:#e8f4ff;color:#1a3a6b;}
+    .badge-vinho{background:#f5e8eb;color:#6b1a2a;}
+    .badge-verde{background:#e0f0e8;color:#1a5a2a;}
+    .badge-amber{background:#fef3d0;color:#8a5c00;}
+    .badge-canela{background:#fde8d0;color:#8a3800;}
+    .badge-gratis{background:#e0f0e8;color:#1a5a2a;}
+    .badge-premier{background:#ffd080;color:#7a3800;font-weight:700;}
+    .card-preco{font-size:0.85rem;font-weight:500;color:var(--texto);text-align:right;white-space:nowrap;}
+    .preco-dica{font-size:0.65rem;background:#e0f0e8;color:var(--verde);padding:2px 7px;border-radius:4px;margin-top:3px;display:inline-block;}
+    .card-desc{font-size:0.83rem;color:var(--texto-muted);line-height:1.6;margin-top:8px;}
+    .card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:6px;}
+    .card-endereco{font-size:0.72rem;color:var(--texto-muted);}
+    .btn-maps{font-size:0.72rem;padding:4px 10px;border-radius:6px;background:var(--vinho-claro);color:var(--vinho);border:none;cursor:pointer;font-weight:500;text-decoration:none;white-space:nowrap;}
+    .btn-maps:hover{background:var(--vinho);color:white;}
+    .epocas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin:0.8rem 0 1rem;}
+    .epoca-card{background:white;border:1px solid var(--borda);border-radius:10px;padding:10px 12px;}
+    .epoca-card.destaque{border:2px solid var(--azul);}
+    .epoca-titulo{font-family:'Syne',sans-serif;font-weight:700;font-size:0.85rem;margin-bottom:2px;}
+    .epoca-sub{font-size:0.7rem;color:var(--texto-muted);line-height:1.4;}
+    .epoca-tag{font-size:0.65rem;color:var(--azul);font-weight:600;margin-bottom:4px;}
+    .parques-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:1rem;}
+    .parque-mini{background:white;border:1px solid var(--borda);border-radius:12px;padding:1rem;transition:border-color .15s;}
+    .parque-mini:hover{border-color:var(--vinho);}
+    .parque-emoji{font-size:1.5rem;margin-bottom:6px;display:block;}
+    .parque-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;margin-bottom:4px;}
+    .parque-desc{font-size:0.77rem;color:var(--texto-muted);line-height:1.5;}
+    .parque-preco{font-size:0.75rem;font-weight:500;color:var(--vinho);margin-top:6px;}
+    .info-box{border-radius:12px;padding:1.1rem 1.3rem;margin:1.5rem 0;}
+    .info-box.azul{background:#e8f0f8;border-left:3px solid var(--azul);}
+    .info-box.vinho{background:var(--vinho-claro);border-left:3px solid var(--vinho);}
+    .info-box.verde{background:#e8f5ed;border-left:3px solid var(--verde);}
+    .info-box.cinza{background:var(--cinza);border-left:3px solid var(--azul);}
+    .info-box.amber{background:#fef8e0;border-left:3px solid #c4960f;}
+    .info-box.neve{background:#f0f6ff;border-left:3px solid #2a4a6b;}
+    .info-box strong{font-family:'Syne',sans-serif;font-size:0.85rem;display:block;margin-bottom:4px;}
+    .info-box.azul strong{color:var(--azul);}
+    .info-box.vinho strong{color:var(--vinho);}
+    .info-box.verde strong{color:var(--verde);}
+    .info-box.cinza strong{color:var(--azul);}
+    .info-box.amber strong{color:#7a5200;}
+    .info-box.neve strong{color:#1a3a6b;}
+    .info-box p{font-size:0.82rem;line-height:1.6;color:var(--texto-muted);}
+    .hoteis-cta{background:linear-gradient(135deg,#2a3a6b 0%,#1a2a4a 100%);border-radius:16px;padding:2rem;margin:2.5rem 0;color:white;text-align:center;}
+    .hoteis-cta h3{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:0.5rem;}
+    .hoteis-cta p{font-size:0.85rem;opacity:0.85;margin-bottom:1.2rem;}
+    .btn-booking{display:inline-block;background:#a8d8f0;color:#1a2a4a;font-weight:700;font-size:0.9rem;padding:10px 24px;border-radius:8px;text-decoration:none;transition:opacity .15s;}
+    .btn-booking:hover{opacity:0.9;}
+    footer{background:var(--texto);color:white;padding:2.5rem 1.5rem;margin-top:4rem;}
+    .footer-inner{max-width:760px;margin:0 auto;}
+    .footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;margin-bottom:0.5rem;}
+    .footer-logo span{color:#f5c842;}
+    footer p{font-size:0.78rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-top:0.5rem;}
+    footer a{color:rgba(255,255,255,0.5);text-decoration:underline;}
+    .hidden{display:none!important;}
+    @media(max-width:600px){.hero{padding:3rem 1.2rem 2.5rem;}.parques-grid,.epocas-grid{grid-template-columns:1fr 1fr;}nav a{display:none;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">vai<span>bora</span>.com.br</a>
+  <div>
+    <a href="#parques">Parques</a>
+    <a href="#atracoes">Atrações</a>
+    <a href="#canela">Canela</a>
+    <a href="#restaurantes">Comer</a>
+    <a href="#noite">Noite</a>
+    <a href="#hoteis">Hotéis</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Guia completo · Serra Gaúcha · Gramado + Canela</div>
+    <h1>Gramado, RS<br><span>A Europa na Serra Gaúcha</span></h1>
+    <p>Arquitetura europeia, fondue irresistível, neve no Snowland, o Natal mais bonito do Brasil, chocolates artesanais, vinícolas premiadas e uma das cidades mais charmosas do país. Gramado é diferente em qualquer época do ano.</p>
+    <div class="hero-chips">
+      <div class="chip">❄️ Neve possível em julho</div>
+      <div class="chip">🎄 Natal Luz out–jan</div>
+      <div class="chip">🚗 130km de Porto Alegre</div>
+      <div class="chip">📅 4–5 dias ideais</div>
+      <div class="chip">💑 Família · Casal · Grupos</div>
+    </div>
+  </div>
+</div>
+
+<!-- MELHOR ÉPOCA -->
+<div style="background:#f4f2ee;border-bottom:1px solid #e0ddd6;padding:1rem 1.5rem;">
+  <div style="max-width:760px;margin:0 auto;">
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:0.8rem">Gramado é diferente em cada estação — escolha sua experiência</div>
+    <div class="epocas-grid">
+      <div class="epoca-card destaque">
+        <div class="epoca-tag">❄️ INVERNO · Alta temporada</div>
+        <div class="epoca-titulo">Jun · Jul · Ago</div>
+        <div class="epoca-sub">Frio europeu (2–17°C). Neve possível. Fondue imperdível. Snowland. Festival de Cinema (ago). Lotado e caro.</div>
+      </div>
+      <div class="epoca-card" style="border:2px solid #c0390f">
+        <div class="epoca-tag" style="color:#c0390f">🎄 NATAL LUZ · Alta temporada</div>
+        <div class="epoca-titulo">Out · Nov · Dez · Jan</div>
+        <div class="epoca-sub">O Natal mais bonito do Brasil. Luzes, desfiles, shows. Muito procurado — reserve com meses de antecedência.</div>
+      </div>
+      <div class="epoca-card">
+        <div class="epoca-tag" style="color:#1a5a2a">🌸 PRIMAVERA · Melhor custo-benefício</div>
+        <div class="epoca-titulo">Set · Out</div>
+        <div class="epoca-sub">Hortênsias florescendo. Clima agradável (16–21°C). Menos gente e preços menores. Início do Natal Luz em out.</div>
+      </div>
+      <div class="epoca-card">
+        <div class="epoca-tag">🍂 OUTONO · Tranquilo</div>
+        <div class="epoca-titulo">Mar · Abr · Mai</div>
+        <div class="epoca-sub">Baixa temporada. Preços menores. Menos gente. Clima ameno (~20°C). Atrações todas abertas.</div>
+      </div>
+    </div>
+    <div style="background:#e8f0f8;border:1px solid #a8c8e8;border-radius:8px;padding:8px 12px;margin-top:4px;font-size:0.78rem;color:#1a3a6b">
+      <strong>💡 Dica do vaibora:</strong> se a ideia é economizar sem perder nada, vá em <strong>setembro ou outubro</strong> — a primavera oferece hortênsias floridas, clima agradável, início do Natal Luz e preços de baixa temporada. Se quiser o inverno europeu com fondue e friozinho, vá em <strong>julho</strong> — mas reserve tudo com 2 a 3 meses de antecedência.
+    </div>
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin:1rem 0 0.6rem">Recomendado para</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">👨‍👩‍👧</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Família com crianças</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Snowland · Mini Mundo · Terra Mágica · Acquamotion</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">💑</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Casal</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Fondue · Vinícolas · Lago Negro · Chalé romântico</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🧑‍🤝‍🧑</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Grupo de amigos</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Skyglass · Bondinho · Cervejarias · Rua Coberta</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🎄</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Amantes do Natal</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Natal Luz out–jan · Desfile · Papai Noel · Luzes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="filtros">
+  <div class="filtros-inner">
+    <span style="font-size:0.75rem;color:var(--texto-muted);margin-right:4px">Ver:</span>
+    <button class="fbtn ativo" onclick="filtrar('todos',this)">Tudo</button>
+    <button class="fbtn" onclick="filtrar('parque',this)">🎢 Parques</button>
+    <button class="fbtn" onclick="filtrar('atracao',this)">🏔 Atrações</button>
+    <button class="fbtn" onclick="filtrar('canela',this)">🌲 Canela</button>
+    <button class="fbtn" onclick="filtrar('restaurante',this)">🍽 Comer</button>
+    <button class="fbtn" onclick="filtrar('noite',this)">🌙 Noite</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- PARQUES GRAMADO -->
+  <div class="secao" id="parques" data-cat="parque">
+    <div class="secao-titulo">Parques temáticos — Gramado</div>
+
+    <div class="card" data-cat="parque">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Snowland <span class="badge badge-neve">1° parque de neve das Américas</span></div>
+          <div class="card-meta">Seg–Sáb 9h–21h · Dom 10h–17h · RS-235, km 28</div>
+        </div>
+        <div>
+          <div class="card-preco">A partir de R$ 180/adulto</div>
+          <div class="preco-dica">Online = mais barato · Reserve</div>
+        </div>
+      </div>
+      <div class="card-desc">O único parque de neve das Américas — neve de verdade o ano inteiro, com temperatura abaixo de zero dentro do parque. Esqui e snowboard no simulador, patinação no gelo, descida em boias, bonecos de neve e espetáculo de patinação artística. A roupa de frio é fornecida pelo parque (incluída). Tem shopping center e o Avalanche Bar & Restaurant dentro.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Rod. RS-235, 9009 Carazal — Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Snowland+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="parque">
+      <div class="card-nome">Acquamotion <span class="badge badge-neve">1° parque aquático coberto do Brasil</span></div>
+      <div class="card-meta" style="margin:3px 0 8px">Águas termais · Coberto · Funciona com qualquer clima</div>
+      <div class="card-desc">Parque aquático completamente coberto com águas termais — funciona o ano todo independente do clima. Toboáguas, piscinas e apresentações temáticas com personagens para crianças. Tem uma piscina aberta com vista panorâmica da serra (disponível nos meses mais quentes). Ideal para quem vai no inverno e quer se molhar sem passar frio.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Gramado RS</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Acquamotion+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="parque">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Mini Mundo <span class="badge badge-verde">Família</span></div>
+          <div class="card-meta">Miniaturas em escala · Ursos Gui e Ana · Café temático</div>
+        </div>
+        <div class="card-preco">A partir de R$ 80/adulto</div>
+      </div>
+      <div class="card-desc">Uma das atrações mais tradicionais de Gramado. Réplicas em miniatura de monumentos mundiais e cenas do cotidiano com nível de detalhe impressionante. Os personagens Gui, Ana e Ju circulam pelo parque. O Café Mini Mundo serve o melhor chocolate quente de Gramado. Decoração temática muda conforme a estação — fica espetacular no Natal.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Rod. RS-235, 15000 — Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Mini+Mundo+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="parque">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Terra Mágica Florybal <span class="badge badge-verde">Família</span></div>
+          <div class="card-meta">Chocolate · Fábrica · Parque temático</div>
+        </div>
+        <div class="card-preco">A partir de R$ 70/adulto</div>
+      </div>
+      <div class="card-desc">Parque temático da maior marca de chocolates artesanais da Serra Gaúcha. Tour pela fábrica de chocolates, degustação, personagens e atrações para crianças. Combina passeio com loja de chocolates — ótimo para comprar presentes. A Florybal produz chocolates desde 1948.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. das Hortênsias, 4100 — Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Terra+Mágica+Florybal+Gramado" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="parque">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Lumni Experience <span class="badge badge-neve">Novo · Noturno</span></div>
+          <div class="card-meta">+500 mil luzes · Arte · Natureza · Imersivo</div>
+        </div>
+        <div class="card-preco">A partir de R$ 80</div>
+      </div>
+      <div class="card-desc">O parque de luzes mais recente de Gramado — experiência noturna imersiva com mais de 500 mil luzes, arte e natureza integradas. Percurso ao ar livre com instalações luminosas interativas. Perfeito para fotos e casais. Um dos passeios noturnos mais elogiados da cidade nos últimos anos.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Gramado RS · Funciona à noite</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Lumni+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="secao-titulo" style="margin-top:1.5rem">Outros parques e atrações temáticas</div>
+    <div class="parques-grid">
+      <div class="parque-mini">
+        <span class="parque-emoji">🏎️</span>
+        <div class="parque-nome">Alpen Park — Canela</div>
+        <div class="parque-desc">Go-kart, tirolesa, arvorismo, paintball e diversão para adultos e adolescentes. Um dos mais completos em aventura.</div>
+        <div class="parque-preco">A partir de R$ 60</div>
+      </div>
+      <div class="parque-mini">
+        <span class="parque-emoji">🌍</span>
+        <div class="parque-nome">Big Land — Canela</div>
+        <div class="parque-desc">O parque dos gigantes — esculturas em tamanho real de dinossauros, animais e personagens. Ótimo para fotos com crianças.</div>
+        <div class="parque-preco">A partir de R$ 60</div>
+      </div>
+      <div class="parque-mini">
+        <span class="parque-emoji">🚀</span>
+        <div class="parque-nome">Space Adventure — Canela</div>
+        <div class="parque-desc">Jornada espacial temática da NASA com simuladores, exposições e experiências imersivas sobre o universo.</div>
+        <div class="parque-preco">A partir de R$ 70</div>
+      </div>
+      <div class="parque-mini">
+        <span class="parque-emoji">🎪</span>
+        <div class="parque-nome">Mundo Lugano</div>
+        <div class="parque-desc">Complexo com osteria italiana, pâtisserie, fondue e bar de vinhos. Gastronomia e entretenimento no mesmo lugar.</div>
+        <div class="parque-preco">A partir de R$ 80</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATRAÇÕES GRAMADO -->
+  <div class="secao" id="atracoes" data-cat="atracao">
+    <div class="secao-titulo">Pontos turísticos — Gramado</div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Lago Negro <span class="badge badge-verde">Cartão-postal</span></div>
+          <div class="card-meta">Pedalinho · Chimarrão · Hortênsias · Gratuito caminhar</div>
+        </div>
+        <div class="card-preco">Pedalinho ~R$ 30/30min</div>
+      </div>
+      <div class="card-desc">O ícone de Gramado. Lago rodeado por pinheiros, hortênsias no inverno e azaleias no verão — paisagem europeia em solo gaúcho. Caminhar pela orla é gratuito. O pedalinho é o programa mais popular. Sentar à beira do lago tomando chimarrão é a experiência gaúcha por excelência. Fica lindo decorado no Natal Luz.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Gramado — Lago Negro</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Lago+Negro+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Rua Coberta <span class="badge badge-amber">Centro</span></div>
+          <div class="card-meta">Teto translúcido · Lojinhas · Feira · Restaurantes</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">Uma das ruas mais charmosas do Brasil. Teto translúcido com decoração de plantas pendentes, em frente ao Palácio dos Festivais — onde acontece o Festival de Cinema de Gramado. Lojinhas de artesanato, chocolates, restaurantes e cafés. Animar em qualquer hora do dia, especialmente à noite no inverno.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Gramado · Em frente ao Palácio dos Festivais</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Rua+Coberta+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Natal Luz de Gramado <span class="badge badge-premier">O maior do Brasil</span></div>
+          <div class="card-meta">Out–Jan · Gratuito (atrações pagas separado)</div>
+        </div>
+      </div>
+      <div class="card-desc">O maior e mais famoso Natal do Brasil — a cidade inteira se transforma. Desfile de carros alegóricos, encontro de Papais Noel, shows com cantores líricos, iluminação espetacular e decoração em cada rua. Edição 2025/2026 aconteceu de 23 de outubro de 2025 a 18 de janeiro de 2026. Reserve hotel com 3–6 meses de antecedência — esgota rápido.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Toda a cidade de Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Gramado+RS+Natal+Luz" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Festival de Cinema de Gramado <span class="badge badge-vinho">Agosto</span></div>
+          <div class="card-meta">Agosto · Tapete vermelho · Estrelas do cinema</div>
+        </div>
+        <div class="card-preco badge-gratis">Desfiles gratuitos</div>
+      </div>
+      <div class="card-desc">Um dos festivais de cinema mais importantes da América Latina, acontecendo em agosto. Atores, diretores e produções nacionais e internacionais desfilam pelo tapete vermelho. O centro da cidade ferve com as sessões abertas e eventos paralelos. Combina perfeitamente com a temporada de inverno.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Palácio dos Festivais — Centro de Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Palácio+dos+Festivais+Gramado" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Ônibus turístico Gramado + Canela <span class="badge badge-verde">City tour</span></div>
+          <div class="card-meta">Hop-on hop-off · Principais pontos · Guia</div>
+        </div>
+        <div class="card-preco">~R$ 60–90/pessoa</div>
+      </div>
+      <div class="card-desc">A melhor forma de conhecer os principais pontos de Gramado e Canela em pouco tempo — especialmente para quem tem apenas 1 ou 2 dias. Hop-on hop-off com guia, passando por Lago Negro, Rua Coberta, Le Jardin, Snowland, Canela e outras atrações. Recomendado para o primeiro dia.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Saída pelo centro de Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Centro+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Vinícolas da Serra Gaúcha <span class="badge badge-vinho">Enoturismo</span></div>
+          <div class="card-meta">Vale dos Vinhedos · Canela · Bento Gonçalves</div>
+        </div>
+        <div class="card-preco">Tour a partir de R$ 80/pessoa</div>
+      </div>
+      <div class="card-desc">A Serra Gaúcha é a maior região vitivinícola do Brasil. De Gramado, é possível fazer passeios organizados ao Vale dos Vinhedos (Bento Gonçalves, ~50km) e vinícolas de Canela, com degustação de vinhos premiados, espumantes e visita às caves. Passeio no Trem Maria Fumaça é o programa clássico saindo de Bento Gonçalves.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Saída de Gramado · Vale dos Vinhedos ~50km</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Vale+dos+Vinhedos+Bento+Gonçalves+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Chocolates artesanais — Loja Praline e Florybal <span class="badge badge-amber">Compras</span></div>
+          <div class="card-meta">Trufas · Bombons · Degustação</div>
+        </div>
+      </div>
+      <div class="card-desc">Gramado é a capital do chocolate artesanal brasileiro. A Praline e a Florybal são as marcas mais tradicionais — trufas de todos os sabores, bombons, barras e ovos de Páscoa. Degustação gratuita nas lojas. Impossible sair de Gramado sem uma caixa de chocolates. Preços a partir de R$ 40/250g.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro e Av. das Hortênsias — Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Chocolates+Gramado+RS+centro" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CANELA -->
+  <div class="secao" id="canela" data-cat="canela">
+    <div class="secao-titulo">Canela — 15 minutos de Gramado</div>
+
+    <div class="info-box verde">
+      <strong>🌲 Canela é parte essencial do roteiro</strong>
+      <p>A 15 minutos de Gramado, Canela tem suas próprias atrações únicas — o Skyglass é o mirante mais impressionante do Sul do Brasil, o Bondinhos Aéreos sobrevoa o Cânion do Itaimbezinho e a Catedral de Pedra é um dos prédios religiosos mais bonitos do país. Inclua pelo menos um dia inteiro em Canela no seu roteiro.</p>
+    </div>
+
+    <div class="card" data-cat="canela">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Skyglass Canela <span class="badge badge-neve">Mirante de vidro 360m</span></div>
+          <div class="card-meta">Vista do Rio Caí · "Abusado" · Tirar o fôlego</div>
+        </div>
+        <div>
+          <div class="card-preco">A partir de R$ 100</div>
+          <div class="preco-dica">Reserve online · Esgota rápido</div>
+        </div>
+      </div>
+      <div class="card-desc">Uma das experiências mais únicas do Brasil. Mirante de vidro suspenso a 360 metros de altura sobre o Rio Caí — você literalmente anda sobre o abismo com o chão transparente. Para os mais corajosos, o brinquedo "Abusado" é um passeio suspenso sob os trilhos da plataforma. Vista de tirar o fôlego da Serra Gaúcha.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Parque da Serra — Canela RS</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Skyglass+Canela+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="canela">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Bondinhos Aéreos <span class="badge badge-verde">Natureza</span></div>
+          <div class="card-meta">Cânion do Itaimbezinho · Vista aérea · Parque Estadual</div>
+        </div>
+        <div class="card-preco">A partir de R$ 90</div>
+      </div>
+      <div class="card-desc">Teleférico sobre o Parque Estadual do Caracol e arredores do Cânion do Itaimbezinho — um dos mais profundos cânions do Brasil. Vista panorâmica da Serra Gaúcha do alto. Complexo inclui também Museu de Cera, Vale dos Dinossauros e Pizzaria Kongo. Passeio para todas as idades.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Estrada Queda d'Água — Canela RS</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Bondinhos+Aéreos+Canela+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="canela">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Catedral de Pedra de Canela <span class="badge badge-amber">Histórico</span></div>
+          <div class="card-meta">Construção iniciada em 1953 · Gótica · Gratuito</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">Uma das igrejas mais bonitas do Brasil — construção em estilo neogótico com torres de 60 metros inteiramente feitas de pedra basáltica. Construção iniciada em 1953 e ainda em andamento. Fica na praça central de Canela, cercada por pinheiros e hortênsias. Visita gratuita — imperdível.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Praça da Matriz — Centro de Canela RS</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Catedral+de+Pedra+Canela+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="canela">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Parque do Caracol <span class="badge badge-verde">Cachoeira</span></div>
+          <div class="card-meta">Cachoeira 131m · Trilhas · Mirante</div>
+        </div>
+        <div class="card-preco">~R$ 30–50/adulto</div>
+      </div>
+      <div class="card-desc">O parque mais visitado do Rio Grande do Sul. A Cascata do Caracol tem 131 metros de queda livre — espetacular. Trilhas ecológicas pelo Parque Estadual, mirante panorâmico e ecomuseu. Fica a 8km do centro de Canela. Combine com o Skyglass no mesmo dia.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 8km do centro de Canela</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Parque+do+Caracol+Canela+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="canela">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cânion do Itaimbezinho <span class="badge badge-verde">Natureza</span></div>
+          <div class="card-meta">Parque Nacional · Trilhas · Vista panorâmica</div>
+        </div>
+        <div class="card-preco">~R$ 30 ingresso</div>
+      </div>
+      <div class="card-desc">Um dos cânions mais profundos do Brasil, com paredes de até 720m de altura. Fica no Parque Nacional dos Aparados da Serra, a ~80km de Canela. Trilhas de diferentes níveis de dificuldade com vistas épicas. Para os aventureiros, a descida até o fundo do cânion é inesquecível — exige guia credenciado.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Cambará do Sul RS · ~80km de Canela</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Cânion+Itaimbezinho+Cambará+do+Sul+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="canela">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Vinícola Jolimont — Canela <span class="badge badge-vinho">Enoturismo</span></div>
+          <div class="card-meta">Tour · Degustação · Espumantes premiados</div>
+        </div>
+        <div class="card-preco">Tour a partir de R$ 60</div>
+      </div>
+      <div class="card-desc">A vinícola mais próxima de Gramado — fica em Canela. Espumantes e vinhos premiados produzidos na serra. Tour pela cave, processo de produção e degustação guiada. Ótima opção para quem não quer ir até o Vale dos Vinhedos mas quer a experiência de enoturismo.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Canela RS</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Vinícola+Jolimont+Canela+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESTAURANTES -->
+  <div class="secao" id="restaurantes" data-cat="restaurante">
+    <div class="secao-titulo">Restaurantes e gastronomia</div>
+
+    <div class="info-box vinho">
+      <strong>🧀 A sequência de fondue é o programa gastronômico obrigatório</strong>
+      <p>Fondue em Gramado não é um prato — é uma sequência completa de 3 etapas: fondue de queijo (emmental, gruyère), fondue de carne (na pedra ou no vinho) e fondue de chocolate (várias opções de molho). Dura ~2h e é um programa por si só. Reserve com antecedência especialmente no inverno. Preços de R$ 79–300/pessoa dependendo do restaurante.</p>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Catherine Fondue <span class="badge badge-vinho">O mais diferenciado</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> 4 tipos de molho de queijo · Carne no vinho</div>
+        </div>
+        <div class="card-preco">Tradicional: ~R$ 98/pessoa</div>
+      </div>
+      <div class="card-desc">O fondue mais comentado de Gramado. Diferencial: 4 molhos de queijo distintos — queijo com trufas, quatro queijos com presunto de parma, queijo suíço e queijo com alho. Na sequência de carne, opção de cozinhar no vinho (além do tradicional óleo). No chocolate: 6 opções de molho incluindo erva-mate. Reserve com antecedência — sempre cheio.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Gramado RS · Reserva obrigatória</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Catherine+Fondue+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Royal Fondue <span class="badge badge-vinho">Tradicional</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Inaugurado 2011 · Renovado 2016</div>
+        </div>
+        <div>
+          <div class="card-preco">Tradicional: R$ 79/pessoa</div>
+          <div class="card-preco">Premium pedra: R$ 119</div>
+        </div>
+      </div>
+      <div class="card-desc">Um dos mais bem avaliados e com melhor custo-benefício em Gramado. Três opções de sequência. A versão tradicional sai por R$ 79/pessoa — uma das mais acessíveis da cidade com qualidade reconhecida. Ambiente aconchegante com muita madeira e iluminação quente.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. Ângelo Bisol, 444 — Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Royal+Fondue+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">La Divina Fondue <span class="badge badge-vinho">Música ao vivo</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Almoço e jantar · Centro de Gramado</div>
+        </div>
+        <div class="card-preco">A partir de R$ 99/pessoa</div>
+      </div>
+      <div class="card-desc">Fica no centrinho de Gramado — boa localização. Diferencial no fondue de queijo: acompanha quibe. Infinidade de molhos para a carne. Música ao vivo nos fins de semana (couvert artístico cobrado). Atende tanto para almoço quanto jantar.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=La+Divina+Fondue+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Era do Fogo <span class="badge badge-amber">Temático · Imersivo</span></div>
+          <div class="card-meta">Jantar teatral · Fev/2026: a partir R$ 189/pessoa</div>
+        </div>
+        <div class="card-preco">A partir de R$ 189/pessoa</div>
+      </div>
+      <div class="card-desc">Restaurante imersivo temático — jantar com encenação ao vivo. Ambiente de época com personagens interagindo com os clientes durante a refeição. Um dos 13 melhores restaurantes temáticos de Gramado. Precisa de reserva antecipada. Fica na Av. das Hortênsias.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. das Hortênsias, 4901 — Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Era+do+Fogo+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cafés coloniais <span class="badge badge-amber">Tradição gaúcha</span></div>
+          <div class="card-meta">Cucas · Pães artesanais · Queijos · Embutidos</div>
+        </div>
+        <div class="card-preco">~R$ 60–120/pessoa</div>
+      </div>
+      <div class="card-desc">O café colonial gaúcho é uma refeição completa — não um simples café. Cucas (bolo alemão), pães artesanais, queijos, embutidos, geleias, cucas de uva, mel e muito mais numa mesa farta. Vários hotéis e pousadas oferecem; também encontrado em restaurantes especializados pela cidade. Imperdível para sentir a cultura da imigração alemã e italiana.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Vários restaurantes em Gramado e Canela</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Café+Colonial+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOITE -->
+  <div class="secao" id="noite" data-cat="noite">
+    <div class="secao-titulo">Vida noturna e entretenimento</div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Rua Coberta à noite <span class="badge badge-amber">Programa clássico</span></div>
+          <div class="card-meta">Lojinhas · Bares · Chocolate quente · Gratuito</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">O programa noturno mais charmoso de Gramado. Passear pela Rua Coberta com chocolate quente na mão, olhando as lojinhas iluminadas, no frio da serra — experiência que resume tudo que Gramado tem de especial. No inverno e no Natal Luz ganha decoração adicional e fica ainda mais bonito.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Rua+Coberta+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Lumni Experience (noturno) <span class="badge badge-neve">Novo</span></div>
+          <div class="card-meta">+500 mil luzes · Arte imersiva · Fotogênico</div>
+        </div>
+        <div class="card-preco">A partir de R$ 80</div>
+      </div>
+      <div class="card-desc">Imperdível à noite — as instalações luminosas ganham vida no escuro. Percurso de luz e arte em meio à natureza, com mais de 500 mil luzes integradas ao ambiente. Um dos programas noturnos mais comentados de Gramado nos últimos anos. Ótimo para casais e grupos.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Gramado RS</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Lumni+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cervejarias artesanais e bares <span class="badge badge-verde">Descontraído</span></div>
+          <div class="card-meta">Cervejas de inverno · Ambiente aconchegante</div>
+        </div>
+      </div>
+      <div class="card-desc">Gramado tem uma cena crescente de cervejarias artesanais e bares aconchegantes — o frio convida a ficar dentro, aquecido. Algumas com música ao vivo, especialmente no inverno e no Natal Luz. O centro e a Av. das Hortênsias concentram as opções. A Oktoberfest de outubro movimenta a cena de cervejas.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro e Av. das Hortênsias — Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Cervejaria+Gramado+RS" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Noite Italiana / Noite Gaúcha / Noite Alemã <span class="badge badge-vinho">Temático</span></div>
+          <div class="card-meta">Jantar com show cultural · Reserva necessária</div>
+        </div>
+        <div class="card-preco">~R$ 120–200/pessoa</div>
+      </div>
+      <div class="card-desc">Jantares temáticos com show cultural — danças e música típica italiana, gaúcha ou alemã ao vivo durante a refeição. Oferecidos por vários restaurantes da cidade. Uma das formas mais completas de vivenciar a herança cultural europeia de Gramado. Perfeito para grupos e famílias.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Vários restaurantes de Gramado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Gramado+RS+jantar+temático" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box cinza">
+    <strong>💡 Dica de ouro — como planejar bem a viagem a Gramado</strong>
+    <p>Gramado fica a 130km de Porto Alegre — alugue carro para ter liberdade entre Gramado e Canela (15 min) e excursões ao Vale dos Vinhedos e Cânion Itaimbezinho. No inverno (jul) e no Natal Luz (out–jan), reserve hotel e restaurantes com 2 a 3 meses de antecedência — a cidade esgota. Compre ingressos dos parques online com antecedência — Snowland e Skyglass esgotam nos fins de semana. Um roteiro de 4–5 dias permite cobrir Gramado, Canela e uma excursão ao Vale dos Vinhedos. Hotel com café colonial incluso economiza tempo e dinheiro no café da manhã.</p>
+  </div>
+
+  <div class="hoteis-cta" id="hoteis">
+    <h3>Onde ficar em Gramado?</h3>
+    <p>De chalés românticos a hotéis boutique no centro. Reserve com muita antecedência no inverno e no Natal Luz — a cidade esgota meses antes.</p>
+    <a class="btn-booking" href="https://www.booking.com/searchresults.pt-br.html?ss=Gramado%2C+Rio+Grande+do+Sul" target="_blank">Ver hotéis disponíveis →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">vai<span>bora</span>.com.br</div>
+    <p>Guias de viagem curados para destinos brasileiros. Conteúdo verificado e atualizado.<br>
+    Este site contém links de afiliados. Se você reservar um hotel por aqui, recebo uma pequena comissão sem custo adicional para você.<br>
+    <a href="/privacidade.html">Política de privacidade</a></p>
+  </div>
+</footer>
+
+<script>
+function filtrar(cat, btn) {
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  const map = {parque:'parques',atracao:'atracoes',canela:'canela',restaurante:'restaurantes',noite:'noite'};
+  ['parques','atracoes','canela','restaurantes','noite'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = (cat === 'todos' || map[cat] === id) ? '' : 'none';
+  });
+  document.querySelectorAll('.info-box').forEach(b => {
+    b.style.display = cat === 'todos' ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
