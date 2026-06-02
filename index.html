@@ -132,6 +132,7 @@
     <button class="fbtn ativo" onclick="filtrar('todos',this)">Todos</button>
     <button class="fbtn" onclick="filtrar('praia',this)">🏖 Praia</button>
     <button class="fbtn" onclick="filtrar('parque',this)">🎢 Parques</button>
+    <button class="fbtn" onclick="filtrar('natureza',this)">🌿 Natureza</button>
     <button class="fbtn" onclick="filtrar('historico',this)">🏛 Histórico</button>
   </div>
 </div>
@@ -166,6 +167,31 @@
       </div>
     </a>
 
+    <a class="destino-card" href="/bonito.html" data-tipo="natureza historico">
+      <div class="destino-header" style="background:#1a6b3c">
+        <span class="destino-emoji">🤿</span>
+        <div class="destino-cidade">Bonito</div>
+        <div class="destino-estado">Mato Grosso do Sul · Ecoturismo</div>
+        <div class="destino-badge">Guia completo</div>
+      </div>
+      <div class="destino-body">
+        <div class="destino-desc">16x eleito o Melhor Destino de Ecoturismo do Brasil. Rios com visibilidade de 40m, grutas milenares, araras em vida selvagem e o misterioso Abismo Anhumas.</div>
+        <div class="destino-chips">
+          <span class="dchip">🐠 Flutuação cristalina</span>
+          <span class="dchip">🦜 Buraco das Araras</span>
+          <span class="dchip">🏔 Abismo Anhumas</span>
+          <span class="dchip">🌿 Pantanal</span>
+        </div>
+        <div class="destino-cta">
+          <span class="btn-ver" style="color:#1a6b3c">Ver guia completo →</span>
+          <div class="destino-stats">
+            <div class="stat"><strong>297km</strong> de CG</div>
+            <div class="stat"><strong>4–7</strong> dias</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
     <a class="destino-card" href="/porto-seguro.html" data-tipo="praia historico">
       <div class="destino-header azul">
         <span class="destino-emoji">🏖</span>
@@ -195,18 +221,11 @@
 
   <div class="secao-titulo">Em breve</div>
 
-  <div class="em-breve" data-tipo="praia">
+  <div class="em-breve" data-tipo="parque">
     <div class="em-breve-emoji">🌊</div>
     <div>
       <div class="em-breve-nome">Caldas Novas, GO</div>
       <div class="em-breve-tag">Termas · Parques aquáticos</div>
-    </div>
-  </div>
-  <div class="em-breve" data-tipo="praia historico">
-    <div class="em-breve-emoji">🌿</div>
-    <div>
-      <div class="em-breve-nome">Bonito, MS</div>
-      <div class="em-breve-tag">Ecoturismo · Mergulho · Natureza</div>
     </div>
   </div>
   <div class="em-breve" data-tipo="praia">
@@ -214,6 +233,13 @@
     <div>
       <div class="em-breve-nome">Gramado, RS</div>
       <div class="em-breve-tag">Serra Gaúcha · Natal Luz · Chocolate</div>
+    </div>
+  </div>
+  <div class="em-breve" data-tipo="praia historico">
+    <div class="em-breve-emoji">🌴</div>
+    <div>
+      <div class="em-breve-nome">Foz do Iguaçu, PR</div>
+      <div class="em-breve-tag">Cataratas · Itaipu · Natureza</div>
     </div>
   </div>
 
