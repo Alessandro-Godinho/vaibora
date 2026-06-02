@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia completo Caldas Novas GO 2026 — maior estância hidrotermal do mundo. Hot Park, diRoma, parques, restaurantes, trilhas, Feira do Luar e onde ficar. Tudo verificado.">
+  <title>Caldas Novas GO — Guia Completo | Vaibora</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8EFW81MN6"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K8EFW81MN6');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--azul:#1a4f8a;--azul-claro:#e6eef8;--laranja:#e85d26;--vermelho-agua:#c0390f;--verde:#1a6b3c;--cinza:#f4f2ee;--texto:#1a1a18;--texto-muted:#6b6b65;--borda:#e0ddd6;--branco:#fafaf8;--termal:#e85d26;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'DM Sans',sans-serif;background:var(--branco);color:var(--texto);}
+    nav{position:sticky;top:0;z-index:100;background:var(--branco);border-bottom:1px solid var(--borda);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:56px;}
+    .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:var(--verde);text-decoration:none;}
+    .logo span{color:var(--laranja);}
+    nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
+    nav a:hover{color:var(--azul);}
+    .hero{background:linear-gradient(135deg,#c0390f 0%,#e85d26 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
+    .hero::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;background:rgba(255,255,255,0.1);border-radius:50%;}
+    .hero::after{content:'';position:absolute;bottom:-40px;left:20%;width:250px;height:250px;background:rgba(255,200,100,0.1);border-radius:50%;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero-tag{display:inline-block;background:rgba(255,255,255,0.2);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.3);}
+    .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
+    .hero h1 span{color:#ffd080;}
+    .hero p{font-size:1rem;opacity:0.9;line-height:1.7;max-width:520px;margin-bottom:2rem;}
+    .hero-chips{display:flex;gap:8px;flex-wrap:wrap;}
+    .chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);color:white;font-size:0.8rem;padding:5px 12px;border-radius:20px;}
+    .container{max-width:760px;margin:0 auto;padding:0 1.5rem;}
+    .filtros{background:var(--branco);border-bottom:1px solid var(--borda);padding:0.8rem 1.5rem;position:sticky;top:56px;z-index:90;overflow-x:auto;}
+    .filtros-inner{max-width:760px;margin:0 auto;display:flex;gap:6px;align-items:center;white-space:nowrap;}
+    .fbtn{font-family:'DM Sans',sans-serif;font-size:0.78rem;padding:5px 13px;border-radius:20px;border:1px solid var(--borda);background:white;color:var(--texto-muted);cursor:pointer;transition:all .15s;white-space:nowrap;}
+    .fbtn:hover{border-color:var(--termal);color:var(--termal);}
+    .fbtn.ativo{background:var(--termal);color:white;border-color:var(--termal);}
+    .secao{padding:2.5rem 0 0;}
+    .secao-titulo{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--texto-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:2px solid #ffd080;display:inline-block;}
+    .card{background:white;border:1px solid var(--borda);border-radius:12px;padding:1.1rem 1.2rem;margin-bottom:10px;transition:border-color .15s,transform .15s;}
+    .card:hover{border-color:var(--termal);transform:translateY(-1px);}
+    .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;}
+    .card-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;color:var(--texto);margin-bottom:3px;}
+    .card-meta{font-size:0.75rem;color:var(--texto-muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+    .estrelas{color:#d4900a;font-size:0.75rem;}
+    .badge{display:inline-block;font-size:0.68rem;font-weight:500;padding:2px 8px;border-radius:20px;}
+    .badge-coral{background:#fde8e0;color:#c0390f;}
+    .badge-verde{background:#e0f0e8;color:#1a6b3c;}
+    .badge-azul{background:#e6eef8;color:#1a4f8a;}
+    .badge-amber{background:#fef3d0;color:#8a5c00;}
+    .badge-gratis{background:#e0f0e8;color:#1a6b3c;}
+    .badge-mundo{background:#ffd080;color:#7a3800;font-weight:700;}
+    .badge-radical{background:#fde8e0;color:#8a0000;}
+    .card-preco{font-size:0.85rem;font-weight:500;color:var(--texto);text-align:right;white-space:nowrap;}
+    .preco-dica{font-size:0.65rem;background:#e0f0e8;color:var(--verde);padding:2px 7px;border-radius:4px;margin-top:3px;display:inline-block;}
+    .card-desc{font-size:0.83rem;color:var(--texto-muted);line-height:1.6;margin-top:8px;}
+    .card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:6px;}
+    .card-endereco{font-size:0.72rem;color:var(--texto-muted);}
+    .btn-maps{font-size:0.72rem;padding:4px 10px;border-radius:6px;background:var(--azul-claro);color:var(--azul);border:none;cursor:pointer;font-weight:500;text-decoration:none;white-space:nowrap;}
+    .btn-maps:hover{background:var(--azul);color:white;}
+    .parques-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-bottom:1rem;}
+    .parque-mini{background:white;border:1px solid var(--borda);border-radius:12px;padding:1rem;transition:border-color .15s;}
+    .parque-mini:hover{border-color:var(--termal);}
+    .parque-emoji{font-size:1.5rem;margin-bottom:6px;display:block;}
+    .parque-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;margin-bottom:4px;}
+    .parque-desc{font-size:0.77rem;color:var(--texto-muted);line-height:1.5;}
+    .parque-preco{font-size:0.75rem;font-weight:500;color:var(--termal);margin-top:6px;}
+    .info-box{border-radius:12px;padding:1.1rem 1.3rem;margin:1.5rem 0;}
+    .info-box.termal{background:#fff3ee;border-left:3px solid var(--termal);}
+    .info-box.verde{background:#e8f5ed;border-left:3px solid var(--verde);}
+    .info-box.cinza{background:var(--cinza);border-left:3px solid var(--azul);}
+    .info-box.amber{background:#fef8e0;border-left:3px solid #c4960f;}
+    .info-box strong{font-family:'Syne',sans-serif;font-size:0.85rem;display:block;margin-bottom:4px;}
+    .info-box.termal strong{color:#c0390f;}
+    .info-box.verde strong{color:var(--verde);}
+    .info-box.cinza strong{color:var(--azul);}
+    .info-box.amber strong{color:#7a5200;}
+    .info-box p{font-size:0.82rem;line-height:1.6;color:var(--texto-muted);}
+    .info-box.amber p{color:#5a3c00;}
+    .hoteis-cta{background:linear-gradient(135deg,#c0390f 0%,#7a1500 100%);border-radius:16px;padding:2rem;margin:2.5rem 0;color:white;text-align:center;}
+    .hoteis-cta h3{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:0.5rem;}
+    .hoteis-cta p{font-size:0.85rem;opacity:0.85;margin-bottom:1.2rem;}
+    .btn-booking{display:inline-block;background:#ffd080;color:#7a3800;font-weight:700;font-size:0.9rem;padding:10px 24px;border-radius:8px;text-decoration:none;transition:opacity .15s;}
+    .btn-booking:hover{opacity:0.9;}
+    footer{background:var(--texto);color:white;padding:2.5rem 1.5rem;margin-top:4rem;}
+    .footer-inner{max-width:760px;margin:0 auto;}
+    .footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;margin-bottom:0.5rem;}
+    .footer-logo span{color:#f5c842;}
+    footer p{font-size:0.78rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-top:0.5rem;}
+    footer a{color:rgba(255,255,255,0.5);text-decoration:underline;}
+    .hidden{display:none!important;}
+    @media(max-width:600px){.hero{padding:3rem 1.2rem 2.5rem;}.parques-grid{grid-template-columns:1fr;}nav a{display:none;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">vai<span>bora</span>.com.br</a>
+  <div>
+    <a href="#parques">Parques</a>
+    <a href="#atracoes">Atrações</a>
+    <a href="#restaurantes">Comer</a>
+    <a href="#noite">Noite</a>
+    <a href="#hoteis">Hotéis</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Guia completo · Goiás · Maior estância hidrotermal do mundo</div>
+    <h1>Caldas Novas, GO<br><span>Águas quentes o ano inteiro</span></h1>
+    <p>A maior estância hidrotermal do mundo abriga águas que brotam naturalmente a até 57°C. Parques aquáticos épicos, trilhas no cerrado, culinária goiana e uma noite agitada com forró e sertanejo.</p>
+    <div class="hero-chips">
+      <div class="chip">🌡 20–27°C em junho</div>
+      <div class="chip">♨️ Água termal até 57°C</div>
+      <div class="chip">🚗 170km de Goiânia · 330km de Brasília</div>
+      <div class="chip">📅 3–5 dias ideais</div>
+      <div class="chip">👨‍👩‍👧 Família · Casal · Grupos</div>
+    </div>
+  </div>
+</div>
+
+<!-- MELHOR ÉPOCA -->
+<div style="background:#f4f2ee;border-bottom:1px solid #e0ddd6;padding:1rem 1.5rem;">
+  <div style="max-width:760px;margin:0 auto;">
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:0.8rem">Melhor época para ir</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="background:white;border:2px solid #c0390f;border-radius:10px;padding:8px 12px;flex:1;min-width:140px">
+        <div style="font-size:0.7rem;color:#c0390f;font-weight:600;margin-bottom:2px">🏆 Ideal</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Junho</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Seco · Clima ameno · Preço baixo · Menos gente</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:140px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">✅ Bom</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Mai · Jul · Ago</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Jul = férias escolares (lotado e caro)</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:140px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">⚠️ Movimentado</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Dez · Jan · Fev</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Alta temporada · Calor e chuvas à tarde</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:140px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">♨️ Dica de ouro</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Piscina à noite</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Junhão: clima frio + água quente = perfeição</div>
+      </div>
+    </div>
+    <div style="background:#fff3ee;border:1px solid #f0a080;border-radius:8px;padding:8px 12px;margin-top:10px;font-size:0.78rem;color:#7a2800">
+      <strong>♨️ Por que junho é perfeito para águas termais:</strong> com temperatura externa em torno de 15–20°C à noite e as piscinas a 37–50°C, a experiência é sublime — como um spa gigante ao ar livre. Junho também tem preços de baixa temporada e menos filas nos parques.
+    </div>
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin:1rem 0 0.6rem">Recomendado para</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">👨‍👩‍👧</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Família com crianças</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Hot Park · diRoma · Lagoa Termas · Kitakas</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">💑</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Casal</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Lago Corumbá · Ofurô · Jantar goiano · Noite animada</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🧑‍🤝‍🧑</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Grupos e turmas</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Festas · Shows · Forró · Av. Orcalino Santos</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">👴</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Terceira idade</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Águas termais terapêuticas · Hidromassagem · Spa</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="filtros">
+  <div class="filtros-inner">
+    <span style="font-size:0.75rem;color:var(--texto-muted);margin-right:4px">Ver:</span>
+    <button class="fbtn ativo" onclick="filtrar('todos',this)">Tudo</button>
+    <button class="fbtn" onclick="filtrar('parque',this)">♨️ Parques</button>
+    <button class="fbtn" onclick="filtrar('atracao',this)">🏛 Atrações</button>
+    <button class="fbtn" onclick="filtrar('restaurante',this)">🍽 Comer</button>
+    <button class="fbtn" onclick="filtrar('noite',this)">🌙 Noite</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- PARQUES -->
+  <div class="secao" id="parques" data-cat="parque">
+    <div class="secao-titulo">Parques aquáticos termais</div>
+
+    <div class="info-box termal">
+      <strong>♨️ A água de Caldas Novas é naturalmente quente</strong>
+      <p>As águas brotam do subsolo entre 37°C e 57°C — sem aquecimento artificial. São ricas em minerais com propriedades terapêuticas comprovadas. Compre ingressos online com antecedência — sai mais barato e você evita filas. Verifique os dias de fechamento de cada parque antes de ir.</p>
+    </div>
+
+    <div class="card" data-cat="parque">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Hot Park — Rio Quente Resorts <span class="badge badge-mundo">6° do mundo</span></div>
+          <div class="card-meta">Sex–Qua 10h–17h · 28km de Caldas Novas</div>
+        </div>
+        <div>
+          <div class="card-preco">A partir de R$ 178/adulto</div>
+          <div class="preco-dica">Online = mais barato</div>
+        </div>
+      </div>
+      <div class="card-desc">O maior e mais famoso parque de águas quentes da América do Sul — eleito o 6° melhor do mundo. Toboáguas radicais, praia artificial com ondas, rio lento, bar molhado e mais de 15 atrações. Fica em Rio Quente, a 28km de Caldas Novas. Muitos visitantes optam por se hospedar dentro do próprio resort para aproveitar ao máximo.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Rio Quente Resorts · Esplanada do Rio Quente GO</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Hot+Park+Rio+Quente+GO" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="parque">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">diRoma Acqua Park <span class="badge badge-coral">Mais completo de Caldas</span></div>
+          <div class="card-meta">Qua–Dom 8h–19h · Centro de Caldas Novas</div>
+        </div>
+        <div>
+          <div class="card-preco">R$ 250 (hóspede diRoma)</div>
+          <div class="card-preco">R$ 550 (visitante)</div>
+        </div>
+      </div>
+      <div class="card-desc">O mais completo de Caldas Novas. Kids Park com brinquedos proporcionais às crianças, HotWave com praia artificial de ondas, Spa com piscinas de hidromassagem e Splash com toboáguas radicais e o temido Kamikaze. Todo consumo interno por cartão. Atenção: fecha às segundas e terças.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. São Cristóvão, 805 — Solar de Caldas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=diRoma+Acqua+Park+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="parque">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Lagoa Termas Parque <span class="badge badge-amber">Tradicional</span></div>
+          <div class="card-meta">Ter–Dom 9h–18h · 11 piscinas termais</div>
+        </div>
+        <div>
+          <div class="card-preco">A partir de R$ 100</div>
+          <div class="preco-dica">Grátis até 9 anos</div>
+        </div>
+      </div>
+      <div class="card-desc">Também conhecido como Lagoa Quente — um dos mais tradicionais de Caldas Novas. 11 piscinas com temperaturas variadas, 12 toboáguas e o Hot Half (rampa em "U" feita em boias). Abriga as nascentes mais quentes — o Poço do Ovo chega a 57°C. Inclui sauna, restaurante e área de camping. Fecha às segundas.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. Caminho do Lago s/n — Pirapitinga</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Lagoa+Termas+Parque+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="parque">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Kawana Park <span class="badge badge-radical">Mais radical</span></div>
+          <div class="card-meta">Piscina de ondas · Toboáguas gigantes · Rio lento</div>
+        </div>
+        <div class="card-preco">A partir de R$ 80</div>
+      </div>
+      <div class="card-desc">O mais adrenalítico de Caldas Novas — toboáguas gigantes, piscina de ondas e rio lento. Parte das piscinas tem água fria (diferente dos outros parques). Ótima opção para quem prefere mais aventura que relaxamento.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Proximidades do Lago Corumbá</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Kawana+Park+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="secao-titulo" style="margin-top:1.5rem">Outros parques da região</div>
+    <div class="parques-grid">
+      <div class="parque-mini">
+        <span class="parque-emoji">🌊</span>
+        <div class="parque-nome">Water Park</div>
+        <div class="parque-desc">Parte do complexo Privé Diversão. Piscinas termais, toboáguas e rio lento. Boa opção para quem se hospeda no Privé.</div>
+        <div class="parque-preco">A partir de R$ 70</div>
+      </div>
+      <div class="parque-mini">
+        <span class="parque-emoji">⛵</span>
+        <div class="parque-nome">Náutico Praia Clube</div>
+        <div class="parque-desc">9km do centro, à beira do Lago Corumbá. Vista linda do lago, piscinas termais e atmosfera mais tranquila.</div>
+        <div class="parque-preco">A partir de R$ 60</div>
+      </div>
+      <div class="parque-mini">
+        <span class="parque-emoji">🌿</span>
+        <div class="parque-nome">Clube Privé</div>
+        <div class="parque-desc">Complexo ideal para dia de lazer em família. Piscinas termais, área kids e mais tranquilo que os grandes parques.</div>
+        <div class="parque-preco">A partir de R$ 50</div>
+      </div>
+      <div class="parque-mini">
+        <span class="parque-emoji">🌱</span>
+        <div class="parque-nome">Eko Aventura Park</div>
+        <div class="parque-desc">Foco em atividades de adrenalina. Arvorismo, tirolesa, rapel e atividades ao ar livre além das piscinas.</div>
+        <div class="parque-preco">A partir de R$ 80</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATRAÇÕES -->
+  <div class="secao" id="atracoes" data-cat="atracao">
+    <div class="secao-titulo">Atrações e pontos turísticos</div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Parque Estadual Serra de Caldas (PESCAN) <span class="badge badge-verde">Natureza</span></div>
+          <div class="card-meta">Diariamente 6h–18h · 6km do centro</div>
+        </div>
+        <div class="card-preco">A partir de R$ 15</div>
+      </div>
+      <div class="card-desc">O lado natural de Caldas Novas que poucos conhecem. Duas trilhas principais no cerrado: Cachoeira da Cascatinha (600m, fácil, na sombra — ótima para crianças) e Cachoeira do Paredão (mais longa e desafiadora). Mirantes com vista panorâmica e Museu da Fauna na entrada. Verifique o Instagram do PESCAN antes de ir — cachoeiras podem estar secas na estação seca.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 6km do centro de Caldas Novas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Parque+Estadual+Serra+Caldas+PESCAN" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Lago Corumbá <span class="badge badge-azul">Passeio</span></div>
+          <div class="card-meta">Passeio de barco · Pesca esportiva · Orla</div>
+        </div>
+        <div class="card-preco">Passeio de barco ~R$ 50–80</div>
+      </div>
+      <div class="card-desc">Lago artificial formado pela Usina Hidrelétrica de Corumbá. Belíssimo para passeios de barco, jet ski e pesca esportiva. A orla tem restaurantes e bares com vista para o lago. Ótima pedida para quem quer descansar das piscinas por um dia. Náutico Praia Clube e Kawana ficam às margens.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Orla do Lago Corumbá · Caldas Novas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Lago+Corumbá+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Casarão dos Gonzaga <span class="badge badge-amber">Histórico</span></div>
+          <div class="card-meta">Primeira casa da cidade · Artesanato local</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">Considerada a primeira casa construída em Caldas Novas — hoje transformada em espaço de artesanato local. Boa oportunidade para comprar lembranças autênticas feitas por artesãos da cidade: cerâmica, tecidos, doces e produtos do cerrado goiano.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro histórico de Caldas Novas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Casarão+dos+Gonzaga+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Santuário de Salete <span class="badge badge-azul">Mirante</span></div>
+          <div class="card-meta">Ponto religioso · Vista panorâmica da cidade</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">Ponto religioso e turístico frequentemente incluído nos roteiros de trenzinho pela cidade. O grande atrativo para o turista é o mirante com vista panorâmica de Caldas Novas e seus bairros. Vale a parada rápida para fotos.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. 18 — Estância Chácara Itapema</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Santuário+Salete+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Jardim Japonês <span class="badge badge-verde">Passeio diferente</span></div>
+          <div class="card-meta">Lago com peixes · Pontes · Ornamentação</div>
+        </div>
+        <div class="card-preco">Pequena taxa</div>
+      </div>
+      <div class="card-desc">Espaço inusitado em Caldas Novas — jardim com ornamentação japonesa, lago com peixes coloridos e pontes características. Guarda também uma das casas mais antigas da cidade com objetos das décadas passadas. Passeio tranquilo e diferente para quem quer descansar dos parques.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Caldas Novas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Jardim+Japonês+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Kitakas Center Park <span class="badge badge-coral">Família</span></div>
+          <div class="card-meta">Roda-gigante · Brinquedos · Vista da cidade</div>
+        </div>
+        <div class="card-preco">Por atração</div>
+      </div>
+      <div class="card-desc">Parque de diversões com brinquedos, guloseimas e uma roda-gigante que permite ver toda a cidade de cima. Ótimo para crianças e para quem quer um programa diferente dos parques aquáticos. Fica na avenida principal, perto da Feira do Luar.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. Orcalino Santos — Termal</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Kitakas+Center+Park+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cachaçaria Vale das Águas <span class="badge badge-amber">Degustação</span></div>
+          <div class="card-meta">Cachaças artesanais · Degustação gratuita</div>
+        </div>
+        <div class="card-preco">Gratuito (degustação)</div>
+      </div>
+      <div class="card-desc">Parada curiosa e divertida — cachaçaria artesanal de Caldas Novas com degustação gratuita de diversos rótulos. Boa oportunidade para conhecer a produção local e comprar uma lembrança diferente da cidade.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Caldas Novas · Centro</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Cachaçaria+Vale+das+Águas+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Trenzinho turístico <span class="badge badge-verde">City tour</span></div>
+          <div class="card-meta">Pontos históricos · Santuário · Centro antigo</div>
+        </div>
+        <div class="card-preco">~R$ 20–30/pessoa</div>
+      </div>
+      <div class="card-desc">Passeio de trem pelas ruas de Caldas Novas passando pelos principais pontos históricos — Casarão dos Gonzaga, Santuário de Salete, Praça Mestre Orlando e centro histórico. Boa opção para o primeiro dia ou para quem quer conhecer a cidade de forma descontraída.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Saída pela Praça Mestre Orlando</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Praça+Mestre+Orlando+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESTAURANTES -->
+  <div class="secao" id="restaurantes" data-cat="restaurante">
+    <div class="secao-titulo">Restaurantes e gastronomia</div>
+
+    <div class="info-box amber">
+      <strong>🍗 A culinária goiana é o destaque gastronômico</strong>
+      <p>Galinhada com pequi, empadão goiano, frango com guariroba, pamonha e feijão tropeiro são os pratos obrigatórios. O pequi é o ingrediente símbolo do cerrado — sabor forte e único. Muitos hotéis oferecem pensão completa, mas vale sair para experimentar a culinária local. Restaurantes mais simples saem por R$ 30–60/pessoa; os mais completos por R$ 60–100/pessoa.</p>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Empadão Goiano da Tânia <span class="badge badge-amber">Obrigatório</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> O mais tradicional da cidade</div>
+        </div>
+        <div class="card-preco">~R$ 30–60/pessoa</div>
+      </div>
+      <div class="card-desc">A referência absoluta para provar o empadão goiano em Caldas Novas. Torta salgada recheada com frango, linguiça, guariroba, azeitona e ovo cozido — uma explosão de sabores do cerrado. Considerado por muitos visitantes o melhor restaurante de culinária regional da cidade.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Caldas Novas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Empadão+Goiano+Tânia+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Fogão Caipira <span class="badge badge-verde">Caseiro</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★☆</span> Galinhada · Feijão tropeiro · Familiar</div>
+        </div>
+        <div class="card-preco">~R$ 26–60/pessoa</div>
+      </div>
+      <div class="card-desc">Restaurante com comida caseira e preço justo — o arroz com galinha com pequi (R$ 26) e o feijão tropeiro são os carros-chefes. Ambiente simples e acolhedor, perfeito para almoço em família. O gostinho de comida feita no fogão a lenha faz a diferença.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. Machado de Assis, 100 — Centro</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Fogão+Caipira+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Casa do Pão Sírio <span class="badge badge-amber">Árabe</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Parada obrigatória dos visitantes</div>
+        </div>
+        <div class="card-preco">~R$ 30–60/pessoa</div>
+      </div>
+      <div class="card-desc">Um dos mais famosos e tradicionais de Caldas Novas. Culinária árabe autêntica com esfihas, quibes, falafel e pratos típicos. Querido pelos visitantes que retornam especialmente para comer aqui. Boa opção para quem quer variar da comida goiana.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Caldas Novas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Casa+do+Pão+Sírio+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Restaurante Ipê <span class="badge badge-verde">Variado</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★☆</span> Feijoada aos sábados</div>
+        </div>
+        <div class="card-preco">~R$ 40–70/pessoa</div>
+      </div>
+      <div class="card-desc">Cardápio variado que agrada diferentes gostos — pratos goianos, massas e carnes. Destaque para a feijoada aos sábados. Boa relação qualidade-preço e ambiente confortável.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Caldas Novas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Restaurante+Ipê+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Marco Velho / Restaurantes Self-service <span class="badge badge-verde">Econômico</span></div>
+          <div class="card-meta">Buffet livre · Quilo · Custo-benefício</div>
+        </div>
+        <div class="card-preco">R$ 30–50/pessoa</div>
+      </div>
+      <div class="card-desc">Para quem quer comer bem e gastar pouco. Buffet livre (~R$ 30) ou self-service por quilo com grelhados, saladas e pratos típicos. Perfeito para famílias com crianças que comem em ritmos diferentes. Estratégia: economize na alimentação para gastar mais nos parques.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Caldas Novas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Restaurante+Marco+Velho+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Piratas Pizzaria <span class="badge badge-coral">Temático</span></div>
+          <div class="card-meta">Maior restaurante temático do Brasil · Shows piratas</div>
+        </div>
+        <div class="card-preco">~R$ 60–100/pessoa</div>
+      </div>
+      <div class="card-desc">Um dos restaurantes mais diferentes do Brasil. Ambiente pirata imersivo com shows ao vivo durante o jantar — perfeito para crianças e grupos. Pizzas artesanais, porções e cardápio completo. A experiência é tão marcante quanto a comida.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Caldas Novas · Reservar com antecedência</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Piratas+Pizzaria+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOITE -->
+  <div class="secao" id="noite" data-cat="noite">
+    <div class="secao-titulo">Vida noturna</div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Feira do Luar <span class="badge badge-amber">Imperdível</span></div>
+          <div class="card-meta">Gastronomia · Artesanato · Todo dia à noite</div>
+        </div>
+        <div class="card-preco">Entrada gratuita</div>
+      </div>
+      <div class="card-desc">O coração da noite de Caldas Novas. Feira noturna com ~52 lojas em balcão coberto — gastronomia variada com galinhada, empadão, peixada, acarajé e doces caseiros, além de artesanato, roupas, pedras e bijuterias. Ponto de encontro de turistas e moradores. Localizada na avenida principal, atrás do Kitakas.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. Orcalino Santos — Termal</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Feira+do+Luar+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Av. Orcalino Santos <span class="badge badge-coral">Bares e shows</span></div>
+          <div class="card-meta">Restaurantes · Forró · Sertanejo · Todo dia</div>
+        </div>
+      </div>
+      <div class="card-desc">A principal via de entretenimento noturno de Caldas Novas. Ganha vida especialmente após o pôr do sol com bares, restaurantes, shows sertanejos e forró. A cidade tem uma programação de eventos e shows musicais frequente — principalmente durante feriados e alta temporada.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. Orcalino Santos — Centro</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Avenida+Orcalino+Santos+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Piscina termal à noite <span class="badge badge-mundo">Experiência única</span></div>
+          <div class="card-meta">A combinação perfeita com o clima de junho</div>
+        </div>
+      </div>
+      <div class="card-desc">Não é uma atração separada — mas merece menção especial. Muitos hotéis e resorts mantêm as piscinas termais abertas até 22h ou 23h. Em junho, com o ar frio de 15°C e a água quente a 37°C, a experiência é absolutamente inesquecível. Verifique o horário noturno de piscinas ao reservar o hotel.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Resorts e hotéis com piscinas termais</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Caldas+Novas+hotéis+piscinas+termais" target="_blank">Ver hotéis →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cervejaria Chaplin <span class="badge badge-azul">Artesanal</span></div>
+          <div class="card-meta">Cervejas artesanais · Petiscos · Hambúrgueres</div>
+        </div>
+        <div class="card-preco">~R$ 40–80/pessoa</div>
+      </div>
+      <div class="card-desc">Para os amantes de cerveja artesanal — ambiente descontraído com variedade de rótulos próprios, hambúrgueres, petiscos e pratos para acompanhar as bebidas. Boa opção para uma noite mais relaxada fora do circuito de shows.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Caldas Novas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Cervejaria+Chaplin+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPRAS -->
+  <div class="secao" id="compras" data-cat="atracao">
+    <div class="secao-titulo">Compras e lembranças</div>
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Shopping Serra Verde + Quitandas locais <span class="badge badge-verde">Presentes</span></div>
+          <div class="card-meta">Lembranças · Doces · Artesanato goiano</div>
+        </div>
+        <div class="card-preco">Entrada gratuita</div>
+      </div>
+      <div class="card-desc">O Shopping Serra Verde é parada frequente de excursões para compras de presentes e doces — biscoito quebrador, paçoca de carne seca, doce de leite e produtos do cerrado. As quitandas espalhadas pela cidade são onde estão os biscoitos caseiros mais gostosos. Leve uma lembrança comestível de Goiás.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Caldas Novas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Shopping+Serra+Verde+Caldas+Novas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box cinza">
+    <strong>💡 Dica de ouro — como planejar bem a visita a Caldas Novas</strong>
+    <p>Em junho (baixa temporada), hotel com piscina termal sai a partir de R$ 150–300/noite para casal. Na alta temporada (Natal, Carnaval, férias de julho) os preços dobram ou triplicam e os parques ficam lotados. Compre ingressos dos parques online com antecedência — sai mais barato e você evita a fila. Distribua os parques pelos dias: 1 parque grande por dia é suficiente para aproveitar bem. Se for com crianças, Hot Park é para o dia mais importante da viagem. Caldas Novas fica a 170km de Goiânia e 330km de Brasília — ótima para quem está nessas regiões.</p>
+  </div>
+
+  <div class="hoteis-cta" id="hoteis">
+    <h3>Onde ficar em Caldas Novas?</h3>
+    <p>Prefira hotéis e resorts com piscinas termais privativos — a experiência de nadar em água quente sem sair do hotel é o diferencial. Reserve com antecedência na alta temporada.</p>
+    <a class="btn-booking" href="https://www.booking.com/searchresults.pt-br.html?ss=Caldas+Novas%2C+Goias" target="_blank">Ver hotéis disponíveis →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">vai<span>bora</span>.com.br</div>
+    <p>Guias de viagem curados para destinos brasileiros. Conteúdo verificado e atualizado.<br>
+    Este site contém links de afiliados. Se você reservar um hotel por aqui, recebo uma pequena comissão sem custo adicional para você.<br>
+    <a href="/privacidade.html">Política de privacidade</a></p>
+  </div>
+</footer>
+
+<script>
+function filtrar(cat, btn) {
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  const map = {parque:'parques',atracao:'atracoes',restaurante:'restaurantes',noite:'noite'};
+  ['parques','atracoes','restaurantes','noite','compras'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = (cat === 'todos' || map[cat] === id || (cat === 'atracao' && id === 'compras')) ? '' : 'none';
+  });
+  document.querySelectorAll('.info-box').forEach(b => {
+    b.style.display = cat === 'todos' ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
