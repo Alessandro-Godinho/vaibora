@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia completo Fernando de Noronha 2026 — praias, mergulho, trilhas, taxas TPA e ICMBio, restaurantes, passeios de barco e melhor época. Tudo verificado e atualizado.">
+  <title>Fernando de Noronha PE — Guia Completo | Vaibora</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8EFW81MN6"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K8EFW81MN6');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--azul:#0a4a6b;--azul-claro:#e0f0f8;--verde:#0a5a3a;--verde-claro:#e0f5ea;--areia:#f5e8c8;--laranja:#e85d26;--cinza:#f4f2ee;--texto:#1a1a18;--texto-muted:#6b6b65;--borda:#e0ddd6;--branco:#fafaf8;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'DM Sans',sans-serif;background:var(--branco);color:var(--texto);}
+    nav{position:sticky;top:0;z-index:100;background:var(--branco);border-bottom:1px solid var(--borda);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:56px;}
+    .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#1a6b3c;text-decoration:none;}
+    .logo span{color:var(--laranja);}
+    nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
+    nav a:hover{color:var(--azul);}
+    .hero{background:linear-gradient(160deg,#0a2a4a 0%,#0a4a6b 50%,#0a5a3a 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
+    .hero::before{content:'🐢';position:absolute;top:20px;right:80px;font-size:100px;opacity:0.08;}
+    .hero::after{content:'';position:absolute;bottom:-40px;left:10%;width:300px;height:300px;background:rgba(255,255,255,0.03);border-radius:50%;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero-tag{display:inline-block;background:rgba(255,255,255,0.15);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);}
+    .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
+    .hero h1 span{color:#80d8f0;}
+    .hero p{font-size:1rem;opacity:0.85;line-height:1.7;max-width:520px;margin-bottom:2rem;}
+    .hero-chips{display:flex;gap:8px;flex-wrap:wrap;}
+    .chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:white;font-size:0.8rem;padding:5px 12px;border-radius:20px;}
+    .container{max-width:760px;margin:0 auto;padding:0 1.5rem;}
+    .filtros{background:var(--branco);border-bottom:1px solid var(--borda);padding:0.8rem 1.5rem;position:sticky;top:56px;z-index:90;overflow-x:auto;}
+    .filtros-inner{max-width:760px;margin:0 auto;display:flex;gap:6px;align-items:center;white-space:nowrap;}
+    .fbtn{font-family:'DM Sans',sans-serif;font-size:0.78rem;padding:5px 13px;border-radius:20px;border:1px solid var(--borda);background:white;color:var(--texto-muted);cursor:pointer;transition:all .15s;white-space:nowrap;}
+    .fbtn:hover{border-color:var(--azul);color:var(--azul);}
+    .fbtn.ativo{background:var(--azul);color:white;border-color:var(--azul);}
+    .secao{padding:2.5rem 0 0;}
+    .secao-titulo{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--texto-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:2px solid #80d8f0;display:inline-block;}
+    .card{background:white;border:1px solid var(--borda);border-radius:12px;padding:1.1rem 1.2rem;margin-bottom:10px;transition:border-color .15s,transform .15s;}
+    .card:hover{border-color:var(--azul);transform:translateY(-1px);}
+    .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;}
+    .card-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;color:var(--texto);margin-bottom:3px;}
+    .card-meta{font-size:0.75rem;color:var(--texto-muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+    .estrelas{color:#d4900a;font-size:0.75rem;}
+    .badge{display:inline-block;font-size:0.68rem;font-weight:500;padding:2px 8px;border-radius:20px;}
+    .badge-azul{background:#e0f0f8;color:#0a4a6b;}
+    .badge-verde{background:#e0f5ea;color:#0a5a3a;}
+    .badge-coral{background:#fde8e0;color:#8a0a0a;}
+    .badge-amber{background:#fef3d0;color:#8a5c00;}
+    .badge-areia{background:#f5e8c8;color:#7a5200;}
+    .badge-gratis{background:#e0f5ea;color:#0a5a3a;}
+    .badge-unesco{background:#ffd080;color:#7a3800;font-weight:700;}
+    .badge-1000{background:#fde8e0;color:#8a0a0a;font-weight:700;}
+    .card-preco{font-size:0.85rem;font-weight:500;color:var(--texto);text-align:right;white-space:nowrap;}
+    .preco-dica{font-size:0.65rem;background:var(--verde-claro);color:var(--verde);padding:2px 7px;border-radius:4px;margin-top:3px;display:inline-block;}
+    .card-desc{font-size:0.83rem;color:var(--texto-muted);line-height:1.6;margin-top:8px;}
+    .card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:6px;}
+    .card-endereco{font-size:0.72rem;color:var(--texto-muted);}
+    .btn-maps{font-size:0.72rem;padding:4px 10px;border-radius:6px;background:var(--azul-claro);color:var(--azul);border:none;cursor:pointer;font-weight:500;text-decoration:none;white-space:nowrap;}
+    .btn-maps:hover{background:var(--azul);color:white;}
+    .praias-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:10px;margin-bottom:1rem;}
+    .praia-card{background:white;border:1px solid var(--borda);border-radius:12px;padding:1rem;transition:border-color .15s;}
+    .praia-card:hover{border-color:var(--azul);}
+    .praia-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;margin-bottom:4px;}
+    .praia-desc{font-size:0.78rem;color:var(--texto-muted);line-height:1.5;}
+    .praia-tag{display:inline-block;font-size:0.65rem;padding:2px 7px;border-radius:20px;background:var(--azul-claro);color:var(--azul);margin-top:6px;}
+    .praia-tag-parque{background:var(--verde-claro);color:var(--verde);}
+    .info-box{border-radius:12px;padding:1.1rem 1.3rem;margin:1.5rem 0;}
+    .info-box.azul{background:var(--azul-claro);border-left:3px solid var(--azul);}
+    .info-box.verde{background:var(--verde-claro);border-left:3px solid var(--verde);}
+    .info-box.cinza{background:var(--cinza);border-left:3px solid var(--azul);}
+    .info-box.coral{background:#fff0ee;border-left:3px solid #c0390f;}
+    .info-box.amber{background:#fef8e0;border-left:3px solid #c4960f;}
+    .info-box.critico{background:#fff0ee;border:2px solid #c0390f;border-radius:12px;}
+    .info-box strong{font-family:'Syne',sans-serif;font-size:0.85rem;display:block;margin-bottom:4px;}
+    .info-box.azul strong{color:var(--azul);}
+    .info-box.verde strong{color:var(--verde);}
+    .info-box.cinza strong{color:var(--azul);}
+    .info-box.coral strong,.info-box.critico strong{color:#8a0a0a;}
+    .info-box.amber strong{color:#7a5200;}
+    .info-box p{font-size:0.82rem;line-height:1.6;color:var(--texto-muted);}
+    .info-box.critico p{color:#5a0a0a;}
+    .taxas-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:1rem 0;}
+    .taxa-card{background:white;border:1px solid var(--borda);border-radius:10px;padding:12px 14px;}
+    .taxa-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.85rem;margin-bottom:4px;}
+    .taxa-valor{font-size:1rem;font-weight:700;color:var(--azul);margin:4px 0;}
+    .taxa-desc{font-size:0.72rem;color:var(--texto-muted);line-height:1.5;}
+    .passeios-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:1rem;}
+    .passeio-mini{background:white;border:1px solid var(--borda);border-radius:12px;padding:1rem;transition:border-color .15s;}
+    .passeio-mini:hover{border-color:var(--azul);}
+    .passeio-emoji{font-size:1.5rem;margin-bottom:6px;display:block;}
+    .passeio-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;margin-bottom:4px;}
+    .passeio-desc{font-size:0.77rem;color:var(--texto-muted);line-height:1.5;}
+    .passeio-preco{font-size:0.75rem;font-weight:500;color:var(--azul);margin-top:6px;}
+    .hoteis-cta{background:linear-gradient(135deg,#0a2a4a 0%,#0a4a6b 100%);border-radius:16px;padding:2rem;margin:2.5rem 0;color:white;text-align:center;}
+    .hoteis-cta h3{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:0.5rem;}
+    .hoteis-cta p{font-size:0.85rem;opacity:0.85;margin-bottom:1.2rem;}
+    .btn-booking{display:inline-block;background:#80d8f0;color:#0a2a4a;font-weight:700;font-size:0.9rem;padding:10px 24px;border-radius:8px;text-decoration:none;transition:opacity .15s;}
+    .btn-booking:hover{opacity:0.9;}
+    footer{background:var(--texto);color:white;padding:2.5rem 1.5rem;margin-top:4rem;}
+    .footer-inner{max-width:760px;margin:0 auto;}
+    .footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;margin-bottom:0.5rem;}
+    .footer-logo span{color:#f5c842;}
+    footer p{font-size:0.78rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-top:0.5rem;}
+    footer a{color:rgba(255,255,255,0.5);text-decoration:underline;}
+    .hidden{display:none!important;}
+    @media(max-width:600px){.hero{padding:3rem 1.2rem 2.5rem;}.praias-grid,.passeios-grid{grid-template-columns:1fr;}.taxas-grid{grid-template-columns:1fr;}nav a{display:none;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">vai<span>bora</span>.com.br</a>
+  <div>
+    <a href="#taxas">Taxas</a>
+    <a href="#praias">Praias</a>
+    <a href="#passeios">Passeios</a>
+    <a href="#restaurantes">Comer</a>
+    <a href="#hoteis">Hotéis</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Guia completo · Pernambuco · Patrimônio Mundial UNESCO</div>
+    <h1>Fernando de Noronha, PE<br><span>O paraíso proibido do Brasil</span></h1>
+    <p>Arquipélago vulcânico com a praia mais bonita do planeta, visibilidade de 50 metros no mergulho, tubarões e tartarugas em vida selvagem e apenas 1.000 visitantes por dia. Noronha é o destino mais especial do Brasil — e o mais caro. Planeje com cuidado.</p>
+    <div class="hero-chips">
+      <div class="chip">🌡 28°C o ano inteiro</div>
+      <div class="chip">🤿 Visibilidade 50m no mar</div>
+      <div class="chip">✈️ Voos de Recife e Natal</div>
+      <div class="chip">📅 5–7 dias ideais</div>
+      <div class="chip">🐢 Tartarugas e tubarões</div>
+    </div>
+  </div>
+</div>
+
+<!-- TAXAS — ANTES DE TUDO -->
+<div style="background:#fff0ee;border-bottom:2px solid #c0390f;padding:1rem 1.5rem;" id="taxas">
+  <div style="max-width:760px;margin:0 auto;">
+    <div style="font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:700;color:#8a0a0a;margin-bottom:0.8rem">⚠️ LEIA ANTES DE IR — Taxas obrigatórias de Fernando de Noronha (2026)</div>
+    <div class="taxas-grid">
+      <div class="taxa-card">
+        <div class="taxa-nome">TPA — Taxa de Preservação Ambiental</div>
+        <div class="taxa-valor">R$ 105,79/dia</div>
+        <div class="taxa-desc"><strong>Obrigatória para embarcar.</strong> Sem pagar a TPA, você não consegue nem subir no avião. Cobrada por dia de permanência, por pessoa. Para 5 dias: ~R$ 529. Para 7 dias: ~R$ 672. Crianças abaixo de 5 anos são isentas. Pague em <strong>noronha.pe.gov.br</strong> antes de embarcar.</div>
+      </div>
+      <div class="taxa-card">
+        <div class="taxa-nome">ICMBio — Ingresso do Parque Nacional</div>
+        <div class="taxa-valor">R$ 192 (brasileiro)</div>
+        <div class="taxa-desc"><strong>Necessária para as melhores praias.</strong> Sem ela você não acessa Baía do Sancho, Baía dos Porcos, Sueste, Atalaia e outras praias do Parque Nacional. Válida por 10 dias. Estrangeiros pagam R$ 384. Compre no site do ICMBio.</div>
+      </div>
+    </div>
+    <div style="font-size:0.78rem;color:#5a0a0a;background:#fde0d8;border-radius:8px;padding:8px 12px;margin-top:8px">
+      <strong>💰 Custo mínimo em taxas para 5 dias (2 adultos brasileiros):</strong> TPA (~R$ 529 × 2 = R$ 1.058) + ICMBio (R$ 192 × 2 = R$ 384) = <strong>R$ 1.442 só em taxas</strong>, antes de pagar hospedagem, voos, comida e passeios. Planeje o orçamento com antecedência.
+    </div>
+  </div>
+</div>
+
+<!-- MELHOR ÉPOCA -->
+<div style="background:#f4f2ee;border-bottom:1px solid #e0ddd6;padding:1rem 1.5rem;">
+  <div style="max-width:760px;margin:0 auto;">
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:0.8rem">Melhor época para ir</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="background:white;border:2px solid #0a4a6b;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#0a4a6b;font-weight:600;margin-bottom:2px">🏆 Ideal — mergulho e praias</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Set · Out</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Mar calmo · Visibilidade 50m · Pouca chuva · Preço razoável</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">🏄 Surf e agito</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Jan · Fev</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Ondas fortes · Mais caro · Campeonatos de surf</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">💚 Vegetação exuberante</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Mar · Abr · Mai</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Mais chuvoso · Vegetação verde · Preço menor</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">⚠️ Evite (caro e lotado)</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Dez · Jul · Réveillon</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Preços máximos · Limite de 1.000 visitantes/dia esgota</div>
+      </div>
+    </div>
+    <div style="background:#e0f0f8;border:1px solid #80c8e8;border-radius:8px;padding:8px 12px;margin-top:10px;font-size:0.78rem;color:#0a3a5a">
+      <strong>🤿 Por que setembro/outubro são ideais:</strong> mar calmo nos dois lados da ilha (Mar de Dentro e Mar de Fora), visibilidade de até 50 metros — a maior do ano — perfeita para mergulho e snorkel. Pouca ou nenhuma chuva, preços menores que dezembro/janeiro e sem o caos da alta temporada.
+    </div>
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin:1rem 0 0.6rem">Recomendado para</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🤿</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Mergulhadores</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Batismo · Cilindro · Aquasub · Reboque</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">💑</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Casais</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Pôr do sol · Pousadas românticas · Jantar no Mergulhão</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🏄</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Surfistas</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Cacimba do Padre · Jan–Mar · Ondas perfeitas</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🌿</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Ecoturistas</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Trilhas · Tamar · Mirantes · Observação de aves</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="filtros">
+  <div class="filtros-inner">
+    <span style="font-size:0.75rem;color:var(--texto-muted);margin-right:4px">Ver:</span>
+    <button class="fbtn ativo" onclick="filtrar('todos',this)">Tudo</button>
+    <button class="fbtn" onclick="filtrar('praia',this)">🏖 Praias</button>
+    <button class="fbtn" onclick="filtrar('passeio',this)">🤿 Passeios</button>
+    <button class="fbtn" onclick="filtrar('trilha',this)">🥾 Trilhas</button>
+    <button class="fbtn" onclick="filtrar('restaurante',this)">🍽 Comer</button>
+    <button class="fbtn" onclick="filtrar('noite',this)">🌙 Noite</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- PRAIAS -->
+  <div class="secao" id="praias" data-cat="praia">
+    <div class="secao-titulo">Praias — as mais bonitas do Brasil</div>
+
+    <div class="info-box verde">
+      <strong>🌊 Mar de Dentro vs Mar de Fora</strong>
+      <p>Noronha tem dois "lados". O <strong>Mar de Dentro</strong> (voltado para o continente) tem águas calmas, ideais para mergulho, snorkel e banho. O <strong>Mar de Fora</strong> (voltado para o oceano aberto) tem ondas maiores e é favorito dos surfistas. As praias do Parque Nacional exigem o ingresso do ICMBio (R$ 192).</p>
+    </div>
+
+    <div class="praias-grid">
+      <div class="praia-card">
+        <div class="praia-nome">Baía do Sancho 🏆</div>
+        <div class="praia-desc">Eleita repetidamente a praia mais bonita do planeta pelo TripAdvisor. Águas azul-esverdeadas, cercada por falésias. Acesso por trilha ou barco. Mergulho e snorkel excepcionais.</div>
+        <span class="praia-tag praia-tag-parque">Parque Nacional · ICMBio obrigatório</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Baía dos Porcos</div>
+        <div class="praia-desc">Cenário espetacular com piscinas naturais formadas entre as rochas. Vista para os Dois Irmãos. Maré baixa revela piscinas cristalinas perfeitas. Uma das mais fotografadas da ilha.</div>
+        <span class="praia-tag praia-tag-parque">Parque Nacional · ICMBio obrigatório</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Praia do Leão</div>
+        <div class="praia-desc">Paisagem exuberante e isolada — uma das mais preservadas da ilha. Acesso para mergulho proibido por presença de tubarões. Ótima para contemplação. Área de desova de tartarugas.</div>
+        <span class="praia-tag praia-tag-parque">Parque Nacional · Apenas contemplação</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Atalaia</div>
+        <div class="praia-desc">Piscinas naturais com coral e vida marinha abundante — tubarões lixa, tartarugas e polvos a poucos metros. Acesso controlado com horário fixo e limite de visitantes. Snorkel incluído na visita.</div>
+        <span class="praia-tag praia-tag-parque">Parque Nacional · Agendamento obrigatório</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Cacimba do Padre</div>
+        <div class="praia-desc">A praia dos surfistas. Extensa, com o Morro Dois Irmãos ao fundo — o cartão-postal da ilha. Recebe campeonatos internacionais de surf. Snorkel possível na maré baixa. Mar de Fora.</div>
+        <span class="praia-tag">Mar de Fora · Surf · Morro Dois Irmãos</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Praia do Cachorro</div>
+        <div class="praia-desc">A mais estruturada próxima à Vila dos Remédios. Mesas e guarda-sóis para consumação, piscinas naturais na maré baixa. Ponto de partida para outras praias. Acesso gratuito.</div>
+        <span class="praia-tag">Vila dos Remédios · Acesso gratuito</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Baía do Sueste</div>
+        <div class="praia-desc">Famosa pela grande concentração de tartarugas marinhas — você nada com elas no snorkel. Mar calmo e transparente. Projeto Tamar tem base aqui. Uma das experiências mais emocionantes da ilha.</div>
+        <span class="praia-tag praia-tag-parque">Parque Nacional · Tartarugas garantidas</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Praia do Meio</div>
+        <div class="praia-desc">Tranquila e de tamanho mediano, perfeita para descanso em contato com a natureza. Próxima à Vila dos Remédios. Acesso gratuito. Ideal para quem quer fugir das praias mais movimentadas.</div>
+        <span class="praia-tag">Acesso gratuito · Tranquila</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Praia da Conceição</div>
+        <div class="praia-desc">Entre as praias gratuitas mais bonitas. Boa para snorkel na maré baixa. Vista para o Morro do Pico. Uma das mais acessíveis da ilha — perto da Vila dos Remédios.</div>
+        <span class="praia-tag">Acesso gratuito · Snorkel</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PASSEIOS -->
+  <div class="secao" id="passeios" data-cat="passeio">
+    <div class="secao-titulo">Passeios e mergulhos</div>
+
+    <div class="info-box azul">
+      <strong>🤿 4 modalidades de mergulho em Noronha</strong>
+      <p><strong>Batismo:</strong> para iniciantes — aula a bordo e mergulho acompanhado (~R$ 350–500). <strong>Com cilindro:</strong> para certificados — exploração autônoma dos recifes (~R$ 300–450). <strong>Aquasub/Reboque:</strong> segura uma prancha que te puxa pela água sem precisar nadar (~R$ 150–250). <strong>Snorkel:</strong> superficial com máscara — o mais acessível (~R$ 80–150 no passeio de barco).</p>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Ilha Tour <span class="badge badge-azul">Passeio completo em 1 dia</span></div>
+          <div class="card-meta">Projeto Tamar · Baía do Sueste · Snorkel · Atalaia</div>
+        </div>
+        <div class="card-preco">~R$ 200–350/pessoa</div>
+      </div>
+      <div class="card-desc">O passeio mais completo de Noronha para quem tem pouco tempo. Em um dia visita as principais praias e pontos turísticos: Projeto Tamar, Praia do Porto, Museu dos Tubarões, Capela de São Pedro, Baía do Sueste (nada com tartarugas), Atalaia e mirantes. Inclui snorkel e guia. Empresas mais conhecidas: Noronha Tour e Atalaia Noronha.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Saída pela Vila dos Remédios</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Vila+dos+Remédios+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Passeio de Escuna / Barco <span class="badge badge-azul">Imperdível</span></div>
+          <div class="card-meta">Baía do Sancho · Snorkel · Golfinhos · Pôr do sol</div>
+        </div>
+        <div class="card-preco">~R$ 180–300/pessoa</div>
+      </div>
+      <div class="card-desc">A melhor forma de ver Noronha do mar — e de chegar à Baía do Sancho, a mais linda da ilha. Passeio de escuna ao redor do arquipélago com paradas para snorkel e mergulho. O passeio ao pôr do sol com avistamento de golfinhos é o mais concorrido — reserve com antecedência.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Porto de Santo Antônio</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Porto+Santo+Antônio+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Mergulho com cilindro e batismo <span class="badge badge-coral">Top mundial</span></div>
+          <div class="card-meta">Visibilidade 50m · Tubarões · Tartarugas · Corais</div>
+        </div>
+        <div>
+          <div class="card-preco">Batismo: ~R$ 350–500</div>
+          <div class="card-preco">Cilindro: ~R$ 300–450</div>
+        </div>
+      </div>
+      <div class="card-desc">Fernando de Noronha está entre os 10 melhores pontos de mergulho do mundo. Visibilidade de até 50 metros em setembro/outubro, tubarões lixa a distância segura, tartarugas, manta raias e moréias. Mais de 15 pontos de mergulho diferentes ao redor do arquipélago.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Várias empresas de mergulho na Vila dos Remédios</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Fernando+de+Noronha+mergulho" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Projeto Tamar — Baía do Sueste <span class="badge badge-verde">Tartarugas</span></div>
+          <div class="card-meta">Nadar com tartarugas · ICMBio incluso no passeio</div>
+        </div>
+        <div class="card-preco">~R$ 100–180/pessoa</div>
+      </div>
+      <div class="card-desc">Uma das experiências mais emocionantes de Noronha — nadar com tartarugas marinhas em habitat natural. A Baía do Sueste é a área com maior concentração de tartarugas da ilha. O Projeto Tamar tem base física aqui com exposição sobre a preservação. Uma das melhores experiências de snorkel do Brasil.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Baía do Sueste · Parque Nacional</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Projeto+Tamar+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Golfinhos na Enseada dos Golfinhos <span class="badge badge-azul">Amanhecer</span></div>
+          <div class="card-meta">Centenas de golfinhos · Nascer do sol · Mirante</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito do mirante</div>
+      </div>
+      <div class="card-desc">Todos os dias ao amanhecer, centenas de golfinhos-rotadores entram na enseada para descansar após a noite de alimentação. O espetáculo acontece ao nascer do sol — um dos fenômenos naturais mais impressionantes do Brasil. Acesso pelo mirante é gratuito. Proibido entrar no mar para não perturbar os golfinhos.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Enseada dos Golfinhos · Mirante próximo</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Enseada+dos+Golfinhos+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Caiaque transparente <span class="badge badge-azul">Inovador</span></div>
+          <div class="card-meta">Fundo de vidro · Ver peixes do caiaque</div>
+        </div>
+        <div class="card-preco">~R$ 150–250/pessoa</div>
+      </div>
+      <div class="card-desc">Passeio de caiaque com fundo transparente — você vê os peixes, corais e a vida marinha diretamente pelo caiaque sem precisar entrar na água. Ideal para quem não sabe mergulhar ou quer uma experiência diferente. Disponível em algumas empresas na ilha.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Várias praias de Noronha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Fernando+de+Noronha+caiaque" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="secao-titulo" style="margin-top:1.5rem">Outros passeios e atividades</div>
+    <div class="passeios-grid">
+      <div class="passeio-mini">
+        <span class="passeio-emoji">🏄</span>
+        <div class="passeio-nome">Surf em Cacimba do Padre</div>
+        <div class="passeio-desc">Ondas de classe mundial de jan a mar. Campeonatos internacionais. Aluguel de prancha disponível na praia.</div>
+        <div class="passeio-preco">Aluguel ~R$ 50–80/hora</div>
+      </div>
+      <div class="passeio-mini">
+        <span class="passeio-emoji">🚲</span>
+        <div class="passeio-nome">Buggy e bicicleta</div>
+        <div class="passeio-desc">Principal forma de locomoção na ilha. Alugue um buggy ou bike para explorar praias e mirantes com liberdade.</div>
+        <div class="passeio-preco">Buggy ~R$ 150–250/dia</div>
+      </div>
+      <div class="passeio-mini">
+        <span class="passeio-emoji">🐦</span>
+        <div class="passeio-nome">Observação de aves</div>
+        <div class="passeio-desc">Noronha tem espécies endêmicas únicas — o Maracanã-de-Noronha e a Ararinha. Trilhas com guia especializado.</div>
+        <div class="passeio-preco">~R$ 80–150 com guia</div>
+      </div>
+      <div class="passeio-mini">
+        <span class="passeio-emoji">🌅</span>
+        <div class="passeio-nome">Pôr do sol no Mirante dos Golfinhos</div>
+        <div class="passeio-desc">O pôr do sol mais bonito da ilha. Também possível ver golfinhos. Gratuito — chegue com 30min de antecedência.</div>
+        <div class="passeio-preco">Gratuito</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRILHAS -->
+  <div class="secao" id="trilhas" data-cat="trilha">
+    <div class="secao-titulo">Trilhas e pontos turísticos</div>
+
+    <div class="card" data-cat="trilha">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Trilha Baía do Sancho <span class="badge badge-verde">A mais famosa</span></div>
+          <div class="card-meta">ICMBio obrigatório · Descida por escada na falésia</div>
+        </div>
+        <div class="card-preco">ICMBio R$ 192</div>
+      </div>
+      <div class="card-desc">A trilha mais icônica de Noronha. Descida por uma escada embutida na fenda da falésia até chegar à Baía do Sancho — a praia mais bonita do planeta. A vista do alto antes de descer já vale a viagem. Exige ICMBio pago. A chegada pela trilha é mais especial que de barco.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Parque Nacional de Fernando de Noronha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Baía+do+Sancho+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="trilha">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Mirante do Boldró <span class="badge badge-verde">Vista panorâmica</span></div>
+          <div class="card-meta">Vista 360° · Pôr do sol épico · Gratuito</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">Um dos melhores mirantes da ilha com vista 360° do arquipélago. Pôr do sol aqui é espetacular — vista do Morro Dois Irmãos iluminado pelo sol poente. Acesso fácil de buggy ou a pé. Uma das paradas mais recomendadas que não exige ICMBio.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Mirante do Boldró — Noronha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Mirante+do+Boldró+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="trilha">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Forte dos Remédios e Vila Histórica <span class="badge badge-amber">Histórico</span></div>
+          <div class="card-meta">Séc. XVIII · Vista panorâmica · Museu</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">Forte português do século XVIII com vista panorâmica do Mar de Dentro. Próximo à Vila dos Remédios — o centro da ilha. A Igreja Nossa Senhora dos Remédios e o conjunto histórico colonial contam a história do arquipélago. Passeio cultural imperdível e gratuito.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Vila dos Remédios — Noronha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Forte+dos+Remédios+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="trilha">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Museu dos Tubarões <span class="badge badge-azul">Educativo</span></div>
+          <div class="card-meta">Espécies de Noronha · Biologia marinha</div>
+        </div>
+        <div class="card-preco">~R$ 20–30</div>
+      </div>
+      <div class="card-desc">Exposição sobre as espécies de tubarões que habitam o arquipélago — tubarão lixa, tubarão tigre e outros. Contexto educativo sobre a importância da preservação marinha de Noronha. Normalmente incluído no Ilha Tour.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Fernando de Noronha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Museu+dos+Tubarões+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESTAURANTES -->
+  <div class="secao" id="restaurantes" data-cat="restaurante">
+    <div class="secao-titulo">Restaurantes</div>
+
+    <div class="info-box amber">
+      <strong>💰 Noronha é cara — também na gastronomia</strong>
+      <p>Tudo em Noronha é mais caro pela logística de abastecimento. Pratos individuais saem de R$ 120–250. Entradas a partir de R$ 50–120. Drinks e cervejas a partir de R$ 20–30. Planeje no orçamento pelo menos R$ 150–250/pessoa por refeição nos restaurantes mais bons. Há lanchonetes e trailers mais acessíveis pela ilha para refeições rápidas.</p>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Mergulhão <span class="badge badge-coral">O mais famoso da ilha</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Vista para o Porto · Morro do Pico · Pôr do sol</div>
+        </div>
+        <div class="card-preco">Pratos: R$ 180–230</div>
+      </div>
+      <div class="card-desc">O restaurante mais comentado de Noronha — não só pela comida, mas pela experiência completa. Localizado no alto de um morro com vista deslumbrante para o Porto de Santo Antônio e o Morro do Pico. Frutos do mar autorais: Peixe Arretado (R$ 190), Peixe Abusado ao curry (R$ 215), Arroz do Amado com polvo e dendê (R$ 230). Reserve com dias de antecedência para o pôr do sol.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Porto de Santo Antônio s/n · Seg–Sáb 12h–23h</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Restaurante+Mergulhão+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Abençoado <span class="badge badge-azul">Praiano e leve</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Dos donos do Mergulhão · Cacimba do Padre</div>
+        </div>
+        <div class="card-preco">Pratos: R$ 120–200</div>
+      </div>
+      <div class="card-desc">Aberto em 2021 pelos mesmos donos do Mergulhão. Chão de areia, teto de palha, ambiente super praiano. Cardápio leve e ideal para o intervalo entre praias — salada de camarão com bifum, atum selado, wrap de peixe com wasabi, lula grelhada. Serviço pode ser demorado. Fica em Cacimba do Padre.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Cacimba do Padre — Noronha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Restaurante+Abençoado+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Restaurante Varanda <span class="badge badge-verde">Referência gastronômica</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> 12 anos na ilha · Música ao vivo</div>
+        </div>
+        <div class="card-preco">Ticket médio: R$ 200</div>
+      </div>
+      <div class="card-desc">Um dos mais tradicionais de Noronha — 12 anos de ilha. Leve, aconchegante e com cozinha muito elogiada. Música ao vivo em alguns dias da semana. Atende almoço e jantar. Localizado na Vila do Trinta. Um dos favoritos de quem conhece a ilha há anos.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Vila do Trinta — Noronha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Restaurante+Varanda+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cacimba Bistrô <span class="badge badge-azul">Clássico</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★☆</span> Frutos do mar · Grande carta</div>
+        </div>
+        <div class="card-preco">Pastéis de lagosta: R$ 156</div>
+      </div>
+      <div class="card-desc">Um dos mais antigos da ilha. Grande variedade de frutos do mar — pastéis de lagosta (R$ 156), casquinho de caranguejo (R$ 50), pratos para dois a partir de R$ 240. Tempero mais suave que o Mergulhão — ótima qualidade de ingredientes. Entrada a partir de R$ 50.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Fernando de Noronha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Cacimba+Bistrô+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Xica da Silva <span class="badge badge-amber">Culinária brasileira</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★☆</span> Baião de dois · Frutos do mar</div>
+        </div>
+        <div class="card-preco">~R$ 100–180/pessoa</div>
+      </div>
+      <div class="card-desc">Especializado em frutos do mar e pratos clássicos brasileiros — o baião de dois aqui é muito elogiado. Uma das opções mais tradicionais para quem quer comida regional bem feita na ilha. Relação qualidade-preço razoável para os padrões de Noronha.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Fernando de Noronha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Xica+da+Silva+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Bar do Meio e Flambô Gastrobar <span class="badge badge-azul">Pôr do sol + drinks</span></div>
+          <div class="card-meta">Entre Praia da Conceição e do Meio · Vista do Pico</div>
+        </div>
+        <div class="card-preco">Cervejas: R$ 20 · Drinks: R$ 30+</div>
+      </div>
+      <div class="card-desc">O Bar do Meio é o point mais vip da ilha — lounge ao ar livre entre as praias com vista para o Morro do Pico e pôr do sol. Drinks e petiscos num cenário inesquecível. O Flambô Gastrobar na Praça Flamboyant tem porções fartas e cervejas long neck a R$ 20 — boa opção econômica.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Entre Praia da Conceição e Praia do Meio</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Bar+do+Meio+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOITE -->
+  <div class="secao" id="noite" data-cat="noite">
+    <div class="secao-titulo">Vida noturna</div>
+
+    <div class="info-box cinza">
+      <strong>🌙 Noronha não tem balada — e é propositalmente assim</strong>
+      <p>A ilha dorme cedo. A vida noturna é tranquila e concentrada em bares e restaurantes abertos até meia-noite. Não há grandes shows ou festas — a preservação ambiental limita isso. O programa noturno ideal em Noronha é um jantar especial com vista para o mar, drinks no Bar do Meio e céu estrelado sem poluição luminosa.</p>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-nome">Stargazing — Céu estrelado de Noronha <span class="badge badge-azul">Único</span></div>
+      <div class="card-meta" style="margin:4px 0 8px">Sem poluição luminosa · Melhor céu estrelado do Brasil</div>
+      <div class="card-desc">Com limitação de visitantes e quase sem poluição luminosa, Noronha tem um dos céus noturnos mais limpos do Brasil. Deitado na areia de uma praia à noite, olhar para a Via Láctea é uma experiência transformadora. Algumas pousadas e guias oferecem sessões de astronomia com telescópio.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Qualquer praia afastada da Vila dos Remédios</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-nome">Praça Flamboyant <span class="badge badge-amber">Point noturno</span></div>
+      <div class="card-meta" style="margin:4px 0 8px">Bares · Música · Ponto de encontro</div>
+      <div class="card-desc">O centro da vida noturna de Noronha. Bares ao redor da praça com música, drinks e a galera da ilha. O Flambô Gastrobar aqui tem as cervejas mais acessíveis da ilha. Movimento até meia-noite nos fins de semana.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Praça Flamboyant — Vila dos Remédios</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Praça+Flamboyant+Fernando+de+Noronha" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box cinza">
+    <strong>💡 Dica de ouro — o que todo mundo esquece de considerar</strong>
+    <p>Noronha tem limite de 1.000 visitantes por dia — e nos feriados e alta temporada esse limite é atingido. Reserve voo, hospedagem, TPA e ICMBio com meses de antecedência. A única forma de chegar é de avião — voos saem de Recife (1h10) e Natal (1h30), com a Azul e LATAM. A diária de hospedagem varia de R$ 600 a R$ 2.000+. Para 5 dias em Noronha (casal), o custo total realista está entre R$ 12.000 e R$ 25.000 com tudo incluso. É o destino mais caro do Brasil — mas quem vai raramente se arrepende.</p>
+  </div>
+
+  <div class="hoteis-cta" id="hoteis">
+    <h3>Onde ficar em Fernando de Noronha?</h3>
+    <p>Pousadas concentradas na Vila dos Remédios, Floresta Nova e Velha. Diárias de R$ 600 a R$ 2.000+. Reserve com meses de antecedência — a ilha tem limite de visitantes e esgota rápido.</p>
+    <a class="btn-booking" href="https://www.booking.com/searchresults.pt-br.html?ss=Fernando+de+Noronha" target="_blank">Ver hospedagens disponíveis →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">vai<span>bora</span>.com.br</div>
+    <p>Guias de viagem curados para destinos brasileiros. Conteúdo verificado e atualizado.<br>
+    Este site contém links de afiliados. Se você reservar uma hospedagem por aqui, recebo uma pequena comissão sem custo adicional para você.<br>
+    <strong style="color:rgba(255,255,255,0.6)">⚠️ Aviso:</strong> As informações deste site (preços, horários, endereços e disponibilidade) são pesquisadas em fontes públicas e podem estar desatualizadas. O Vaibora não se responsabiliza por alterações, encerramento de estabelecimentos ou divergências em relação ao que for encontrado no local. Sempre confirme diretamente com o estabelecimento antes de visitar.<br>
+    <a href="/privacidade.html">Política de privacidade</a></p>
+  </div>
+</footer>
+
+<script>
+function filtrar(cat, btn) {
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  const map = {praia:'praias',passeio:'passeios',trilha:'trilhas',restaurante:'restaurantes',noite:'noite'};
+  ['praias','passeios','trilhas','restaurantes','noite'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = (cat === 'todos' || map[cat] === id) ? '' : 'none';
+  });
+  document.querySelectorAll('.info-box').forEach(b => {
+    b.style.display = cat === 'todos' ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
