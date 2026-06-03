@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia completo Chapada Diamantina 2026 — Poço Azul, Poço Encantado, Cachoeira da Fumaça, Buracão, grutas, trilhas, Vale do Pati, Lençóis, restaurantes e melhor época.">
+  <title>Chapada Diamantina BA — Guia Completo | Vaibora</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8EFW81MN6"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K8EFW81MN6');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--verde:#1a5a0a;--verde-claro:#e8f5e0;--azul:#0a4a6a;--azul-claro:#e0eef5;--ocre:#8a6a0a;--ocre-claro:#f5f0d8;--laranja:#e85d26;--cinza:#f4f2ee;--texto:#1a1a18;--texto-muted:#6b6b65;--borda:#e0ddd6;--branco:#fafaf8;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'DM Sans',sans-serif;background:var(--branco);color:var(--texto);}
+    nav{position:sticky;top:0;z-index:100;background:var(--branco);border-bottom:1px solid var(--borda);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:56px;}
+    .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#1a6b3c;text-decoration:none;}
+    .logo span{color:var(--laranja);}
+    nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
+    nav a:hover{color:var(--verde);}
+    .hero{background:linear-gradient(150deg,#2a1a0a 0%,#4a3a0a 40%,#1a4a0a 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
+    .hero::before{content:'🦅';position:absolute;top:20px;right:70px;font-size:100px;opacity:0.08;}
+    .hero::after{content:'';position:absolute;bottom:-40px;left:15%;width:280px;height:280px;background:rgba(255,255,255,0.03);border-radius:50%;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero-tag{display:inline-block;background:rgba(255,255,255,0.15);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);}
+    .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
+    .hero h1 span{color:#b0f0a0;}
+    .hero p{font-size:1rem;opacity:0.85;line-height:1.7;max-width:520px;margin-bottom:2rem;}
+    .hero-chips{display:flex;gap:8px;flex-wrap:wrap;}
+    .chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:white;font-size:0.8rem;padding:5px 12px;border-radius:20px;}
+    .container{max-width:760px;margin:0 auto;padding:0 1.5rem;}
+    .filtros{background:var(--branco);border-bottom:1px solid var(--borda);padding:0.8rem 1.5rem;position:sticky;top:56px;z-index:90;overflow-x:auto;}
+    .filtros-inner{max-width:760px;margin:0 auto;display:flex;gap:6px;align-items:center;white-space:nowrap;}
+    .fbtn{font-family:'DM Sans',sans-serif;font-size:0.78rem;padding:5px 13px;border-radius:20px;border:1px solid var(--borda);background:white;color:var(--texto-muted);cursor:pointer;transition:all .15s;white-space:nowrap;}
+    .fbtn:hover{border-color:var(--verde);color:var(--verde);}
+    .fbtn.ativo{background:var(--verde);color:white;border-color:var(--verde);}
+    .secao{padding:2.5rem 0 0;}
+    .secao-titulo{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--texto-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:2px solid #b0f0a0;display:inline-block;}
+    .card{background:white;border:1px solid var(--borda);border-radius:12px;padding:1.1rem 1.2rem;margin-bottom:10px;transition:border-color .15s,transform .15s;}
+    .card:hover{border-color:var(--verde);transform:translateY(-1px);}
+    .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;}
+    .card-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;color:var(--texto);margin-bottom:3px;}
+    .card-meta{font-size:0.75rem;color:var(--texto-muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+    .estrelas{color:#d4900a;font-size:0.75rem;}
+    .badge{display:inline-block;font-size:0.68rem;font-weight:500;padding:2px 8px;border-radius:20px;}
+    .badge-verde{background:var(--verde-claro);color:var(--verde);}
+    .badge-azul{background:var(--azul-claro);color:var(--azul);}
+    .badge-ocre{background:var(--ocre-claro);color:var(--ocre);}
+    .badge-coral{background:#fde8e0;color:#8a1a0a;}
+    .badge-gratis{background:var(--verde-claro);color:var(--verde);}
+    .badge-radical{background:#fde8e0;color:#8a0000;}
+    .badge-guia{background:#f0e8f8;color:#5a0a8a;font-weight:700;}
+    .card-preco{font-size:0.85rem;font-weight:500;color:var(--texto);text-align:right;white-space:nowrap;}
+    .preco-dica{font-size:0.65rem;background:var(--verde-claro);color:var(--verde);padding:2px 7px;border-radius:4px;margin-top:3px;display:inline-block;}
+    .card-desc{font-size:0.83rem;color:var(--texto-muted);line-height:1.6;margin-top:8px;}
+    .card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:6px;}
+    .card-endereco{font-size:0.72rem;color:var(--texto-muted);}
+    .btn-maps{font-size:0.72rem;padding:4px 10px;border-radius:6px;background:var(--verde-claro);color:var(--verde);border:none;cursor:pointer;font-weight:500;text-decoration:none;white-space:nowrap;}
+    .btn-maps:hover{background:var(--verde);color:white;}
+    .extras-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:1rem;}
+    .extra-mini{background:white;border:1px solid var(--borda);border-radius:12px;padding:1rem;transition:border-color .15s;}
+    .extra-mini:hover{border-color:var(--verde);}
+    .extra-emoji{font-size:1.5rem;margin-bottom:6px;display:block;}
+    .extra-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;margin-bottom:4px;}
+    .extra-desc{font-size:0.77rem;color:var(--texto-muted);line-height:1.5;}
+    .extra-preco{font-size:0.75rem;font-weight:500;color:var(--verde);margin-top:6px;}
+    .info-box{border-radius:12px;padding:1.1rem 1.3rem;margin:1.5rem 0;}
+    .info-box.verde{background:var(--verde-claro);border-left:3px solid var(--verde);}
+    .info-box.azul{background:var(--azul-claro);border-left:3px solid var(--azul);}
+    .info-box.cinza{background:var(--cinza);border-left:3px solid var(--verde);}
+    .info-box.ocre{background:var(--ocre-claro);border-left:3px solid var(--ocre);}
+    .info-box.coral{background:#fff0ee;border-left:3px solid #c0390f;}
+    .info-box.guia{background:#f8f0ff;border:2px solid #7a1ab0;}
+    .info-box strong{font-family:'Syne',sans-serif;font-size:0.85rem;display:block;margin-bottom:4px;}
+    .info-box.verde strong{color:var(--verde);}
+    .info-box.azul strong{color:var(--azul);}
+    .info-box.cinza strong{color:var(--verde);}
+    .info-box.ocre strong{color:var(--ocre);}
+    .info-box.coral strong{color:#8a0a0a;}
+    .info-box.guia strong{color:#5a0a8a;}
+    .info-box p{font-size:0.82rem;line-height:1.6;color:var(--texto-muted);}
+    .info-box.ocre p{color:#5a3c00;}
+    .info-box.guia p{color:#3a0a5a;}
+    .hoteis-cta{background:linear-gradient(135deg,#2a1a0a 0%,#4a3a0a 100%);border-radius:16px;padding:2rem;margin:2.5rem 0;color:white;text-align:center;}
+    .hoteis-cta h3{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:0.5rem;}
+    .hoteis-cta p{font-size:0.85rem;opacity:0.85;margin-bottom:1.2rem;}
+    .btn-booking{display:inline-block;background:#b0f0a0;color:#1a3a0a;font-weight:700;font-size:0.9rem;padding:10px 24px;border-radius:8px;text-decoration:none;transition:opacity .15s;}
+    .btn-booking:hover{opacity:0.9;}
+    footer{background:var(--texto);color:white;padding:2.5rem 1.5rem;margin-top:4rem;}
+    .footer-inner{max-width:760px;margin:0 auto;}
+    .footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;margin-bottom:0.5rem;}
+    .footer-logo span{color:#f5c842;}
+    footer p{font-size:0.78rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-top:0.5rem;}
+    footer a{color:rgba(255,255,255,0.5);text-decoration:underline;}
+    .hidden{display:none!important;}
+    @media(max-width:600px){.hero{padding:3rem 1.2rem 2.5rem;}.extras-grid{grid-template-columns:1fr;}nav a{display:none;}}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="/">vai<span>bora</span>.com.br</a>
+  <div>
+    <a href="#pocos">Poços</a>
+    <a href="#cachoeiras">Cachoeiras</a>
+    <a href="#grutas">Grutas</a>
+    <a href="#trilhas">Trilhas</a>
+    <a href="#restaurantes">Comer</a>
+    <a href="#hoteis">Hotéis</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Guia completo · Bahia · Parque Nacional · Base: Lençóis</div>
+    <h1>Chapada Diamantina, BA<br><span>O paraíso de cachoeiras e grutas do Brasil</span></h1>
+    <p>1.520 km² de serras e morros com poços de água azul impossível, cachoeiras de 340 metros, grutas com estalactites milenares, trilhas transformadoras e vilas históricas do garimpo. Um dos destinos mais emocionantes do Brasil.</p>
+    <div class="hero-chips">
+      <div class="chip">🌡 18–28°C o ano inteiro</div>
+      <div class="chip">✈️ Aeroporto em Lençóis (LEC)</div>
+      <div class="chip">🚗 430km de Salvador</div>
+      <div class="chip">📅 5–7 dias ideais</div>
+      <div class="chip">🦅 Guia obrigatório na maioria</div>
+    </div>
+  </div>
+</div>
+
+<!-- ALERTA GUIA — PRIMEIRA COISA -->
+<div style="background:#f8f0ff;border-bottom:2px solid #7a1ab0;padding:1rem 1.5rem;">
+  <div style="max-width:760px;margin:0 auto;">
+    <div style="font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:700;color:#5a0a8a;margin-bottom:0.6rem">🧭 IMPORTANTE — Guia é obrigatório ou fortemente recomendado na maioria dos passeios</div>
+    <p style="font-size:0.82rem;color:#3a0a5a;line-height:1.6">Muitos atrativos da Chapada exigem guia credenciado pelo ICMBio — especialmente trilhas dentro do Parque Nacional. Além da obrigatoriedade legal, os guias locais conhecem caminhos, condições e histórias que fazem toda a diferença. <strong>Exceções que podem ser feitas por conta própria:</strong> Fazenda da Pratinha, Cachoeira do Mosquito (caminho simples), Poço do Diabo, Morro do Pai Inácio, Gruta da Lapa Doce, Gruta da Torrinha. Contrate agências credenciadas em Lençóis.</p>
+  </div>
+</div>
+
+<!-- MELHOR ÉPOCA -->
+<div style="background:#f4f2ee;border-bottom:1px solid #e0ddd6;padding:1rem 1.5rem;">
+  <div style="max-width:760px;margin:0 auto;">
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:0.8rem">Melhor época para ir</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="background:white;border:2px solid #1a5a0a;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#1a5a0a;font-weight:600;margin-bottom:2px">🏆 Ideal — trilhas e poços</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Jun · Jul · Ago · Set</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Seco · Trilhas seguras · Poços azuis cristalinos · Luz perfeita no Poço Encantado</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">💧 Cachoeiras no auge</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Dez · Jan · Fev</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Chuvas · Cachoeiras cheias · Trilhas difíceis · Verde exuberante</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">🌸 Equilibrado</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Mar · Abr · Out · Nov</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Transição · Alguma chuva · Bom custo-benefício</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">💡 Dica para o Poço Encantado</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Abr a Set</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Único período com o feixe de luz solar que cria o efeito azul turquesa</div>
+      </div>
+    </div>
+    <div style="background:var(--verde-claro);border:1px solid #90c880;border-radius:8px;padding:8px 12px;margin-top:10px;font-size:0.78rem;color:#1a3a0a">
+      <strong>☀️ Por que a estação seca é ideal:</strong> trilhas mais seguras e acessíveis, poços com água mais cristalina e azul, sem risco de enchentes nos rios, melhor visibilidade nos mirantes e o fenômeno de luz solar no Poço Encantado acontece apenas de abril a setembro.
+    </div>
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin:1rem 0 0.6rem">Recomendado para</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🥾</span>
+        <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Aventureiros e trilheiros</div>
+        <div style="font-size:0.7rem;color:#6b6b65">Vale do Pati · Morrão · Fumaça · Buracão</div></div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">💑</span>
+        <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Casal</div>
+        <div style="font-size:0.7rem;color:#6b6b65">Poço Azul · Encantado · Pôr do sol Pai Inácio</div></div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">👨‍👩‍👧</span>
+        <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Família com crianças</div>
+        <div style="font-size:0.7rem;color:#6b6b65">Pratinha · Ribeirão do Meio · Poço Azul · Lapa Doce</div></div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">📸</span>
+        <div><div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Fotógrafos e natureza</div>
+        <div style="font-size:0.7rim;color:#6b6b65">Fumaça · Buracão · Pai Inácio · Poço Encantado</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="filtros">
+  <div class="filtros-inner">
+    <span style="font-size:0.75rem;color:var(--texto-muted);margin-right:4px">Ver:</span>
+    <button class="fbtn ativo" onclick="filtrar('todos',this)">Tudo</button>
+    <button class="fbtn" onclick="filtrar('poco',this)">💙 Poços</button>
+    <button class="fbtn" onclick="filtrar('cachoeira',this)">💦 Cachoeiras</button>
+    <button class="fbtn" onclick="filtrar('gruta',this)">🪨 Grutas</button>
+    <button class="fbtn" onclick="filtrar('trilha',this)">🥾 Trilhas</button>
+    <button class="fbtn" onclick="filtrar('restaurante',this)">🍽 Comer</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- POÇOS -->
+  <div class="secao" id="pocos" data-cat="poco">
+    <div class="secao-titulo">Poços — as joias azuis da Chapada</div>
+
+    <div class="card" data-cat="poco">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Poço Encantado <span class="badge badge-azul">Fenômeno de luz · Não pode nadar</span></div>
+          <div class="card-meta">Lago subterrâneo · 60m profundidade · Gruta de calcário · Contemplação</div>
+        </div>
+        <div class="card-preco">~R$ 30 entrada</div>
+      </div>
+      <div class="card-desc">Um dos fenômenos naturais mais impressionantes do Brasil. Dentro de uma gruta de calcário, um lago subterrâneo de 60 metros de profundidade tem água tão cristalina que é impossível enxergar onde ela começa. De abril a setembro, um feixe de luz solar entra por uma claraboia e ilumina o lago criando um azul turquesa hipnotizante. <strong>Banho proibido por preservação.</strong> Visita contemplativa — chegar cedo garante menor fila. Fica no sul da Chapada (140km de Lençóis).</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Itaetê · Sul da Chapada · 140km de Lençóis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Poço+Encantado+Chapada+Diamantina" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="poco">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Poço Azul <span class="badge badge-azul">Flutuação · Snorkel incluído</span></div>
+          <div class="card-meta">Flutuação em águas cristalinas · Colete e máscara incluso · Próximo ao Encantado</div>
+        </div>
+        <div>
+          <div class="card-preco">R$ 30/pessoa</div>
+          <div class="preco-dica">Inclui flutuação e snorkel</div>
+        </div>
+      </div>
+      <div class="card-desc">Diferente do Poço Encantado, aqui você pode entrar na água — flutuação com colete, máscara e snorkel incluídos no ingresso de R$ 30. Água cristalina com azul intenso causado pela concentração de magnésio nas pedras. Passeio acompanhado por guias do próprio atrativo. Combine com o Poço Encantado no mesmo dia — ficam próximos.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Nova Redenção · Sul da Chapada · Próximo ao Encantado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Poço+Azul+Chapada+Diamantina" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="poco">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Poço do Diabo <span class="badge badge-verde">Pode fazer por conta</span></div>
+          <div class="card-meta">Banho · Marimbus · Próximo a Lençóis</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">Poço de água cristalina para banho, próximo aos alagados do Marimbus. Um dos poucos atrativos que pode ser feito por conta própria sem guia. Combina bem com o Ribeirão do Meio (tobogã natural) no mesmo dia. Trilha simples e acessível.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Próximo a Lençóis · Região dos Marimbus</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Poço+do+Diabo+Chapada+Diamantina" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="poco">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Fazenda da Pratinha <span class="badge badge-verde">Flutuação na gruta</span></div>
+          <div class="card-meta">Banho no Rio Pratinha · Flutuação dentro da gruta · Tirolesa · Caiaque</div>
+        </div>
+        <div class="card-preco">~R$ 80–110/pessoa</div>
+      </div>
+      <div class="card-desc">Um dos passeios mais completos e acessíveis da Chapada. Rio Pratinha com água tão cristalina que parece um aquário — flutuação dentro da gruta pelo rio é a experiência mais surreal. Atividades extras pagas à parte: tirolesa, caiaque e pedalinho. Pode ser feito por conta própria.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Iraquara · ~60km de Lençóis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Fazenda+Pratinha+Chapada+Diamantina" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CACHOEIRAS -->
+  <div class="secao" id="cachoeiras" data-cat="cachoeira">
+    <div class="secao-titulo">Cachoeiras</div>
+
+    <div class="card" data-cat="cachoeira">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cachoeira da Fumaça <span class="badge badge-coral">A mais alta do Brasil · 340m</span></div>
+          <div class="card-meta">340m de queda · Vale do Capão · Trilha 3h · Guia recomendado</div>
+        </div>
+        <div class="card-preco badge-gratis">Entrada gratuita</div>
+      </div>
+      <div class="card-desc">A cachoeira mais alta do Brasil — 340 metros de queda livre. Na estação seca, o vento dispersa a água criando uma névoa que dá o nome de "fumaça". Para chegar ao mirante: trilha de ~3h partindo do Vale do Capão. Para ir até a base da cachoeira: outra trilha de ~6h (muito mais difícil, exige guia). A vista do mirante já é espetacular — ir à base é para quem busca aventura extrema.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Vale do Capão · Palmeiras · Guia recomendado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Cachoeira+da+Fumaça+Chapada+Diamantina" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="cachoeira">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cânion do Buracão e Cachoeira <span class="badge badge-coral">Espetacular</span></div>
+          <div class="card-meta">85m de queda · Cânion sinuoso · Trilha 3km · Colete obrigatório</div>
+        </div>
+        <div class="card-preco">R$ 6 entrada</div>
+      </div>
+      <div class="card-desc">Uma das paisagens mais impressionantes da Chapada — 85 metros de queda d'água em meio a cânions sinuosos esculpidos pela erosão. Trilha de 3km até a base (~1h a pé). Para entrar na água e nadar até a cachoeira é obrigatório o uso de colete salva-vidas. A combinação de formas e cores do cânion cria um visual único. Em Ibicoara.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Ibicoara · Sul da Chapada</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Cânion+do+Buracão+Chapada+Diamantina" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="cachoeira">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cachoeira do Mosquito <span class="badge badge-verde">Pode fazer por conta</span></div>
+          <div class="card-meta">Acesso relativamente fácil · Banho gelado · Próximo a Lençóis</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuita</div>
+      </div>
+      <div class="card-desc">Uma das cachoeiras mais acessíveis da Chapada — pode ser feita por conta própria com caminho relativamente simples. Água cristalina e gelada perfeita para banho. Ideal para incluir em dias com passeios múltiplos. Fica próxima de Lençóis, base principal dos turistas.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Próximo a Lençóis · Acesso próprio possível</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Cachoeira+do+Mosquito+Lençóis+BA" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="cachoeira">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Ribeirão do Meio — Tobogã Natural <span class="badge badge-verde">Família</span></div>
+          <div class="card-meta">Tobogã de pedra · Banho · Trilha fácil · Por conta própria</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">O passeio mais divertido e acessível de Lençóis — um tobogã natural de pedra onde você escorrega dentro da própria água do rio. Trilha fácil de ~30 min. Pode ser feito sem guia por conta própria. Perfeito para crianças e para o fim do dia após passeios mais pesados. Um dos favoritos de quem visita a Chapada.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Lençóis · Trilha partindo do centro</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Ribeirão+do+Meio+Lençóis+BA" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- GRUTAS -->
+  <div class="secao" id="grutas" data-cat="gruta">
+    <div class="secao-titulo">Grutas</div>
+
+    <div class="card" data-cat="gruta">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Gruta da Lapa Doce <span class="badge badge-ocre">A maior da Chapada · 42km</span></div>
+          <div class="card-meta">42km de extensão · Formações calcárias · Trilha 2,5km + 700m descida</div>
+        </div>
+        <div class="card-preco">R$ 30 entrada</div>
+      </div>
+      <div class="card-desc">A maior gruta da Chapada Diamantina — 42km de extensão total, mas apenas uma parte está aberta à visitação (pesquisadores têm acesso ao restante). Impressiona pelas dimensões e pelas formações de rochas calcárias — estalactites e estalagmites que parecem esculturas da natureza. Trilha de 2,5km até a entrada + 700m de descida até as formações. Pode ser feita por conta própria. Em Iraquara.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Iraquara · "Cidade das Grutas" · ~60km de Lençóis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Gruta+da+Lapa+Doce+Iraquara+BA" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="gruta">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Gruta da Torrinha <span class="badge badge-ocre">Mais bonita da Chapada</span></div>
+          <div class="card-meta">Formações raras · Salões imensos · 2km de percurso</div>
+        </div>
+        <div class="card-preco">~R$ 25–40 entrada</div>
+      </div>
+      <div class="card-desc">Considerada por muitos a mais bonita das grutas da Chapada. Salões imensos com formações raríssimas de estalactites e estalagmites em formas que a natureza levou milhões de anos para criar. Percurso de 2km dentro da caverna com guia local. Também em Iraquara — combine com a Lapa Doce no mesmo dia.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Iraquara · Combine com a Lapa Doce</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Gruta+da+Torrinha+Iraquara+BA" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="gruta">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Gruta Azul <span class="badge badge-azul">Rara · Agendamento necessário</span></div>
+          <div class="card-meta">Lago azul subterrâneo · Acesso limitado · Próxima ao Encantado</div>
+        </div>
+        <div class="card-preco">~R$ 30</div>
+      </div>
+      <div class="card-desc">Menos conhecida que o Poço Encantado mas igualmente impressionante — lago subterrâneo de cor azul intenso dentro de uma caverna calcária. Acesso mais limitado e menos visitada, o que garante uma experiência mais exclusiva. Combine com o Poço Azul e Encantado durante a mesma excursão ao sul da Chapada.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Sul da Chapada · Próxima ao Poço Encantado</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Gruta+Azul+Chapada+Diamantina" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRILHAS -->
+  <div class="secao" id="trilhas" data-cat="trilha">
+    <div class="secao-titulo">Trilhas e mirantes</div>
+
+    <div class="info-box guia">
+      <strong>🧭 Trilhas dentro do Parque Nacional exigem guia credenciado pelo ICMBio</strong>
+      <p>Além da obrigatoriedade legal, os guias conhecem condições atuais dos caminhos, nascentes de água e detalhes históricos que enriquecem a experiência. Contrate sempre em agências credenciadas em Lençóis. Leve sempre: água (mínimo 2L por pessoa), lanche, protetor solar, repelente e calçado fechado adequado para trilha.</p>
+    </div>
+
+    <div class="card" data-cat="trilha">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Morro do Pai Inácio <span class="badge badge-coral">Pôr do sol épico</span></div>
+          <div class="card-meta">Vista 360° · Cerrado e caatinga · Trilha 1h · Pode por conta própria</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">O mirante mais famoso da Chapada — vista 360° de toda a região ao pôr do sol. Trilha de ~1h de subida. Pode ser feita por conta própria. No topo: vegetação de cerrado com orquídeas e bromélias raras. O pôr do sol aqui é um espetáculo de cores que nenhuma foto consegue capturar plenamente. Imperdível.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 BR-242 · Entre Lençóis e Palmeiras</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Morro+do+Pai+Inácio+Chapada+Diamantina" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="trilha">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Vale do Pati <span class="badge badge-radical">Trekking 3–5 dias</span></div>
+          <div class="card-meta">O trekking mais desejado do Brasil · 3–5 dias · Pernoite com nativos</div>
+        </div>
+        <div class="card-preco">~R$ 800–1.500 total com guia</div>
+      </div>
+      <div class="card-desc">Considerado por muitos o trekking mais transformador do Brasil. Percurso de 3 a 5 dias atravessando o Vale do Pati, passando por mirantes épicos, cachoeiras, vilas isoladas e pernoitando em casas de moradores nativos. Você carrega tudo nas costas. O esforço físico é grande — mas a recompensa é incomparável. Guia obrigatório. Reserve com meses de antecedência.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Partindo de Mucugê ou Andaraí · Guia obrigatório</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Vale+do+Pati+Chapada+Diamantina" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="trilha">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Parque Municipal do Serrano <span class="badge badge-verde">Diversificado</span></div>
+          <div class="card-meta">4,5km trilha · Caldeirões · Piscinas · Rapel · Escalada</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">Um dos mais completos de Lençóis. Trilha de 4,5km com Rio Serrano, piscinas naturais (caldeirões), cachoeiras Primavera e Cachoeirinha, Poço Halley, mirante e rochas gigantescas com túneis de pedra. Para aventureiros: rapel, trekking e escalada no local. Gratuito e acessível por conta própria.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Lençóis · Acesso por conta própria</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Parque+Municipal+Serrano+Lençóis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="trilha">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cidade de Pedra Igatu <span class="badge badge-ocre">Museu a céu aberto</span></div>
+          <div class="card-meta">Vila histórica do garimpo · Ruínas · Pedras imensas · Andaraí</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">Igatu é uma vila que parece um museu a céu aberto — casas em ruínas do tempo do garimpo de diamantes, cercadas por pedras imensas que foram o cenário de uma época épica da história baiana. Passeio mais tranquilo e cultural. Combine com a visita ao Poço Azul/Encantado (região sul). Em Andaraí.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Igatu · Andaraí · Sul da Chapada</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Igatu+Andaraí+Chapada+Diamantina" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="secao-titulo" style="margin-top:1.5rem">Esportes e aventura</div>
+    <div class="extras-grid">
+      <div class="extra-mini">
+        <span class="extra-emoji">🧗</span>
+        <div class="extra-nome">Rapel e escalada</div>
+        <div class="extra-desc">Parque do Serrano e outras formações rochosas. Guias especializados em Lençóis oferecem roteiros para todos os níveis.</div>
+        <div class="extra-preco">~R$ 150–300 com guia</div>
+      </div>
+      <div class="extra-mini">
+        <span class="extra-emoji">🚵</span>
+        <div class="extra-nome">Mountain bike</div>
+        <div class="extra-desc">Trilhas por caminhos históricos de garimpo. Aluguel de bikes em Lençóis e roteiros guiados pelo cerrado.</div>
+        <div class="extra-preco">~R$ 60–150</div>
+      </div>
+      <div class="extra-mini">
+        <span class="extra-emoji">🐎</span>
+        <div class="extra-nome">Cavalgada</div>
+        <div class="extra-desc">Passeio a cavalo pela região de Lençóis e Vale do Capão. Forma tradicional de locomoção dos garimpeiros.</div>
+        <div class="extra-preco">~R$ 100–200</div>
+      </div>
+      <div class="extra-mini">
+        <span class="extra-emoji">🪂</span>
+        <div class="extra-nome">Parapente</div>
+        <div class="extra-desc">Vista aérea da Chapada de parapente. Decolagem do Morro do Pai Inácio e outros mirantes. Tandem disponível.</div>
+        <div class="extra-preco">~R$ 300–500</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESTAURANTES -->
+  <div class="secao" id="restaurantes" data-cat="restaurante">
+    <div class="secao-titulo">Restaurantes em Lençóis</div>
+
+    <div class="info-box ocre">
+      <strong>🍽 A gastronomia de Lençóis é uma surpresa inesperada</strong>
+      <p>Lençóis tem uma cena gastronômica surpreendentemente boa para uma cidade pequena. Ingredientes locais do cerrado e da caatinga — umbu, maracujá do mato, queijo de coalho, carne de bode — se encontram com técnicas contemporâneas. A maioria dos restaurantes fica no centro histórico, nas ruas de pedra entre a Rua das Pedras e a Rua da Baderna. À noite, as mesas ocupam as calçadas. Comida para todos os bolsos.</p>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cozinha Aberta Slow Food <span class="badge badge-coral">Melhor de Lençóis</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Pátio aberto · Alta gastronomia · Menu diferente todo dia</div>
+        </div>
+        <div class="card-preco">~R$ 60–120/pessoa</div>
+      </div>
+      <div class="card-desc">O restaurante mais aclamado de Lençóis. Ambiente incrível com mesas e cadeiras em pátio aberto com muito verde. Filosofia slow food — ingredientes locais valorizados com técnica contemporânea. Menu completo diferente quase todos os dias. Criativo, original, atendimento fantástico. Reserva recomendada nos fins de semana.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Av. Rui Barbosa, 42 — Centro de Lençóis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Cozinha+Aberta+Lençóis+BA" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Quilombola <span class="badge badge-ocre">Culinária regional autêntica</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Godó de Banana Verde · Cortado de Palma · Rústico</div>
+        </div>
+        <div class="card-preco">~R$ 40–80/pessoa</div>
+      </div>
+      <div class="card-desc">Pratos únicos e autênticos da culinária regional baiana com boa apresentação. Destaques: Godó de Banana Verde (prato típico do sertão) e Cortado de Palma (prato de xique-xique com carne). Ambiente rústico com mesas de madeira. Um dos mais bem avaliados de Lençóis pela autenticidade.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro histórico de Lençóis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Quilombola+Restaurante+Lençóis+BA" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Bodega Restaurant Pizza Bar <span class="badge badge-verde">Drinks e pizza</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Pizzas artesanais · Drinks · Música ao vivo · Noite</div>
+        </div>
+        <div class="card-preco">~R$ 50–90/pessoa</div>
+      </div>
+      <div class="card-desc">O melhor bar e pizzaria de Lençóis — drinks frescos, petiscos criativos e pizzas artesanais muito elogiadas. Filé de carne como prato principal bem apresentado. Frequentemente tem música ao vivo à noite. O programa perfeito após um dia intenso de trilhas.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Lençóis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Bodega+Bar+Lençóis+BA" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Café Ba-cana <span class="badge badge-ocre">Comida caseira · Surpresa</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Menu do dia · Cozinha de mercado · R$ 25–50</div>
+        </div>
+        <div class="card-preco">~R$ 25–50/pessoa</div>
+      </div>
+      <div class="card-desc">Uma das maiores surpresas de Lençóis — menu do dia baseado no que a cozinheira encontra no mercado pela manhã. Cozinha caseira com muito carinho e ingredientes frescos. Carne de panela, frango caipira, pratos simples e deliciosos. Um dos melhores custo-benefícios da cidade.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Lençóis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Café+Ba-cana+Lençóis+BA" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Restaurante Paraguassu <span class="badge badge-azul">Alta gastronomia</span></div>
+          <div class="card-meta">Chef André Chequer · Refúgio na Serra · Menu Degustação sábados</div>
+        </div>
+        <div class="card-preco">~R$ 100–200/pessoa</div>
+      </div>
+      <div class="card-desc">O restaurante mais sofisticado da Chapada, dentro do hotel Refúgio na Serra. Chef André Chequer com 20 anos de experiência e passagem pela Itália — cardápio que revisita os sabores da Chapada em versão contemporânea. Aos sábados: Menu Degustação com harmonização. Para quem quer uma noite especial após um dia de aventura.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Hotel Refúgio na Serra — Lençóis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Restaurante+Paraguassu+Lençóis+BA" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box cinza">
+    <strong>💡 Dica de ouro — como planejar bem a Chapada Diamantina</strong>
+    <p>Use Lençóis como base principal — tem o melhor aeroporto (LEC), a maior oferta de hospedagem e a maioria das agências. Para os atrativos do sul (Poço Azul, Encantado, Buracão, Igatu), pernoite em Mucugê ou Igatu para economizar 3h de deslocamento por dia. A Chapada é imensa — não tente ver tudo em poucos dias. 5 dias permitem os principais atrativos; 7 dias permitem incluir o Vale do Pati. Leve tênis de trilha ou bota, 2L de água por pessoa por passeio, lanche, repelente e protetor. Muitos atrativos são gratuitos — o principal custo é o guia e o transporte.</p>
+  </div>
+
+  <div class="hoteis-cta" id="hoteis">
+    <h3>Onde ficar na Chapada Diamantina?</h3>
+    <p>Lençóis é a base principal com mais estrutura. Para atrativos do sul, considere Mucugê ou Andaraí. Pousadas simples a partir de R$ 80/noite; pousadas com conforto a partir de R$ 150–300.</p>
+    <a class="btn-booking" href="https://www.booking.com/searchresults.pt-br.html?ss=Lençóis%2C+Bahia" target="_blank">Ver pousadas disponíveis →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">vai<span>bora</span>.com.br</div>
+    <p>Guias de viagem curados para destinos brasileiros. Conteúdo pesquisado em múltiplas fontes e atualizado regularmente.<br>
+    Este site contém links de afiliados. Se você reservar por aqui, recebo uma comissão sem custo adicional para você.<br>
+    <strong style="color:rgba(255,255,255,0.6)">⚠️ Aviso:</strong> As informações deste site (preços, horários, endereços e disponibilidade) são pesquisadas em fontes públicas e podem estar desatualizadas. O Vaibora não se responsabiliza por alterações, encerramento de estabelecimentos ou divergências em relação ao que for encontrado no local. Sempre confirme diretamente com o estabelecimento antes de visitar.<br>
+    <a href="/privacidade.html">Política de privacidade</a></p>
+  </div>
+</footer>
+
+<script>
+function filtrar(cat, btn) {
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  const map = {poco:'pocos',cachoeira:'cachoeiras',gruta:'grutas',trilha:'trilhas',restaurante:'restaurantes'};
+  ['pocos','cachoeiras','grutas','trilhas','restaurantes'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = (cat === 'todos' || map[cat] === id) ? '' : 'none';
+  });
+  document.querySelectorAll('.info-box').forEach(b => {
+    b.style.display = cat === 'todos' ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
