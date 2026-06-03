@@ -115,23 +115,23 @@
     /* DESTINOS GRID */
     .container { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
     .secao-titulo { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--texto-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.2rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--amarelo); display: inline-block; margin-top: 2.5rem; }
-    .destinos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 3rem; }
+    .destinos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 3rem; }
 
     .destino-card { background: white; border: 1px solid var(--borda); border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; display: block; }
     .destino-card:hover { border-color: var(--verde); transform: translateY(-2px); }
-    .destino-header { padding: 1.1rem 1rem 0.9rem; position: relative; }
+    .destino-header { padding: 1.4rem 1.2rem 1.1rem; position: relative; }
     .destino-header.verde { background: var(--verde); }
     .destino-header.azul { background: var(--azul); }
     .destino-header.verm { background: #8a0a0a; }
     .destino-header.roxo { background: #4a1a6a; }
     .destino-header.mar { background: #0a4a6a; }
     .destino-header.terra { background: #6a3a0a; }
-    .destino-emoji { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
-    .destino-cidade { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 800; color: white; margin-bottom: 1px; line-height: 1.2; }
+    .destino-emoji { font-size: 1.8rem; margin-bottom: 0.6rem; display: block; }
+    .destino-cidade { font-family: 'Syne', sans-serif; font-size: 1.15rem; font-weight: 800; color: white; margin-bottom: 2px; line-height: 1.2; }
     .destino-estado { font-size: 0.72rem; color: rgba(255,255,255,0.7); }
     .destino-badge { position: absolute; top: 0.7rem; right: 0.7rem; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: white; font-size: 0.62rem; padding: 2px 7px; border-radius: 20px; }
-    .destino-body { padding: 0.8rem 1rem 1rem; }
-    .destino-desc { font-size: 0.75rem; color: var(--texto-muted); line-height: 1.55; margin-bottom: 0.7rem; }
+    .destino-body { padding: 1rem 1.2rem 1.2rem; }
+    .destino-desc { font-size: 0.8rem; color: var(--texto-muted); line-height: 1.6; margin-bottom: 0.8rem; }
     .destino-chips { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 0.8rem; }
     .dchip { font-size: 0.65rem; background: var(--cinza); color: var(--texto-muted); padding: 2px 7px; border-radius: 20px; }
     .destino-cta { display: flex; align-items: center; justify-content: flex-end; }
@@ -480,20 +480,28 @@
       </div>
     </a>
 
-  </div>
-
-
     <a class="destino-card" href="/jericoacoara.html" data-tipo="praia natureza">
       <div class="destino-header" style="background:linear-gradient(135deg,#3a1a00,#7a4a00)">
         <span class="destino-emoji">🌅</span>
         <div class="destino-cidade">Jericoacoara</div>
-        <div class="destino-estado">CE · Parque Nacional</div>
-        <div class="destino-badge">Novo</div>
+        <div class="destino-estado">Ceará · Parque Nacional</div>
+        <div class="destino-badge">Guia completo</div>
       </div>
       <div class="destino-body">
         <div class="destino-desc">Vila de ruas de areia, Duna do Pôr do Sol, Lagoa do Paraíso, kitesurf de classe mundial e o charme mais autêntico do Nordeste.</div>
-        <div class="destino-chips"><span class="dchip">🪁 Kitesurf</span><span class="dchip">💧 Lagoas</span><span class="dchip">🌅 Pôr do Sol</span></div>
-        <div class="destino-cta"><a class="btn-ver" href="/jericoacoara.html">Ver guia →</a></div>
+        <div class="destino-chips">
+          <span class="dchip">🪁 Kitesurf</span>
+          <span class="dchip">💧 Lagoa do Paraíso</span>
+          <span class="dchip">🌅 Pôr do Sol</span>
+          <span class="dchip">🏖 Pedra Furada</span>
+        </div>
+        <div class="destino-cta">
+          <span class="btn-ver" style="color:#7a4a00">Ver guia completo →</span>
+          <div class="destino-stats">
+            <div class="stat"><strong>Aeroporto</strong> JJD</div>
+            <div class="stat"><strong>4–7</strong> dias</div>
+          </div>
+        </div>
       </div>
     </a>
 
@@ -501,13 +509,24 @@
       <div class="destino-header" style="background:linear-gradient(135deg,#0a2a0a,#1a5a1a)">
         <span class="destino-emoji">🐆</span>
         <div class="destino-cidade">Pantanal</div>
-        <div class="destino-estado">MT/MS · UNESCO</div>
-        <div class="destino-badge">Novo</div>
+        <div class="destino-estado">Mato Grosso e MS · UNESCO</div>
+        <div class="destino-badge">Guia completo</div>
       </div>
       <div class="destino-body">
         <div class="destino-desc">Maior santuário de vida selvagem do planeta. Safári de onça pintada, 650 espécies de aves, jacarés e pousadas fazenda inesquecíveis.</div>
-        <div class="destino-chips"><span class="dchip">🐆 Onça</span><span class="dchip">🦜 Aves</span><span class="dchip">🛥 Safári</span></div>
-        <div class="destino-cta"><a class="btn-ver" href="/pantanal.html" style="color:#1a5a1a">Ver guia →</a></div>
+        <div class="destino-chips">
+          <span class="dchip">🐆 Onça pintada</span>
+          <span class="dchip">🦜 650 sp. de aves</span>
+          <span class="dchip">🛥 Safári de barco</span>
+          <span class="dchip">🌿 Ecoturismo</span>
+        </div>
+        <div class="destino-cta">
+          <span class="btn-ver" style="color:#1a5a1a">Ver guia completo →</span>
+          <div class="destino-stats">
+            <div class="stat"><strong>Base</strong> Cuiabá/CG</div>
+            <div class="stat"><strong>5–7</strong> dias</div>
+          </div>
+        </div>
       </div>
     </a>
 
@@ -515,13 +534,24 @@
       <div class="destino-header" style="background:linear-gradient(135deg,#5a0a00,#a01a00)">
         <span class="destino-emoji">🥁</span>
         <div class="destino-cidade">Salvador</div>
-        <div class="destino-estado">BA · Patrimônio UNESCO</div>
-        <div class="destino-badge">Novo</div>
+        <div class="destino-estado">Bahia · Patrimônio UNESCO</div>
+        <div class="destino-badge">Guia completo</div>
       </div>
       <div class="destino-body">
         <div class="destino-desc">Pelourinho colorido, acarajé no tabuleiro, moqueca de dendê, Olodum às terças e o maior Carnaval do mundo. O axé corre solto.</div>
-        <div class="destino-chips"><span class="dchip">🏛 Pelourinho</span><span class="dchip">🎉 Carnaval</span><span class="dchip">🫒 Dendê</span></div>
-        <div class="destino-cta"><a class="btn-ver" href="/salvador.html" style="color:#8a0a0a">Ver guia →</a></div>
+        <div class="destino-chips">
+          <span class="dchip">🏛 Pelourinho</span>
+          <span class="dchip">🎉 Maior Carnaval</span>
+          <span class="dchip">🫒 Culinária afro</span>
+          <span class="dchip">🥁 Olodum</span>
+        </div>
+        <div class="destino-cta">
+          <span class="btn-ver" style="color:#8a0a0a">Ver guia completo →</span>
+          <div class="destino-stats">
+            <div class="stat"><strong>Aeroporto</strong> SSA</div>
+            <div class="stat"><strong>4–7</strong> dias</div>
+          </div>
+        </div>
       </div>
     </a>
 
@@ -529,13 +559,24 @@
       <div class="destino-header" style="background:linear-gradient(135deg,#3a0a0a,#6a1a0a)">
         <span class="destino-emoji">🍺</span>
         <div class="destino-cidade">Belo Horizonte</div>
-        <div class="destino-estado">MG · Capital dos botecos</div>
-        <div class="destino-badge">Novo</div>
+        <div class="destino-estado">Minas Gerais · Capital dos botecos</div>
+        <div class="destino-badge">Guia completo</div>
       </div>
       <div class="destino-body">
         <div class="destino-desc">14 mil botecos, culinária mineira de dar inveja, Pampulha de Niemeyer, Inhotim e bate-voltas para Ouro Preto e Congonhas.</div>
-        <div class="destino-chips"><span class="dchip">🍺 Botecos</span><span class="dchip">🧀 Queijo</span><span class="dchip">🎨 Inhotim</span></div>
-        <div class="destino-cta"><a class="btn-ver" href="/belo-horizonte.html" style="color:#6a1a0a">Ver guia →</a></div>
+        <div class="destino-chips">
+          <span class="dchip">🍺 14 mil botecos</span>
+          <span class="dchip">🧀 Queijo mineiro</span>
+          <span class="dchip">🎨 Inhotim</span>
+          <span class="dchip">🏛 Ouro Preto</span>
+        </div>
+        <div class="destino-cta">
+          <span class="btn-ver" style="color:#6a1a0a">Ver guia completo →</span>
+          <div class="destino-stats">
+            <div class="stat"><strong>Aeroporto</strong> CNF</div>
+            <div class="stat"><strong>3–5</strong> dias</div>
+          </div>
+        </div>
       </div>
     </a>
 
