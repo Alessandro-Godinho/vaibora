@@ -36,11 +36,38 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Vaibora",
-  "url": "https://www.vaibora.com.br",
-  "description": "Guias completos e verificados dos melhores destinos do Brasil — praias, ecoturismo, parques, cidades históricas. Informações atualizadas com preços reais 2026.",
-  "potentialAction": {"@type": "SearchAction", "target": "https://www.vaibora.com.br/?q={search_term_string}", "query-input": "required name=search_term_string"}
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Vaibora",
+        "url": "https://www.vaibora.com.br",
+        "description": "Guias completos e verificados dos melhores destinos do Brasil — praias, ecoturismo, parques e cidades históricas. Informações atualizadas com preços reais 2026.",
+        "potentialAction": {"@type": "SearchAction", "target": "https://www.vaibora.com.br/?q={search_term_string}", "query-input": "required name=search_term_string"}
+      },
+      {
+        "@type": "ItemList",
+        "name": "Destinos turísticos no Brasil — Vaibora",
+        "url": "https://www.vaibora.com.br",
+        "numberOfItems": 15,
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Olímpia SP","url":"https://www.vaibora.com.br/olimpia.html"},
+          {"@type":"ListItem","position":2,"name":"Bonito MS","url":"https://www.vaibora.com.br/bonito.html"},
+          {"@type":"ListItem","position":3,"name":"Chapada Diamantina BA","url":"https://www.vaibora.com.br/chapada-diamantina.html"},
+          {"@type":"ListItem","position":4,"name":"Maceió AL","url":"https://www.vaibora.com.br/maceio.html"},
+          {"@type":"ListItem","position":5,"name":"Porto de Galinhas PE","url":"https://www.vaibora.com.br/porto-de-galinhas.html"},
+          {"@type":"ListItem","position":6,"name":"Florianópolis SC","url":"https://www.vaibora.com.br/florianopolis.html"},
+          {"@type":"ListItem","position":7,"name":"Foz do Iguaçu PR","url":"https://www.vaibora.com.br/foz-do-iguacu.html"},
+          {"@type":"ListItem","position":8,"name":"Fernando de Noronha PE","url":"https://www.vaibora.com.br/fernando-de-noronha.html"},
+          {"@type":"ListItem","position":9,"name":"Gramado RS","url":"https://www.vaibora.com.br/gramado.html"},
+          {"@type":"ListItem","position":10,"name":"Caldas Novas GO","url":"https://www.vaibora.com.br/caldas-novas.html"},
+          {"@type":"ListItem","position":11,"name":"Porto Seguro BA","url":"https://www.vaibora.com.br/porto-seguro.html"},
+          {"@type":"ListItem","position":12,"name":"Jericoacoara CE","url":"https://www.vaibora.com.br/jericoacoara.html"},
+          {"@type":"ListItem","position":13,"name":"Pantanal MT/MS","url":"https://www.vaibora.com.br/pantanal.html"},
+          {"@type":"ListItem","position":14,"name":"Salvador BA","url":"https://www.vaibora.com.br/salvador.html"},
+          {"@type":"ListItem","position":15,"name":"Belo Horizonte MG","url":"https://www.vaibora.com.br/belo-horizonte.html"}
+        ]
+      }
+    ]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,24 +115,30 @@
     /* DESTINOS GRID */
     .container { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
     .secao-titulo { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--texto-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.2rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--amarelo); display: inline-block; margin-top: 2.5rem; }
-    .destinos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 3rem; }
+    .destinos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 3rem; }
 
-    .destino-card { background: white; border: 1px solid var(--borda); border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; display: block; }
+    .destino-card { background: white; border: 1px solid var(--borda); border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; display: block; }
     .destino-card:hover { border-color: var(--verde); transform: translateY(-2px); }
-    .destino-header { padding: 1.8rem 1.5rem 1.4rem; position: relative; }
+    .destino-header { padding: 1.1rem 1rem 0.9rem; position: relative; }
     .destino-header.verde { background: var(--verde); }
     .destino-header.azul { background: var(--azul); }
-    .destino-emoji { font-size: 2rem; margin-bottom: 0.8rem; display: block; }
-    .destino-cidade { font-family: 'Syne', sans-serif; font-size: 1.4rem; font-weight: 800; color: white; margin-bottom: 2px; }
-    .destino-estado { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
-    .destino-badge { position: absolute; top: 1.2rem; right: 1.2rem; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: white; font-size: 0.7rem; padding: 3px 10px; border-radius: 20px; }
-    .destino-body { padding: 1.2rem 1.5rem 1.5rem; }
-    .destino-desc { font-size: 0.85rem; color: var(--texto-muted); line-height: 1.6; margin-bottom: 1rem; }
-    .destino-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.2rem; }
-    .dchip { font-size: 0.7rem; background: var(--cinza); color: var(--texto-muted); padding: 3px 9px; border-radius: 20px; }
-    .destino-cta { display: flex; align-items: center; justify-content: space-between; }
-    .btn-ver { font-size: 0.82rem; font-weight: 500; color: var(--verde); text-decoration: none; display: flex; align-items: center; gap: 4px; }
+    .destino-header.verm { background: #8a0a0a; }
+    .destino-header.roxo { background: #4a1a6a; }
+    .destino-header.mar { background: #0a4a6a; }
+    .destino-header.terra { background: #6a3a0a; }
+    .destino-emoji { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+    .destino-cidade { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 800; color: white; margin-bottom: 1px; line-height: 1.2; }
+    .destino-estado { font-size: 0.72rem; color: rgba(255,255,255,0.7); }
+    .destino-badge { position: absolute; top: 0.7rem; right: 0.7rem; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: white; font-size: 0.62rem; padding: 2px 7px; border-radius: 20px; }
+    .destino-body { padding: 0.8rem 1rem 1rem; }
+    .destino-desc { font-size: 0.75rem; color: var(--texto-muted); line-height: 1.55; margin-bottom: 0.7rem; }
+    .destino-chips { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 0.8rem; }
+    .dchip { font-size: 0.65rem; background: var(--cinza); color: var(--texto-muted); padding: 2px 7px; border-radius: 20px; }
+    .destino-cta { display: flex; align-items: center; justify-content: flex-end; }
+    .btn-ver { font-size: 0.75rem; font-weight: 500; color: var(--verde); text-decoration: none; display: flex; align-items: center; gap: 4px; }
     .btn-ver.azul { color: var(--azul); }
+    .btn-ver.verm { color: #8a0a0a; }
+    .btn-ver.terra { color: #6a3a0a; }
     .destino-stats { display: flex; gap: 12px; }
     .stat { font-size: 0.72rem; color: var(--texto-muted); }
     .stat strong { color: var(--texto); font-weight: 500; }
@@ -133,7 +166,7 @@
 
     .hidden { display: none !important; }
     @media (max-width: 600px) {
-      .destinos-grid { grid-template-columns: 1fr; }
+      .destinos-grid { grid-template-columns: repeat(2, 1fr); }
       nav a { display: none; }
     }
   </style>
@@ -449,31 +482,64 @@
 
   </div>
 
-  <h2 class="secao-titulo">Em breve</h2>
 
-  <div class="em-breve" data-tipo="praia">
-    <div class="em-breve-emoji">🌴</div>
-    <div>
-      <div class="em-breve-nome">Jericoacoara, CE</div>
-      <div class="em-breve-tag">Dunas · Lagoa Azul · Pôr do sol · Kitesurf</div>
-    </div>
-  </div>
-  <div class="em-breve" data-tipo="natureza">
-    <div class="em-breve-emoji">🐊</div>
-    <div>
-      <div class="em-breve-nome">Pantanal, MT/MS</div>
-      <div class="em-breve-tag">Onças · Jacarés · Maior planície alagada do mundo</div>
-    </div>
-  </div>
-  <div class="em-breve" data-tipo="praia historico">
-    <div class="em-breve-emoji">🏰</div>
-    <div>
-      <div class="em-breve-nome">Salvador, BA</div>
-      <div class="em-breve-tag">Centro Histórico · Pelourinho · Carnaval · Axé</div>
-    </div>
-  </div>
+    <a class="destino-card" href="/jericoacoara.html" data-tipo="praia natureza">
+      <div class="destino-header" style="background:linear-gradient(135deg,#3a1a00,#7a4a00)">
+        <span class="destino-emoji">🌅</span>
+        <div class="destino-cidade">Jericoacoara</div>
+        <div class="destino-estado">CE · Parque Nacional</div>
+        <div class="destino-badge">Novo</div>
+      </div>
+      <div class="destino-body">
+        <div class="destino-desc">Vila de ruas de areia, Duna do Pôr do Sol, Lagoa do Paraíso, kitesurf de classe mundial e o charme mais autêntico do Nordeste.</div>
+        <div class="destino-chips"><span class="dchip">🪁 Kitesurf</span><span class="dchip">💧 Lagoas</span><span class="dchip">🌅 Pôr do Sol</span></div>
+        <div class="destino-cta"><a class="btn-ver" href="/jericoacoara.html">Ver guia →</a></div>
+      </div>
+    </a>
 
-</div>
+    <a class="destino-card" href="/pantanal.html" data-tipo="natureza">
+      <div class="destino-header" style="background:linear-gradient(135deg,#0a2a0a,#1a5a1a)">
+        <span class="destino-emoji">🐆</span>
+        <div class="destino-cidade">Pantanal</div>
+        <div class="destino-estado">MT/MS · UNESCO</div>
+        <div class="destino-badge">Novo</div>
+      </div>
+      <div class="destino-body">
+        <div class="destino-desc">Maior santuário de vida selvagem do planeta. Safári de onça pintada, 650 espécies de aves, jacarés e pousadas fazenda inesquecíveis.</div>
+        <div class="destino-chips"><span class="dchip">🐆 Onça</span><span class="dchip">🦜 Aves</span><span class="dchip">🛥 Safári</span></div>
+        <div class="destino-cta"><a class="btn-ver" href="/pantanal.html" style="color:#1a5a1a">Ver guia →</a></div>
+      </div>
+    </a>
+
+    <a class="destino-card" href="/salvador.html" data-tipo="praia historico">
+      <div class="destino-header" style="background:linear-gradient(135deg,#5a0a00,#a01a00)">
+        <span class="destino-emoji">🥁</span>
+        <div class="destino-cidade">Salvador</div>
+        <div class="destino-estado">BA · Patrimônio UNESCO</div>
+        <div class="destino-badge">Novo</div>
+      </div>
+      <div class="destino-body">
+        <div class="destino-desc">Pelourinho colorido, acarajé no tabuleiro, moqueca de dendê, Olodum às terças e o maior Carnaval do mundo. O axé corre solto.</div>
+        <div class="destino-chips"><span class="dchip">🏛 Pelourinho</span><span class="dchip">🎉 Carnaval</span><span class="dchip">🫒 Dendê</span></div>
+        <div class="destino-cta"><a class="btn-ver" href="/salvador.html" style="color:#8a0a0a">Ver guia →</a></div>
+      </div>
+    </a>
+
+    <a class="destino-card" href="/belo-horizonte.html" data-tipo="historico">
+      <div class="destino-header" style="background:linear-gradient(135deg,#3a0a0a,#6a1a0a)">
+        <span class="destino-emoji">🍺</span>
+        <div class="destino-cidade">Belo Horizonte</div>
+        <div class="destino-estado">MG · Capital dos botecos</div>
+        <div class="destino-badge">Novo</div>
+      </div>
+      <div class="destino-body">
+        <div class="destino-desc">14 mil botecos, culinária mineira de dar inveja, Pampulha de Niemeyer, Inhotim e bate-voltas para Ouro Preto e Congonhas.</div>
+        <div class="destino-chips"><span class="dchip">🍺 Botecos</span><span class="dchip">🧀 Queijo</span><span class="dchip">🎨 Inhotim</span></div>
+        <div class="destino-cta"><a class="btn-ver" href="/belo-horizonte.html" style="color:#6a1a0a">Ver guia →</a></div>
+      </div>
+    </a>
+
+  </div>
 
 <div class="sobre" id="sobre">
   <div class="sobre-inner">
