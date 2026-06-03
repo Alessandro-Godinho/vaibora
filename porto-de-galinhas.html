@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia completo Porto de Galinhas 2026 — piscinas naturais, jangada, buggy, cavalos-marinhos, Praia dos Carneiros, Ilha de Santo Aleixo, restaurantes e tábua de marés.">
+  <title>Porto de Galinhas PE — Guia Completo | Vaibora</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8EFW81MN6"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K8EFW81MN6');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--verde:#0a6a2a;--verde-claro:#e0f5e8;--azul:#0a4a7a;--azul-claro:#e0eef8;--areia:#f5e8c8;--laranja:#e85d26;--coral:#e85020;--cinza:#f4f2ee;--texto:#1a1a18;--texto-muted:#6b6b65;--borda:#e0ddd6;--branco:#fafaf8;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'DM Sans',sans-serif;background:var(--branco);color:var(--texto);}
+    nav{position:sticky;top:0;z-index:100;background:var(--branco);border-bottom:1px solid var(--borda);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:56px;}
+    .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#1a6b3c;text-decoration:none;}
+    .logo span{color:var(--laranja);}
+    nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
+    nav a:hover{color:var(--verde);}
+    .hero{background:linear-gradient(150deg,#0a3a1a 0%,#0a5a2a 50%,#0a4a6a 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
+    .hero::before{content:'🐠';position:absolute;top:15px;right:70px;font-size:110px;opacity:0.08;}
+    .hero::after{content:'';position:absolute;bottom:-50px;left:10%;width:300px;height:300px;background:rgba(255,255,255,0.03);border-radius:50%;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero-tag{display:inline-block;background:rgba(255,255,255,0.15);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);}
+    .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
+    .hero h1 span{color:#90f0b0;}
+    .hero p{font-size:1rem;opacity:0.85;line-height:1.7;max-width:520px;margin-bottom:2rem;}
+    .hero-chips{display:flex;gap:8px;flex-wrap:wrap;}
+    .chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:white;font-size:0.8rem;padding:5px 12px;border-radius:20px;}
+    .container{max-width:760px;margin:0 auto;padding:0 1.5rem;}
+    .filtros{background:var(--branco);border-bottom:1px solid var(--borda);padding:0.8rem 1.5rem;position:sticky;top:56px;z-index:90;overflow-x:auto;}
+    .filtros-inner{max-width:760px;margin:0 auto;display:flex;gap:6px;align-items:center;white-space:nowrap;}
+    .fbtn{font-family:'DM Sans',sans-serif;font-size:0.78rem;padding:5px 13px;border-radius:20px;border:1px solid var(--borda);background:white;color:var(--texto-muted);cursor:pointer;transition:all .15s;white-space:nowrap;}
+    .fbtn:hover{border-color:var(--verde);color:var(--verde);}
+    .fbtn.ativo{background:var(--verde);color:white;border-color:var(--verde);}
+    .secao{padding:2.5rem 0 0;}
+    .secao-titulo{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--texto-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:2px solid #90f0b0;display:inline-block;}
+    .card{background:white;border:1px solid var(--borda);border-radius:12px;padding:1.1rem 1.2rem;margin-bottom:10px;transition:border-color .15s,transform .15s;}
+    .card:hover{border-color:var(--verde);transform:translateY(-1px);}
+    .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;}
+    .card-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;color:var(--texto);margin-bottom:3px;}
+    .card-meta{font-size:0.75rem;color:var(--texto-muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+    .estrelas{color:#d4900a;font-size:0.75rem;}
+    .badge{display:inline-block;font-size:0.68rem;font-weight:500;padding:2px 8px;border-radius:20px;}
+    .badge-verde{background:var(--verde-claro);color:var(--verde);}
+    .badge-azul{background:var(--azul-claro);color:var(--azul);}
+    .badge-coral{background:#fde8e0;color:#8a1a0a;}
+    .badge-amber{background:#fef3d0;color:#8a5c00;}
+    .badge-areia{background:#f5e8c8;color:#7a5200;}
+    .badge-gratis{background:var(--verde-claro);color:var(--verde);}
+    .badge-mare{background:#e0f0f8;color:#0a3a6b;font-weight:700;}
+    .card-preco{font-size:0.85rem;font-weight:500;color:var(--texto);text-align:right;white-space:nowrap;}
+    .preco-dica{font-size:0.65rem;background:var(--verde-claro);color:var(--verde);padding:2px 7px;border-radius:4px;margin-top:3px;display:inline-block;}
+    .card-desc{font-size:0.83rem;color:var(--texto-muted);line-height:1.6;margin-top:8px;}
+    .card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:6px;}
+    .card-endereco{font-size:0.72rem;color:var(--texto-muted);}
+    .btn-maps{font-size:0.72rem;padding:4px 10px;border-radius:6px;background:var(--verde-claro);color:var(--verde);border:none;cursor:pointer;font-weight:500;text-decoration:none;white-space:nowrap;}
+    .btn-maps:hover{background:var(--verde);color:white;}
+    .praias-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:10px;margin-bottom:1rem;}
+    .praia-card{background:white;border:1px solid var(--borda);border-radius:12px;padding:1rem;transition:border-color .15s;}
+    .praia-card:hover{border-color:var(--verde);}
+    .praia-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;margin-bottom:4px;}
+    .praia-desc{font-size:0.78rem;color:var(--texto-muted);line-height:1.5;}
+    .praia-tag{display:inline-block;font-size:0.65rem;padding:2px 7px;border-radius:20px;background:var(--verde-claro);color:var(--verde);margin-top:6px;}
+    .praia-tag-surf{background:var(--azul-claro);color:var(--azul);}
+    .praia-tag-familia{background:#f5e8c8;color:#7a5200;}
+    .praia-tag-bate{background:#fef3d0;color:#8a5c00;}
+    .extras-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:1rem;}
+    .extra-mini{background:white;border:1px solid var(--borda);border-radius:12px;padding:1rem;transition:border-color .15s;}
+    .extra-mini:hover{border-color:var(--verde);}
+    .extra-emoji{font-size:1.5rem;margin-bottom:6px;display:block;}
+    .extra-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;margin-bottom:4px;}
+    .extra-desc{font-size:0.77rem;color:var(--texto-muted);line-height:1.5;}
+    .extra-preco{font-size:0.75rem;font-weight:500;color:var(--verde);margin-top:6px;}
+    .info-box{border-radius:12px;padding:1.1rem 1.3rem;margin:1.5rem 0;}
+    .info-box.verde{background:var(--verde-claro);border-left:3px solid var(--verde);}
+    .info-box.azul{background:var(--azul-claro);border-left:3px solid var(--azul);}
+    .info-box.cinza{background:var(--cinza);border-left:3px solid var(--verde);}
+    .info-box.amber{background:#fef8e0;border-left:3px solid #c4960f;}
+    .info-box.coral{background:#fff0ee;border-left:3px solid var(--coral);}
+    .info-box.mare{background:#e0f0f8;border:2px solid #0a3a6b;}
+    .info-box strong{font-family:'Syne',sans-serif;font-size:0.85rem;display:block;margin-bottom:4px;}
+    .info-box.verde strong{color:var(--verde);}
+    .info-box.azul strong{color:var(--azul);}
+    .info-box.cinza strong{color:var(--verde);}
+    .info-box.amber strong{color:#7a5200;}
+    .info-box.coral strong{color:#8a1a0a;}
+    .info-box.mare strong{color:#0a2a5a;}
+    .info-box p{font-size:0.82rem;line-height:1.6;color:var(--texto-muted);}
+    .info-box.coral p{color:#5a0a0a;}
+    .info-box.mare p{color:#0a2a5a;}
+    .hoteis-cta{background:linear-gradient(135deg,#0a3a1a 0%,#0a5a2a 100%);border-radius:16px;padding:2rem;margin:2.5rem 0;color:white;text-align:center;}
+    .hoteis-cta h3{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:0.5rem;}
+    .hoteis-cta p{font-size:0.85rem;opacity:0.85;margin-bottom:1.2rem;}
+    .btn-booking{display:inline-block;background:#90f0b0;color:#0a3a1a;font-weight:700;font-size:0.9rem;padding:10px 24px;border-radius:8px;text-decoration:none;transition:opacity .15s;}
+    .btn-booking:hover{opacity:0.9;}
+    footer{background:var(--texto);color:white;padding:2.5rem 1.5rem;margin-top:4rem;}
+    .footer-inner{max-width:760px;margin:0 auto;}
+    .footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;margin-bottom:0.5rem;}
+    .footer-logo span{color:#f5c842;}
+    footer p{font-size:0.78rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-top:0.5rem;}
+    footer a{color:rgba(255,255,255,0.5);text-decoration:underline;}
+    .hidden{display:none!important;}
+    @media(max-width:600px){.hero{padding:3rem 1.2rem 2.5rem;}.praias-grid,.extras-grid{grid-template-columns:1fr;}nav a{display:none;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">vai<span>bora</span>.com.br</a>
+  <div>
+    <a href="#piscinas">Piscinas</a>
+    <a href="#passeios">Passeios</a>
+    <a href="#praias">Praias</a>
+    <a href="#restaurantes">Comer</a>
+    <a href="#noite">Noite</a>
+    <a href="#hoteis">Hotéis</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Guia completo · Pernambuco · Ipojuca</div>
+    <h1>Porto de Galinhas, PE<br><span>Piscinas naturais e o mar mais bonito do Nordeste</span></h1>
+    <p>Piscinas naturais formadas entre corais com peixinhos coloridos, cavalos-marinhos em vida selvagem, jangadas à vela, buggy pelas praias e a água mais quente e cristalina do litoral pernambucano. Um dos destinos mais premiados do Brasil.</p>
+    <div class="hero-chips">
+      <div class="chip">🌡 28–32°C o ano inteiro</div>
+      <div class="chip">🐠 Piscinas naturais de corais</div>
+      <div class="chip">🚗 60km de Recife</div>
+      <div class="chip">📅 4–7 dias ideais</div>
+      <div class="chip">🦄 Cavalos-marinhos</div>
+    </div>
+  </div>
+</div>
+
+<!-- ALERTA MARÉ — PRIMEIRA COISA QUE O VISITANTE PRECISA SABER -->
+<div style="background:#e0f0f8;border-bottom:2px solid #0a3a6b;padding:1rem 1.5rem;">
+  <div style="max-width:760px;margin:0 auto;">
+    <div style="font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:700;color:#0a2a5a;margin-bottom:0.6rem">🌊 LEIA ANTES DE PLANEJAR — A tábua de marés manda em Porto de Galinhas</div>
+    <p style="font-size:0.82rem;color:#0a2a5a;line-height:1.6">As piscinas naturais só existem na <strong>maré baixa</strong> — quando a maré está alta, ficam submersas e o passeio de jangada é suspenso por segurança. A maré baixa tem hora marcada diferente cada dia. O ideal é estar na praia <strong>1h30 antes e permanecer até 1h30 depois</strong> do pico da baixa-mar. Consulte a tábua de marés em <strong>vivoportodegalinhas.com/blog/dicas-de-viagem/tabua-de-mares/</strong> antes de montar o roteiro de cada dia. Quando a maré está alta, o mar ganha movimento — ótimo para banho, mas sem piscinas.</p>
+  </div>
+</div>
+
+<!-- MELHOR ÉPOCA -->
+<div style="background:#f4f2ee;border-bottom:1px solid #e0ddd6;padding:1rem 1.5rem;">
+  <div style="max-width:760px;margin:0 auto;">
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:0.8rem">Melhor época para ir</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="background:white;border:2px solid #0a6a2a;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#0a6a2a;font-weight:600;margin-bottom:2px">🏆 Ideal — tempo seco e mar cristalino</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Set · Out · Nov</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Pouca chuva · Mar transparente · Menos turistas · Preço menor</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">✅ Bom · Alta temporada</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Dez · Jan · Fev</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Mar quente e cristalino · Lotado · Caro · Muito agitado</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">⚠️ Evite — estação chuvosa</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Abr · Mai · Jun · Jul</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Chuvas frequentes · Mar turvo · Piscinas menos visíveis</div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 12px;flex:1;min-width:150px">
+        <div style="font-size:0.7rem;color:#6b6b65;margin-bottom:2px">🌅 Intermediário</div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem">Mar · Ago</div>
+        <div style="font-size:0.72rem;color:#6b6b65;margin-top:2px">Clima imprevisível · Preço menor · Mar variável</div>
+      </div>
+    </div>
+    <div style="background:#e0f5e8;border:1px solid #90c8a0;border-radius:8px;padding:8px 12px;margin-top:10px;font-size:0.78rem;color:#0a3a1a">
+      <strong>☀️ Por que setembro/outubro são ideais:</strong> o inverno nordestino (chuvas) termina e o tempo abre com força. O mar fica cristalino — água transparente, piscinas bem formadas, ótima visibilidade para snorkel. Menos turistas que dezembro/janeiro, preços menores e estrutura toda funcionando sem filas.
+    </div>
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin:1rem 0 0.6rem">Recomendado para</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">👨‍👩‍👧</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Família com crianças</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Piscinas naturais · Jangada · Muro Alto · Biofábrica</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">💑</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Casal</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Cavalos-marinhos · Pôr do sol Maracaípe · Restaurantes</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🌿</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Natureza e aventura</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Ilha de Santo Aleixo · Buggy · Helicóptero · Quadriciclo</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🏄</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Surfistas</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Maracaípe · Praia do Cupe · Ondas constantes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="filtros">
+  <div class="filtros-inner">
+    <span style="font-size:0.75rem;color:var(--texto-muted);margin-right:4px">Ver:</span>
+    <button class="fbtn ativo" onclick="filtrar('todos',this)">Tudo</button>
+    <button class="fbtn" onclick="filtrar('piscina',this)">🐠 Piscinas</button>
+    <button class="fbtn" onclick="filtrar('passeio',this)">⛵ Passeios</button>
+    <button class="fbtn" onclick="filtrar('praia',this)">🏖 Praias</button>
+    <button class="fbtn" onclick="filtrar('restaurante',this)">🍽 Comer</button>
+    <button class="fbtn" onclick="filtrar('noite',this)">🌙 Noite</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- PISCINAS NATURAIS -->
+  <div class="secao" id="piscinas" data-cat="piscina">
+    <div class="secao-titulo">As piscinas naturais — o coração de Porto</div>
+
+    <div class="info-box mare">
+      <strong>🌊 Regra de ouro: nunca vá às piscinas sem checar a maré do dia</strong>
+      <p>As piscinas naturais só se formam na maré baixa (abaixo de 0.4m). Na maré alta, ficam cobertas e o passeio de jangada é cancelado por segurança. A maré muda de horário todo dia — às vezes é de manhã, às vezes à tarde. Não entre nas piscinas com óleo ou protetor solar em excesso — polui os corais. Proibido pescar ou capturar animais marinhos. Os jangadeiros cobram preço tabelado: R$ 63/adulto (2026).</p>
+    </div>
+
+    <div class="card" data-cat="piscina">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Piscinas Naturais da Vila <span class="badge badge-mare">Depende da maré</span></div>
+          <div class="card-meta">Jangada à vela · ~10 min de travessia · Peixinhos coloridos</div>
+        </div>
+        <div>
+          <div class="card-preco">R$ 63/adulto</div>
+          <div class="card-preco">R$ 33 (4–6 anos)</div>
+          <div class="preco-dica">Preço tabelado · Pix ou dinheiro</div>
+        </div>
+      </div>
+      <div class="card-desc">O cartão-postal de Porto de Galinhas. Jangada à vela sem motor — já seria gostoso mesmo sem a piscina. A travessia de ~10 min leva você a piscinas rasas e cristalinas entre os corais, com peixes coloridos por toda parte. Leve snorkel para ver melhor a vida marinha. Passeio dura ~1 hora. Ponto de embarque na orla da Vila, em frente à praia principal. Contrate direto com os jangadeiros credenciados — preço fixo para todos.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Orla da Vila de Porto de Galinhas · Embarque na praia</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Piscinas+Naturais+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="piscina">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Piscinas Naturais de Muro Alto <span class="badge badge-verde">A maior barreira de corais</span></div>
+          <div class="card-meta">Barreira de corais extensa · Mar calmo · Snorkel excepcional</div>
+        </div>
+      </div>
+      <div class="card-desc">A Praia de Muro Alto tem uma das maiores barreiras de corais do litoral nordestino — forma uma piscina natural gigante com água calma, morna e transparente. Mar completamente protegido pelos corais. Diferente das piscinas da Vila, aqui o acesso pode ser feito a pé na maré baixa. Snorkel excepcional com muito mais peixes e corais.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Praia de Muro Alto · ~8km da Vila</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Praia+Muro+Alto+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="piscina">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Pontal de Maracaípe — Cavalos-marinhos <span class="badge badge-verde">Único no Brasil</span></div>
+          <div class="card-meta">Jangada · Cavalos-marinhos em habitat natural · Pôr do sol</div>
+        </div>
+        <div>
+          <div class="card-preco">R$ 60/adulto</div>
+          <div class="preco-dica">Preço tabelado</div>
+        </div>
+      </div>
+      <div class="card-desc">Uma das experiências mais únicas do Brasil. No Pontal de Maracaípe, jangadas levam você até o manguezal onde vivem cavalos-marinhos em habitat natural — você os vê de perto no snorkel. O pôr do sol aqui é considerado o mais bonito de Porto de Galinhas. Uma combinação de experiência de natureza e beleza cênica inesquecível. Leve snorkel.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Praia de Maracaípe · ~3km da Vila · Embarque na orla</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Pontal+de+Maracaípe+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="piscina">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Biofábrica dos Corais <span class="badge badge-azul">Inovador · Educativo</span></div>
+          <div class="card-meta">Reprodução de corais em laboratório · Mergulho · Visita guiada</div>
+        </div>
+        <div class="card-preco">~R$ 80–150/pessoa</div>
+      </div>
+      <div class="card-desc">Uma das experiências mais inovadoras de Porto de Galinhas. Projeto de conservação marinha que reproduz corais em laboratório para repovoar os recifes degradados. Visita guiada ao laboratório + mergulho para ver os corais transplantados no mar. Consciência ambiental aliada a uma imersão única na vida marinha. Reserve antecipadamente.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Porto de Galinhas — confirme localização com a operadora</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Porto+de+Galinhas+Biofábrica+Corais" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PASSEIOS -->
+  <div class="secao" id="passeios" data-cat="passeio">
+    <div class="secao-titulo">Passeios e atividades</div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Buggy — Ponta a Ponta <span class="badge badge-coral">Passeio completo</span></div>
+          <div class="card-meta">4–8h · Muro Alto · Cupe · Maracaípe · Piscinas · Pôr do sol</div>
+        </div>
+        <div>
+          <div class="card-preco">R$ 400–450/buggy</div>
+          <div class="preco-dica">Até 4 pessoas por buggy</div>
+        </div>
+      </div>
+      <div class="card-desc">O programa mais completo de Porto de Galinhas. O buggy percorre todas as praias do litoral — Muro Alto, Cupe, Maracaípe e o Pontal dos cavalos-marinhos. Ao contrário de Natal ou Jericoacoara, aqui o passeio é seguro e sem dunas — percorre estradas de terra, trilhas e trechos à beira-mar. Duração de 2h, 4h, 6h ou 8h. Combine com parada nas piscinas naturais. Ponto dos bugueiros: R. Caraúna esquina com R. das Piscinas Naturais.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. Caraúna esq. R. das Piscinas Naturais — Vila</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=buggy+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Praia dos Carneiros — Bate-volta <span class="badge badge-amber">Imperdível</span></div>
+          <div class="card-meta">1h de carro · Igrejinha à beira-mar · Catamarã · Banho de argila</div>
+        </div>
+        <div class="card-preco">~R$ 100–180/pessoa</div>
+      </div>
+      <div class="card-desc">Considerada uma das praias mais bonitas do Brasil — a Praia dos Carneiros fica a ~60km de Porto de Galinhas. O passeio de catamarã inclui paradas nas piscinas naturais de Aver-o-Mar, banho de argila terapêutica e visita à icônica igrejinha de São Benedito construída na beira do mar. Uma experiência completa de natureza e cultura nordestina.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Tamandaré · ~60km de Porto de Galinhas · 1h de carro</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Praia+dos+Carneiros+Tamandaré+PE" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Ilha de Santo Aleixo <span class="badge badge-verde">Paraíso escondido</span></div>
+          <div class="card-meta">40km de Porto · Rochas vulcânicas · Piscinas · Trilha · Limit. visitantes</div>
+        </div>
+        <div>
+          <div class="card-preco">~R$ 100–150/pessoa</div>
+          <div class="preco-dica">Reserve antecipado — vagas limitadas</div>
+        </div>
+      </div>
+      <div class="card-desc">Um dos destinos mais exclusivos de Pernambuco — pouco explorado e paradisíaco. Ilha privativa entre Porto de Galinhas e Praia dos Carneiros, com formações rochosas vulcânicas únicas no nordeste, piscinas naturais cristalinas e trilha ecológica. Acesso por lancha de Barra de Sirinhaém (~15 min). Estrutura de apoio com restaurante. Vagas limitadas por dia — reserve com antecedência. A partir de Porto: ~40km de carro + travessia de lancha.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Sirinhaém PE · Embarque na Barra de Sirinhaém</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Ilha+de+Santo+Aleixo+Sirinhaém+PE" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Voo de helicóptero sobre as piscinas <span class="badge badge-amber">Premium</span></div>
+          <div class="card-meta">Heliporto em Maracaípe · Vista aérea das piscinas e corais</div>
+        </div>
+        <div class="card-preco">A partir de R$ 400/pessoa</div>
+      </div>
+      <div class="card-desc">A vista mais impressionante de Porto de Galinhas — os corais vistos de cima formam um mosaico de tonalidades de verde e azul que de baixo você não consegue perceber. Saída do heliporto em Maracaípe. ~10 minutos sobrevoando as piscinas naturais, Muro Alto, Cupe e o litoral. A foto mais bonita que você vai trazer de Porto.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Heliporto de Maracaípe</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Heliporto+Maracaípe+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="secao-titulo" style="margin-top:1.5rem">Mais atividades e esportes</div>
+    <div class="extras-grid">
+      <div class="extra-mini">
+        <span class="extra-emoji">🚤</span>
+        <div class="extra-nome">Jet Ski em Serrambi</div>
+        <div class="extra-desc">Aluguel de jet ski nas praias de Serrambi e Maracaípe. Adrenalina com vista para os recifes e praias vazias.</div>
+        <div class="extra-preco">~R$ 100–150/30min</div>
+      </div>
+      <div class="extra-mini">
+        <span class="extra-emoji">🏄</span>
+        <div class="extra-nome">Surf em Maracaípe</div>
+        <div class="extra-desc">Ondas constantes de qualidade. Maracaípe é um dos pontos de surf mais tradicionais de PE. Aulas disponíveis para iniciantes.</div>
+        <div class="extra-preco">Aula ~R$ 100–150</div>
+      </div>
+      <div class="extra-mini">
+        <span class="extra-emoji">🚵</span>
+        <div class="extra-nome">Quadriciclo ecológico</div>
+        <div class="extra-desc">Rota ecológica pelo manguezal e trilhas próximas à Vila. Boa alternativa para quem quer aventura diferente do buggy.</div>
+        <div class="extra-preco">~R$ 150–200</div>
+      </div>
+      <div class="extra-mini">
+        <span class="extra-emoji">🤿</span>
+        <div class="extra-nome">Mergulho com cilindro</div>
+        <div class="extra-desc">Pontos de mergulho nos recifes de Porto de Galinhas. Visibilidade excelente em setembro/outubro. Batismo para iniciantes disponível.</div>
+        <div class="extra-preco">~R$ 200–350</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRAIAS -->
+  <div class="secao" id="praias" data-cat="praia">
+    <div class="secao-titulo">Praias da região</div>
+
+    <div class="praias-grid">
+      <div class="praia-card">
+        <div class="praia-nome">Praia da Vila 🏆</div>
+        <div class="praia-desc">A mais famosa — daqui saem as jangadas para as piscinas naturais. Cheia de quiosques, restaurantes e lojinhas. A mais agitada e com melhor infraestrutura.</div>
+        <span class="praia-tag">Centro da Vila · Jangadas</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Praia de Muro Alto</div>
+        <div class="praia-desc">Extensa barreira de corais formando piscina gigante. Mais tranquila e preservada. Alguns dos melhores resorts de Porto ficam aqui. Snorkel excepcional.</div>
+        <span class="praia-tag">8km da Vila · Piscina natural · Resorts</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Praia do Cupe</div>
+        <div class="praia-desc">Entre a Vila e Muro Alto. Ondas em algumas partes (surf) e piscinas calmas em outras. Menos movimentada que a Vila. Ótima para quem quer variedade.</div>
+        <span class="praia-tag praia-surf">Surf · Piscinas · Equilibrada</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Praia de Maracaípe</div>
+        <div class="praia-desc">Surf de qualidade, manguezal com cavalos-marinhos e o pôr do sol mais bonito de Porto. Atmosfera mais relaxada e autêntica que a Vila. Restaurantes à beira-mar.</div>
+        <span class="praia-tag praia-surf">Surf · Cavalos-marinhos · Pôr do sol</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Praia dos Carneiros</div>
+        <div class="praia-desc">60km de Porto — a mais linda da região. Igrejinha na beira do mar, piscinas naturais, catamarã com banho de argila. Bate-volta imperdível.</div>
+        <span class="praia-tag praia-bate">60km · Bate-volta · Igrejinha</span>
+      </div>
+      <div class="praia-card">
+        <div class="praia-nome">Praia de Serrambi</div>
+        <div class="praia-desc">Tranquila e preservada, pouco explorada pelo turismo de massa. Boa para quem quer fugir da agitação da Vila. Jet ski e esportes aquáticos disponíveis.</div>
+        <span class="praia-tag praia-familia">Tranquila · Jet ski</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESTAURANTES -->
+  <div class="secao" id="restaurantes" data-cat="restaurante">
+    <div class="secao-titulo">Restaurantes e gastronomia</div>
+
+    <div class="info-box amber">
+      <strong>🦐 A culinária de Porto é nordestina com muito fruto do mar</strong>
+      <p>Peixe na telha (técnica regional onde o peixe é assado diretamente sobre uma telha de barro), moqueca nordestina, camarão com abacaxi, caldos de peixe, casquinha de siri e galinha caipira são os carros-chefes. Frutos do mar em Porto são excepcionalmente frescos — saem do mar para o prato no mesmo dia. Ticket médio: R$ 120–250 por pessoa nos restaurantes principais. Existem opções mais acessíveis nas barracas da orla e na vila.</p>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Peixe na Telha <span class="badge badge-coral">Ícone de Porto</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Vista para o mar · Varanda aberta · Pôr do sol</div>
+        </div>
+        <div class="card-preco">Ticket médio: R$ 250</div>
+      </div>
+      <div class="card-desc">O restaurante mais famoso de Porto de Galinhas. Varanda aberta de frente para o mar — a vista é imbatível. Especialidade no peixe assado sobre telha de barro, técnica tradicional nordestina. Prato serve 2 pessoas. Destaques: Belle Roselis (peixe na telha com arroz de alho-poró, R$ 153), moqueca (R$ 153) e gratinado primavera vegetariano (R$ 68). À noite transforma-se em forneria com pizzas artesanais. Tem serviço de praia com cadeira e guarda-sol.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. das Piscinas Naturais, 103 · Seg–Dom 10h–16h e 18h30–22h</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Peixe+na+Telha+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Beijupirá <span class="badge badge-verde">Nouvelle nordestino desde 1991</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Aberto em 1991 · Nova cozinha nordestina</div>
+        </div>
+        <div class="card-preco">~R$ 150–250/pessoa</div>
+      </div>
+      <div class="card-desc">O clássico mais antigo de Porto — abriu quando o destino ainda era exótico, em 1991. Cozinha nouvelle-nordestina que combina peixes e frutos do mar com frutas e ervas regionais. Pratos icônicos: Beijumanga (filé de peixe com banana ao mel de curry, R$ 150+), peixe na castanha (serra frito inteiro com manteiga de castanha de caju) e carne de sol marinada com farofa de frutas. Ambiente bem-humorado e único.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. Beijupirá, 90 · Porto de Galinhas · (81) 3552-2354</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Beijupirá+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Munganga Bistrô <span class="badge badge-azul">Custo-benefício · Frutos do mar</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Galeria à beira-mar · Refrigerado e ao ar livre</div>
+        </div>
+        <div class="card-preco">~R$ 100–180/pessoa</div>
+      </div>
+      <div class="card-desc">Galeria entre a praia e a Rua das Piscinas Naturais com mesas em dois ambientes refrigerados e pátio ao ar livre. Cardápio especializado em frutos do mar frescos — camarões, polvo, peixe — com boa relação qualidade-preço para os padrões de Porto. Também tem serviço de praia com cadeira e guarda-sol. Boa alternativa ao Peixe na Telha com menu similar.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Galeria na R. das Piscinas Naturais — Porto de Galinhas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Munganga+Bistrô+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Cabidela da Natália <span class="badge badge-amber">Culinária nordestina raiz</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★☆</span> Galinha caipira · Cabrito · Pirão de peixe</div>
+        </div>
+        <div class="card-preco">~R$ 60–100/pessoa</div>
+      </div>
+      <div class="card-desc">Para fugir dos frutos do mar por um dia e mergulhar na culinária nordestina mais tradicional. Galinha caipira com pirão (só no Nordeste), cabrito, bode, peixada e a famosa cabidela de galinha com o sangue do animal. Doce caseiro de banana e coco para fechar. Preço mais acessível que os restaurantes à beira-mar.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. K, 173 · Porto de Galinhas · (81) 3552-2577</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Cabidela+da+Natália+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Domingos <span class="badge badge-verde">Camarão com abacaxi</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★☆</span> Decoração diferenciada · Carro-chefe: camarão</div>
+        </div>
+        <div class="card-preco">Ticket médio: R$ 250</div>
+      </div>
+      <div class="card-desc">Luzes penduradas em toldos criam uma decoração espetacular para o almoço e jantar. Cardápio variado com peixes, frutos do mar, carne e frango. O carro-chefe é o camarão com abacaxi — combinação nordestina que surpreende. Aberto de segunda a domingo com horários amplos.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. Bejupirá, 128 · Seg–Qui 14h–23h, Sex–Dom 12h–23h/00h</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Domingos+Restaurante+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Restaurante do Gugu <span class="badge badge-verde">Tradicional desde 1990</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Sem frescura · Comida boa de verdade</div>
+        </div>
+        <div class="card-preco">~R$ 60–100/pessoa</div>
+      </div>
+      <div class="card-desc">Tradicional desde 1990 — comida muito boa sem grandes frescuras. O bolinho de siri levemente apimentado, o pastel de camarão e o namorado com frutos do mar são as pedidas. Porções generosas e tudo extremamente fresco. Um dos melhores custo-benefícios da Vila.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Vila de Porto de Galinhas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Restaurante+do+Gugu+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOITE -->
+  <div class="secao" id="noite" data-cat="noite">
+    <div class="secao-titulo">Vida noturna e Vila</div>
+
+    <div class="info-box cinza">
+      <strong>🌙 Porto de Galinhas não é destino de balada — e tudo bem</strong>
+      <p>A noite em Porto é tranquila e encerra cedo — a maioria dos bares fecha por volta da meia-noite. O perfil é de quem acorda cedo para aproveitar a maré baixa nas piscinas. O programa noturno perfeito aqui é jantar bem, tomar uma caipirinha ouvindo forró e passear pelas lojinhas da Vila.</p>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Rua das Sombrinhas — Vila de Porto de Galinhas <span class="badge badge-coral">Point da noite</span></div>
+          <div class="card-meta">Lojinhas · Bares · Forró · Artesanato · Todo dia à noite</div>
+        </div>
+        <div class="card-preco badge-gratis">Entrada gratuita</div>
+      </div>
+      <div class="card-desc">O coração da vida noturna de Porto. A Vila ganha vida após o jantar com lojinhas de artesanato, barracas de caipirinha, forró ao vivo e o movimento típico do Nordeste. A famosa Rua das Sombrinhas com guarda-sóis coloridos é o ponto mais fotogênico. Passear pela Vila com uma caipirinha de tapioca na mão é o programa mais autêntico de Porto de Galinhas.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Rua das Sombrinhas — Vila de Porto de Galinhas</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Vila+Porto+de+Galinhas+Rua+das+Sombrinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Pôr do sol no Pontal de Maracaípe <span class="badge badge-amber">Experiência única</span></div>
+          <div class="card-meta">O mais bonito de Porto · Cavalos-marinhos + pôr do sol</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito (ver da praia)</div>
+      </div>
+      <div class="card-desc">O pôr do sol de Maracaípe é considerado o mais bonito de Porto de Galinhas — o sol se põe sobre o manguezal e o rio, com as jangadas voltando da pesca. Combine com o passeio de jangada para ver os cavalos-marinhos (que acontece ao entardecer) e você tem o programa mais completo e romântico da cidade. Restaurantes na orla de Maracaípe são perfeitos para jantar depois.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Praia de Maracaípe · 3km da Vila</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Pontal+de+Maracaípe+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Peixe na Telha à noite — Forneria <span class="badge badge-verde">Diferente do almoço</span></div>
+          <div class="card-meta">Pizzas artesanais · Ambiente com vista noturna para o mar</div>
+        </div>
+        <div class="card-preco">~R$ 60–100/pizza</div>
+      </div>
+      <div class="card-desc">À noite o Peixe na Telha se transforma em forneria com pizzas artesanais. Perfeito para quem quer uma refeição noturna mais leve depois de um dia intenso de passeios. A varanda com vista para o mar iluminada à noite cria um ambiente completamente diferente do almoço.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. das Piscinas Naturais, 103 · A partir das 18h30</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Peixe+na+Telha+Porto+de+Galinhas" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box cinza">
+    <strong>💡 Dica de ouro — como aproveitar Porto de Galinhas ao máximo</strong>
+    <p><strong>Dia 1:</strong> Chegada + passeio de jangada nas piscinas naturais (cheque a maré!) + Vila à noite. <strong>Dia 2:</strong> Buggy ponta a ponta (Muro Alto, Cupe, Maracaípe) + pôr do sol com cavalos-marinhos. <strong>Dia 3:</strong> Bate-volta para Praia dos Carneiros (passeio de catamarã + igrejinha). <strong>Dia 4:</strong> Biofábrica dos Corais + mergulho + dia livre na Praia de Muro Alto. Com 6–7 dias adicione a Ilha de Santo Aleixo. Dica de ouro: nunca contrate passeio de jangada na hora da maré alta — as piscinas ficam rasas e sem transparência. Sempre leve dinheiro ou Pix — jangadeiros raramente aceitam cartão.</p>
+  </div>
+
+  <div class="hoteis-cta" id="hoteis">
+    <h3>Onde ficar em Porto de Galinhas?</h3>
+    <p>Fique na Vila para ter tudo a pé. Muro Alto tem os melhores resorts all-inclusive. Cupe e Maracaípe oferecem equilíbrio entre tranquilidade e estrutura. Na alta temporada, reserve com meses de antecedência.</p>
+    <a class="btn-booking" href="https://www.booking.com/searchresults.pt-br.html?ss=Porto+de+Galinhas%2C+Pernambuco" target="_blank">Ver hotéis e resorts →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">vai<span>bora</span>.com.br</div>
+    <p>Guias de viagem curados para destinos brasileiros. Conteúdo pesquisado em múltiplas fontes e atualizado regularmente.<br>
+    Este site contém links de afiliados. Se você reservar por aqui, recebo uma comissão sem custo adicional para você.<br>
+    <strong style="color:rgba(255,255,255,0.6)">⚠️ Aviso:</strong> As informações deste site (preços, horários, endereços e disponibilidade) são pesquisadas em fontes públicas e podem estar desatualizadas. O Vaibora não se responsabiliza por alterações, encerramento de estabelecimentos ou divergências em relação ao que for encontrado no local. Sempre confirme diretamente com o estabelecimento antes de visitar.<br>
+    <a href="/privacidade.html">Política de privacidade</a></p>
+  </div>
+</footer>
+
+<script>
+function filtrar(cat, btn) {
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  const map = {piscina:'piscinas',passeio:'passeios',praia:'praias',restaurante:'restaurantes',noite:'noite'};
+  ['piscinas','passeios','praias','restaurantes','noite'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = (cat === 'todos' || map[cat] === id) ? '' : 'none';
+  });
+  document.querySelectorAll('.info-box').forEach(b => {
+    b.style.display = cat === 'todos' ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>

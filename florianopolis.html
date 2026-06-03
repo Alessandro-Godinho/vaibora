@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia completo Florianópolis 2026 — 42 praias, Jurerê Internacional, Lagoa da Conceição, Ilha do Campeche, trilhas, ostras, surf, Mercado Público e vida noturna. Tudo verificado.">
+  <title>Florianópolis SC — Guia Completo | Vaibora</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8EFW81MN6"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K8EFW81MN6');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--azul:#0a4a7a;--azul-claro:#e0eef8;--verde:#0a6a3a;--verde-claro:#e0f5ea;--areia:#f5e8c8;--laranja:#e85d26;--cinza:#f4f2ee;--texto:#1a1a18;--texto-muted:#6b6b65;--borda:#e0ddd6;--branco:#fafaf8;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'DM Sans',sans-serif;background:var(--branco);color:var(--texto);}
+    nav{position:sticky;top:0;z-index:100;background:var(--branco);border-bottom:1px solid var(--borda);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:56px;}
+    .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#1a6b3c;text-decoration:none;}
+    .logo span{color:var(--laranja);}
+    nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
+    nav a:hover{color:var(--azul);}
+    .hero{background:linear-gradient(150deg,#0a2a5a 0%,#0a4a7a 50%,#0a6a8a 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
+    .hero::before{content:'🌊';position:absolute;top:15px;right:70px;font-size:110px;opacity:0.07;}
+    .hero::after{content:'';position:absolute;bottom:-40px;left:15%;width:280px;height:280px;background:rgba(255,255,255,0.03);border-radius:50%;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero-tag{display:inline-block;background:rgba(255,255,255,0.15);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);}
+    .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
+    .hero h1 span{color:#90d8f0;}
+    .hero p{font-size:1rem;opacity:0.85;line-height:1.7;max-width:520px;margin-bottom:2rem;}
+    .hero-chips{display:flex;gap:8px;flex-wrap:wrap;}
+    .chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:white;font-size:0.8rem;padding:5px 12px;border-radius:20px;}
+    .container{max-width:760px;margin:0 auto;padding:0 1.5rem;}
+    .filtros{background:var(--branco);border-bottom:1px solid var(--borda);padding:0.8rem 1.5rem;position:sticky;top:56px;z-index:90;overflow-x:auto;}
+    .filtros-inner{max-width:760px;margin:0 auto;display:flex;gap:6px;align-items:center;white-space:nowrap;}
+    .fbtn{font-family:'DM Sans',sans-serif;font-size:0.78rem;padding:5px 13px;border-radius:20px;border:1px solid var(--borda);background:white;color:var(--texto-muted);cursor:pointer;transition:all .15s;white-space:nowrap;}
+    .fbtn:hover{border-color:var(--azul);color:var(--azul);}
+    .fbtn.ativo{background:var(--azul);color:white;border-color:var(--azul);}
+    .secao{padding:2.5rem 0 0;}
+    .secao-titulo{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--texto-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:2px solid #90d8f0;display:inline-block;}
+    .card{background:white;border:1px solid var(--borda);border-radius:12px;padding:1.1rem 1.2rem;margin-bottom:10px;transition:border-color .15s,transform .15s;}
+    .card:hover{border-color:var(--azul);transform:translateY(-1px);}
+    .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;}
+    .card-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;color:var(--texto);margin-bottom:3px;}
+    .card-meta{font-size:0.75rem;color:var(--texto-muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+    .estrelas{color:#d4900a;font-size:0.75rem;}
+    .badge{display:inline-block;font-size:0.68rem;font-weight:500;padding:2px 8px;border-radius:20px;}
+    .badge-azul{background:var(--azul-claro);color:var(--azul);}
+    .badge-verde{background:var(--verde-claro);color:var(--verde);}
+    .badge-coral{background:#fde8e0;color:#8a1a0a;}
+    .badge-amber{background:#fef3d0;color:#8a5c00;}
+    .badge-areia{background:#f5e8c8;color:#7a5200;}
+    .badge-gratis{background:var(--verde-claro);color:var(--verde);}
+    .badge-luxo{background:#ffd080;color:#7a3800;font-weight:700;}
+    .badge-surf{background:#e0f0f8;color:#0a3a6b;}
+    .card-preco{font-size:0.85rem;font-weight:500;color:var(--texto);text-align:right;white-space:nowrap;}
+    .preco-dica{font-size:0.65rem;background:var(--verde-claro);color:var(--verde);padding:2px 7px;border-radius:4px;margin-top:3px;display:inline-block;}
+    .card-desc{font-size:0.83rem;color:var(--texto-muted);line-height:1.6;margin-top:8px;}
+    .card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:6px;}
+    .card-endereco{font-size:0.72rem;color:var(--texto-muted);}
+    .btn-maps{font-size:0.72rem;padding:4px 10px;border-radius:6px;background:var(--azul-claro);color:var(--azul);border:none;cursor:pointer;font-weight:500;text-decoration:none;white-space:nowrap;}
+    .btn-maps:hover{background:var(--azul);color:white;}
+    .praias-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:1.5rem 0 1rem;}
+    .ptab{font-size:0.78rem;padding:5px 13px;border-radius:8px;border:1px solid var(--borda);background:white;color:var(--texto-muted);cursor:pointer;transition:all .15s;font-family:'DM Sans',sans-serif;}
+    .ptab.ativo{background:var(--azul);color:white;border-color:var(--azul);}
+    .praias-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:10px;margin-bottom:1rem;}
+    .praia-card{background:white;border:1px solid var(--borda);border-radius:12px;padding:1rem;transition:border-color .15s;}
+    .praia-card:hover{border-color:var(--azul);}
+    .praia-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;margin-bottom:4px;}
+    .praia-desc{font-size:0.78rem;color:var(--texto-muted);line-height:1.5;}
+    .praia-tag{display:inline-block;font-size:0.65rem;padding:2px 7px;border-radius:20px;background:var(--azul-claro);color:var(--azul);margin-top:6px;}
+    .praia-tag-surf{background:#e0f0f8;color:#0a3a6b;}
+    .praia-tag-luxo{background:#ffd080;color:#7a3800;}
+    .praia-tag-familia{background:var(--verde-claro);color:var(--verde);}
+    .praia-tag-trilha{background:#f5e8c8;color:#7a5200;}
+    .extras-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:1rem;}
+    .extra-mini{background:white;border:1px solid var(--borda);border-radius:12px;padding:1rem;transition:border-color .15s;}
+    .extra-mini:hover{border-color:var(--azul);}
+    .extra-emoji{font-size:1.5rem;margin-bottom:6px;display:block;}
+    .extra-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.88rem;margin-bottom:4px;}
+    .extra-desc{font-size:0.77rem;color:var(--texto-muted);line-height:1.5;}
+    .extra-preco{font-size:0.75rem;font-weight:500;color:var(--azul);margin-top:6px;}
+    .epocas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin:0.8rem 0 1rem;}
+    .epoca-card{background:white;border:1px solid var(--borda);border-radius:10px;padding:10px 12px;}
+    .epoca-card.destaque{border:2px solid var(--azul);}
+    .epoca-titulo{font-family:'Syne',sans-serif;font-weight:700;font-size:0.85rem;margin-bottom:2px;}
+    .epoca-sub{font-size:0.7rem;color:var(--texto-muted);line-height:1.4;}
+    .epoca-tag{font-size:0.65rem;color:var(--azul);font-weight:600;margin-bottom:4px;}
+    .info-box{border-radius:12px;padding:1.1rem 1.3rem;margin:1.5rem 0;}
+    .info-box.azul{background:var(--azul-claro);border-left:3px solid var(--azul);}
+    .info-box.verde{background:var(--verde-claro);border-left:3px solid var(--verde);}
+    .info-box.cinza{background:var(--cinza);border-left:3px solid var(--azul);}
+    .info-box.amber{background:#fef8e0;border-left:3px solid #c4960f;}
+    .info-box.coral{background:#fff0ee;border-left:3px solid #c0390f;}
+    .info-box strong{font-family:'Syne',sans-serif;font-size:0.85rem;display:block;margin-bottom:4px;}
+    .info-box.azul strong{color:var(--azul);}
+    .info-box.verde strong{color:var(--verde);}
+    .info-box.cinza strong{color:var(--azul);}
+    .info-box.amber strong{color:#7a5200;}
+    .info-box.coral strong{color:#8a0a0a;}
+    .info-box p{font-size:0.82rem;line-height:1.6;color:var(--texto-muted);}
+    .hoteis-cta{background:linear-gradient(135deg,#0a2a5a 0%,#0a4a7a 100%);border-radius:16px;padding:2rem;margin:2.5rem 0;color:white;text-align:center;}
+    .hoteis-cta h3{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:0.5rem;}
+    .hoteis-cta p{font-size:0.85rem;opacity:0.85;margin-bottom:1.2rem;}
+    .btn-booking{display:inline-block;background:#90d8f0;color:#0a2a5a;font-weight:700;font-size:0.9rem;padding:10px 24px;border-radius:8px;text-decoration:none;transition:opacity .15s;}
+    .btn-booking:hover{opacity:0.9;}
+    footer{background:var(--texto);color:white;padding:2.5rem 1.5rem;margin-top:4rem;}
+    .footer-inner{max-width:760px;margin:0 auto;}
+    .footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;margin-bottom:0.5rem;}
+    .footer-logo span{color:#f5c842;}
+    footer p{font-size:0.78rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-top:0.5rem;}
+    footer a{color:rgba(255,255,255,0.5);text-decoration:underline;}
+    .hidden{display:none!important;}
+    @media(max-width:600px){.hero{padding:3rem 1.2rem 2.5rem;}.praias-grid,.extras-grid,.epocas-grid{grid-template-columns:1fr 1fr;}nav a{display:none;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">vai<span>bora</span>.com.br</a>
+  <div>
+    <a href="#praias">Praias</a>
+    <a href="#passeios">Passeios</a>
+    <a href="#atracoes">Atrações</a>
+    <a href="#restaurantes">Comer</a>
+    <a href="#noite">Noite</a>
+    <a href="#hoteis">Hotéis</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Guia completo · Santa Catarina · Ilha da Magia</div>
+    <h1>Florianópolis, SC<br><span>42 praias, ostras e a Ilha da Magia</span></h1>
+    <p>A capital mais bonita do Brasil reúne 42 praias paradisíacas para todos os perfis, gastronomia açoriana com ostras fresquíssimas, surf de classe mundial, trilhas em Mata Atlântica preservada e uma das melhores cenas noturnas do país.</p>
+    <div class="hero-chips">
+      <div class="chip">🌡 20–28°C em março/abril</div>
+      <div class="chip">🏖 42 praias oficiais</div>
+      <div class="chip">✈️ Aeroporto Internacional</div>
+      <div class="chip">📅 5–7 dias ideais</div>
+      <div class="chip">🦪 Capital das ostras</div>
+    </div>
+  </div>
+</div>
+
+<!-- MELHOR ÉPOCA -->
+<div style="background:#f4f2ee;border-bottom:1px solid #e0ddd6;padding:1rem 1.5rem;">
+  <div style="max-width:760px;margin:0 auto;">
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:0.8rem">Floripa tem uma experiência diferente em cada estação — escolha a sua</div>
+    <div class="epocas-grid">
+      <div class="epoca-card destaque">
+        <div class="epoca-tag">🏆 IDEAL — Equilíbrio perfeito</div>
+        <div class="epoca-titulo">Mar · Abr / Set · Out</div>
+        <div class="epoca-sub">Clima ótimo (18–27°C). Praias tranquilas. Preços menores. Trânsito fluido. Mar ainda bom para banho em mar/abr.</div>
+      </div>
+      <div class="epoca-card">
+        <div class="epoca-tag" style="color:#c0390f">☀️ VERÃO — Praia e agito</div>
+        <div class="epoca-titulo">Dez · Jan · Fev</div>
+        <div class="epoca-sub">Mar quente (25–32°C). Praias cheias. Jurerê badalado. Réveillon épico. Muito caro e lotado.</div>
+      </div>
+      <div class="epoca-card">
+        <div class="epoca-tag" style="color:#0a3a6b">🌊 SURF — Ondas perfeitas</div>
+        <div class="epoca-titulo">Mai · Jun · Jul</div>
+        <div class="epoca-sub">Ondas maiores na Joaquina e Mole. Frio (10–18°C). Trilhas e cultura. Preços baixos.</div>
+      </div>
+      <div class="epoca-card">
+        <div class="epoca-tag" style="color:#7a5200">🦪 OSTRAS — Baixa temporada</div>
+        <div class="epoca-titulo">Jun · Jul · Ago</div>
+        <div class="epoca-sub">Festival das Ostras. Gastronomia excelente. Menos movimento. Preço menor em tudo.</div>
+      </div>
+    </div>
+    <div style="background:var(--azul-claro);border:1px solid #80b8e0;border-radius:8px;padding:8px 12px;margin-top:8px;font-size:0.78rem;color:#0a2a5a">
+      <strong>💡 Por que março/abril são ideais:</strong> o verão acabou mas o mar ainda está quente e acessível. Praias tranquilas, sem o trânsito caótico de janeiro, sem os preços absurdos do Réveillon. Temperatura agradável para trilhas e passeios. A mesma lógica vale para setembro/outubro — primavera com sol crescente e muito menos gente.
+    </div>
+    <div style="font-family:'Syne',sans-serif;font-size:0.8rem;font-weight:700;color:#6b6b65;text-transform:uppercase;letter-spacing:0.5px;margin:1rem 0 0.6rem">Recomendado para</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">👨‍👩‍👧</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Família com crianças</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Canasvieiras · Jurerê Trad. · Daniela · Ingleses</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">💑</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Casal</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Campeche · Ribeirão da Ilha · Santo Antônio de Lisboa</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🏄</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Surfistas e esportistas</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Joaquina · Praia Mole · Brava · Moçambique</div>
+        </div>
+      </div>
+      <div style="background:white;border:1px solid #e0ddd6;border-radius:10px;padding:8px 14px;display:flex;align-items:center;gap:8px">
+        <span style="font-size:1.1rem">🎉</span>
+        <div>
+          <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem">Balada e agito</div>
+          <div style="font-size:0.7rem;color:#6b6b65">Jurerê Internacional · Lagoa da Conceição · Centro</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="filtros">
+  <div class="filtros-inner">
+    <span style="font-size:0.75rem;color:var(--texto-muted);margin-right:4px">Ver:</span>
+    <button class="fbtn ativo" onclick="filtrar('todos',this)">Tudo</button>
+    <button class="fbtn" onclick="filtrar('praia',this)">🏖 Praias</button>
+    <button class="fbtn" onclick="filtrar('passeio',this)">⛵ Passeios</button>
+    <button class="fbtn" onclick="filtrar('atracao',this)">🏛 Atrações</button>
+    <button class="fbtn" onclick="filtrar('restaurante',this)">🍽 Comer</button>
+    <button class="fbtn" onclick="filtrar('noite',this)">🌙 Noite</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- PRAIAS -->
+  <div class="secao" id="praias" data-cat="praia">
+    <div class="secao-titulo">As praias de Florianópolis</div>
+
+    <div class="info-box azul">
+      <strong>🗺️ Floripa tem 4 regiões com personalidades completamente diferentes</strong>
+      <p><strong>Norte</strong> — mar calmo e morno, beach clubs, famílias e baladas (Jurerê, Canasvieiras, Ingleses). <strong>Leste</strong> — ondas fortes, surf, dunas, jovens e vida selvagem (Joaquina, Mole, Campeche). <strong>Sul</strong> — praias preservadas, cultura açoriana, restaurantes de ostra, trilhas (Ribeirão, Pântano do Sul, Lagoinha do Leste). <strong>Centro/Lagoa</strong> — esportes aquáticos, vida boêmia, gastronomia e pôr do sol (Lagoa da Conceição, Barra da Lagoa).</p>
+    </div>
+
+    <div class="praias-tabs">
+      <button class="ptab ativo" onclick="setRegiao('todas',this)">Todas</button>
+      <button class="ptab" onclick="setRegiao('norte',this)">Norte</button>
+      <button class="ptab" onclick="setRegiao('leste',this)">Leste</button>
+      <button class="ptab" onclick="setRegiao('sul',this)">Sul</button>
+      <button class="ptab" onclick="setRegiao('lagoa',this)">Lagoa</button>
+    </div>
+
+    <div class="praias-grid">
+      <!-- NORTE -->
+      <div class="praia-card" data-regiao="norte">
+        <div class="praia-nome">Jurerê Internacional 🏆</div>
+        <div class="praia-desc">A mais badalada do Brasil. Beach clubs com DJs internacionais (P12, Posh, Donna), mansões, mar calmo e 2km de areia clara. Sofisticada e cara — mas impressionante.</div>
+        <span class="praia-tag praia-tag-luxo">Norte · Beach clubs · Luxo</span>
+      </div>
+      <div class="praia-card" data-regiao="norte">
+        <div class="praia-nome">Canasvieiras</div>
+        <div class="praia-desc">Estrutura completa para famílias — mar calmo e morno, barracas, restaurantes e muitos argentinos no verão. A mais tradicional do norte. Boa para crianças.</div>
+        <span class="praia-tag praia-tag-familia">Norte · Família · Mar calmo</span>
+      </div>
+      <div class="praia-card" data-regiao="norte">
+        <div class="praia-nome">Daniela</div>
+        <div class="praia-desc">Mar calmo dos dois lados — o pontal tem praia voltada para o Rio Ratones. Mais tranquila que Canasvieiras. Caminhando à direita tem praias secretas preservadas.</div>
+        <span class="praia-tag praia-tag-familia">Norte · Tranquila · Família</span>
+      </div>
+      <div class="praia-card" data-regiao="norte">
+        <div class="praia-nome">Ingleses</div>
+        <div class="praia-desc">Praia longa, boa estrutura, muito frequentada por famílias. Mar com ondas moderadas. Centro comercial próximo. Boa opção de hospedagem mais acessível no norte.</div>
+        <span class="praia-tag praia-tag-familia">Norte · Família · Estrutura</span>
+      </div>
+      <!-- LESTE -->
+      <div class="praia-card" data-regiao="leste">
+        <div class="praia-nome">Praia da Joaquina 🏄</div>
+        <div class="praia-desc">Ícone do surf em Floripa — ondas de classe mundial, campeonatos internacionais. Dunas enormes para sandboard. Mar frio e agitado. Não indicada para nadar mas imperdível para ver.</div>
+        <span class="praia-tag praia-tag-surf">Leste · Surf · Sandboard</span>
+      </div>
+      <div class="praia-card" data-regiao="leste">
+        <div class="praia-nome">Praia Mole</div>
+        <div class="praia-desc">Mais jovem e boêmia que a Joaquina. Mar agitado e frio. Ponto de encontro de jovens, surfistas, LGBTQIA+ e quem gosta de natureza sem filtro. Água azul deslumbrante.</div>
+        <span class="praia-tag praia-tag-surf">Leste · Jovem · Surf</span>
+      </div>
+      <div class="praia-card" data-regiao="leste">
+        <div class="praia-nome">Campeche</div>
+        <div class="praia-desc">Visual paradisíaco com vista para a Ilha do Campeche. Mar mais forte — ótima para surf. A ilha em frente tem inscrições rupestres de 4.000 anos — acesso por barco (800 pessoas/dia).</div>
+        <span class="praia-tag praia-tag-surf">Leste · Ilha do Campeche</span>
+      </div>
+      <div class="praia-card" data-regiao="leste">
+        <div class="praia-nome">Moçambique</div>
+        <div class="praia-desc">Dentro do Parque Municipal — 13km de areia quase deserta. Pouca infraestrutura propositalmente. Surf, natureza selvagem e o encontro mais incrível com a Mata Atlântica.</div>
+        <span class="praia-tag praia-tag-surf">Leste · Parque · Natureza</span>
+      </div>
+      <!-- SUL -->
+      <div class="praia-card" data-regiao="sul">
+        <div class="praia-nome">Lagoinha do Leste 🥾</div>
+        <div class="praia-desc">A mais espetacular de Floripa — mas exige trilha de 2h (sem carro). Praia completamente isolada, cercada de Mata Atlântica e lagoa de água doce. Uma das mais bonitas do Brasil.</div>
+        <span class="praia-tag praia-tag-trilha">Sul · Trilha 2h · Isolada</span>
+      </div>
+      <div class="praia-card" data-regiao="sul">
+        <div class="praia-nome">Armação e Matadeiro</div>
+        <div class="praia-desc">Vilas de pescadores preservadas. Atmosfera caiçara autêntica. Matadeiro tem acesso por trilha curta ou pelo mar. Restaurantes tradicionais. Ambiente tranquilo e bonito.</div>
+        <span class="praia-tag praia-tag-trilha">Sul · Vila de pescadores</span>
+      </div>
+      <div class="praia-card" data-regiao="sul">
+        <div class="praia-nome">Ribeirão da Ilha</div>
+        <div class="praia-desc">Capital mundial das ostras — o maior produtor de ostras do Brasil. Mar calmo, fazendas marinhas à vista, restaurantes especializados. Paisagem açoriana autêntica. Ótima para almoço especial.</div>
+        <span class="praia-tag praia-tag-trilha">Sul · Ostras · Açoriana</span>
+      </div>
+      <div class="praia-card" data-regiao="sul">
+        <div class="praia-nome">Naufragados</div>
+        <div class="praia-desc">Isolada e preservada, com farol histórico. Acesso por trilha de 3km ou barco. Uma das praias mais virgens da ilha. Fez parte de temporadas do Survivor (No Limite).</div>
+        <span class="praia-tag praia-tag-trilha">Sul · Trilha ou barco</span>
+      </div>
+      <!-- LAGOA -->
+      <div class="praia-card" data-regiao="lagoa">
+        <div class="praia-nome">Barra da Lagoa</div>
+        <div class="praia-desc">Pitoresca vila de pescadores com canal de barcos, mar aberto para surf e acesso fácil às piscinas naturais da Galheta por trilha de 15 min. Uma das mais completas da ilha.</div>
+        <span class="praia-tag">Lagoa · Canal · Trilha Galheta</span>
+      </div>
+      <div class="praia-card" data-regiao="lagoa">
+        <div class="praia-nome">Piscinas Naturais da Galheta</div>
+        <div class="praia-desc">Piscinas de água cristalina entre costões rochosos — trilha de 15 min pela Prainha da Barra. Acesso por trilha tranquila. Mergulho natural excepcional. Praia ao lado é de nudismo.</div>
+        <span class="praia-tag">Lagoa · Piscinas naturais</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PASSEIOS -->
+  <div class="secao" id="passeios" data-cat="passeio">
+    <div class="secao-titulo">Passeios e atividades</div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Ilha do Campeche <span class="badge badge-azul">Patrimônio histórico</span></div>
+          <div class="card-meta">Inscrições rupestres de 4.000 anos · 800 pessoas/dia · Barco da Campeche</div>
+        </div>
+        <div>
+          <div class="card-preco">~R$ 80–120/pessoa</div>
+          <div class="preco-dica">Reserve online — limite diário</div>
+        </div>
+      </div>
+      <div class="card-desc">Uma das experiências mais únicas de Floripa. A ilha preservada à frente da praia do Campeche tem inscrições rupestres de 4.000 anos feitas pelos índios Carijós — patrimônio histórico nacional. Mar cristalino e piscinas naturais para snorkel. Acesso controlado — máximo 800 pessoas por dia. Saída de barco da Praia do Campeche (30 min).</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Saída da Praia do Campeche</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Ilha+do+Campeche+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Passeio de barco — Baleias Franca <span class="badge badge-verde">Julho–Novembro</span></div>
+          <div class="card-meta">Baleias-franca · Saída do sul da ilha · Avistamento garantido</div>
+        </div>
+        <div class="card-preco">~R$ 120–200/pessoa</div>
+      </div>
+      <div class="card-desc">Entre julho e novembro, a baleia-franca-do-sul usa o litoral sul de Floripa para reprodução — a maior concentração de baleias do Brasil. Passeios de barco saindo da Armação, Pântano do Sul e Ribeirão da Ilha. Uma das experiências de vida selvagem mais impressionantes do Sul do país.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Saída do sul da ilha (Armação / Pântano do Sul)</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Praia+da+Armação+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Trilha Lagoinha do Leste <span class="badge badge-amber">Aventura</span></div>
+          <div class="card-meta">2h de trilha · Praia isolada · Lagoa de água doce</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuita</div>
+      </div>
+      <div class="card-desc">A trilha mais recompensadora de Floripa. 2h de caminhada em Mata Atlântica até chegar numa praia completamente isolada com lagoa de água doce. Leve água e comida — não há infraestrutura. Saída pelo fim da Praia do Pântano do Sul. Um dos dias mais memoráveis que Floripa pode oferecer.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Início da trilha no fim do Pântano do Sul</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Trilha+Lagoinha+do+Leste+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Sandboard nas dunas da Joaquina <span class="badge badge-surf">Adrenalina</span></div>
+          <div class="card-meta">Dunas de até 40m · Aluguel de prancha na praia</div>
+        </div>
+        <div class="card-preco">~R$ 30–50 aluguel</div>
+      </div>
+      <div class="card-desc">As dunas da Joaquina são uma das mais impressionantes da costa Sul do Brasil — até 40 metros de altura. O sandboard (ou descida em papelão!) é o programa mais divertido da praia. Disponível o ano todo, mas melhor com ventos leves. Um dos programas mais fotogênicos da ilha.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Praia da Joaquina — Leste da ilha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Dunas+da+Joaquina+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Esportes na Lagoa da Conceição <span class="badge badge-azul">Esportes aquáticos</span></div>
+          <div class="card-meta">Kitesurf · Windsurf · SUP · Wakeboard · Caiaque</div>
+        </div>
+        <div class="card-preco">A partir de R$ 60/hora</div>
+      </div>
+      <div class="card-desc">A Lagoa da Conceição é o centro dos esportes aquáticos de Floripa. Kitesurf e windsurf têm ventos ideais quase o ano todo. SUP, caiaque e wakeboard também disponíveis. A orla da lagoa concentra escolas e aluguel de equipamentos. Combine com a famosa Via Gastronômica da Lagoa.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Lagoa da Conceição — Centro da ilha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Lagoa+da+Conceição+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Aula de surf <span class="badge badge-surf">Para todos os níveis</span></div>
+          <div class="card-meta">Iniciantes · Joaquina · Praia Mole · Brava</div>
+        </div>
+        <div class="card-preco">~R$ 120–200/pessoa</div>
+      </div>
+      <div class="card-desc">Floripa é um dos melhores lugares do Brasil para aprender a surfar — ondas constantes e várias escolas credenciadas. Para iniciantes: aulas em Canasvieiras (mar mais calmo) ou Ingleses. Para intermediários: Joaquina e Praia Mole. Aulas geralmente de 2h com instrutor e equipamento incluso.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Várias praias da ilha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=escola+surf+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="passeio">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Mergulho e snorkel <span class="badge badge-azul">Vida marinha</span></div>
+          <div class="card-meta">Ilha do Campeche · Galheta · Arvoredo</div>
+        </div>
+        <div class="card-preco">~R$ 150–300/pessoa</div>
+      </div>
+      <div class="card-desc">Floripa tem excelentes pontos de mergulho. A Ilha do Campeche tem snorkel incrível nas piscinas naturais. A Reserva Biológica do Arvoredo (a maior área de proteção marinha do Sul do Brasil) oferece mergulho com cavernas, corais e polvos — acesso apenas com operadoras credenciadas.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Ilha do Campeche e Reserva de Arvoredo</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Ilha+do+Campeche+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="secao-titulo" style="margin-top:1.5rem">Mais atividades</div>
+    <div class="extras-grid">
+      <div class="extra-mini">
+        <span class="extra-emoji">🚵</span>
+        <div class="extra-nome">Cicloturismo pela Beira-Mar</div>
+        <div class="extra-desc">A Ciclovia Beira-Mar Norte tem 8km de extensão com vista para a baía. Aluguel de bikes disponível. Ideal ao amanhecer.</div>
+        <div class="extra-preco">~R$ 20–40/hora</div>
+      </div>
+      <div class="extra-mini">
+        <span class="extra-emoji">🪁</span>
+        <div class="extra-nome">Kitesurf na Lagoa</div>
+        <div class="extra-desc">A Lagoa da Conceição tem ventos ideais o ano todo. Aulas para iniciantes disponíveis — uma das melhores escolas do Brasil.</div>
+        <div class="extra-preco">Aula ~R$ 200–300</div>
+      </div>
+      <div class="extra-mini">
+        <span class="extra-emoji">🐳</span>
+        <div class="extra-nome">Avistamento de Baleias</div>
+        <div class="extra-desc">Julho a novembro: baleia-franca-do-sul no litoral sul. Passeios de barco saindo do Pântano do Sul e Armação.</div>
+        <div class="extra-preco">~R$ 120–200</div>
+      </div>
+      <div class="extra-mini">
+        <span class="extra-emoji">🏋️</span>
+        <div class="extra-nome">Slackline e Beach Tennis</div>
+        <div class="extra-desc">Beach tennis tem explosão em Floripa — quadras na orla de várias praias, aluguel de raquetes e torneios frequentes.</div>
+        <div class="extra-preco">~R$ 20–40/hora</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATRAÇÕES -->
+  <div class="secao" id="atracoes" data-cat="atracao">
+    <div class="secao-titulo">Atrações e pontos turísticos</div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Lagoa da Conceição <span class="badge badge-azul">Coração boêmio da ilha</span></div>
+          <div class="card-meta">Esportes · Gastronomia · Pôr do sol · Vida noturna</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">O bairro mais completo de Floripa — reúne esportes aquáticos, a famosa Via Gastronômica com bares e restaurantes, pôr do sol inesquecível sobre a lagoa, e vida noturna agitada. A Canal da Barra da Lagoa — recém-reaberto para navegação — permite ir de barco até a Barra. Centro cultural da ilha.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro da ilha de Florianópolis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Lagoa+da+Conceição+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Mercado Público de Florianópolis <span class="badge badge-amber">Histórico · Gastronomia</span></div>
+          <div class="card-meta">Desde 1851 · Pastel de camarão · Vida noturna · Centro</div>
+        </div>
+        <div class="card-preco badge-gratis">Entrada gratuita</div>
+      </div>
+      <div class="card-desc">O coração histórico e gastronômico do centro de Floripa. Construído em 1851, reúne boxes com frutos do mar frescos, o famoso pastel de camarão, bares animados e artesanato local. À noite vira ponto de encontro badalado com shows ao vivo. A Feirarte acontece às sextas-feiras na praça ao lado.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. Conselheiro Mafra — Centro de Florianópolis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Mercado+Público+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Santo Antônio de Lisboa <span class="badge badge-amber">Vila açoriana</span></div>
+          <div class="card-meta">Casas coloniais · Pôr do sol · Ostras · Artesanato</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">O bairro mais charmoso e preservado de Floripa. Casas coloniais açorianas centenárias, calçamento de pedra portuguesa, pôr do sol sobre a baía de Floripa que é considerado um dos mais bonitos do mundo. Restaurantes de frutos do mar à beira-mar e o Freguesia Oyster Bar para ostras frescas.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Norte da ilha — 20 min do centro</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Santo+Antônio+de+Lisboa+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Ponte Hercílio Luz <span class="badge badge-azul">Cartão-postal</span></div>
+          <div class="card-meta">Única ponte pênsil do Brasil · Caminhada · Vista panorâmica</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">O ícone mais reconhecível de Floripa — a única ponte pênsil do Brasil e uma das poucas do mundo ainda em uso. Construída em 1926, conecta a ilha ao continente. Inaugurada para pedestres e ciclistas, a caminhada sobre a ponte oferece uma das vistas mais bonitas da baía de Floripa.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Beira-Mar Norte — Centro de Florianópolis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Ponte+Hercílio+Luz+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Mirante do Morro da Cruz <span class="badge badge-verde">Vista 360°</span></div>
+          <div class="card-meta">Ponto mais alto · Vista de toda a ilha · Pôr do sol</div>
+        </div>
+        <div class="card-preco badge-gratis">Gratuito</div>
+      </div>
+      <div class="card-desc">O ponto mais alto de Floripa, de onde se vê a ilha inteira — norte, sul, leste e oeste — em 360°. Ao entardecer, ver o sol se pôr sobre a baía e a ponte iluminada é inesquecível. Acesso de carro ou a pé por trilha. Essencial para entender a geografia da ilha.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Morro da Cruz — Centro de Florianópolis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Mirante+Morro+da+Cruz+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Projeto Tamar — Barra da Lagoa <span class="badge badge-verde">Tartarugas</span></div>
+          <div class="card-meta">Museu Aberto · Tartarugas marinhas · Educação ambiental</div>
+        </div>
+        <div class="card-preco">~R$ 20–30</div>
+      </div>
+      <div class="card-desc">O Museu Aberto da Tartaruga Marinha na Barra da Lagoa é um dos mais bonitos do Projeto Tamar no Brasil. Aquários com espécies marinhas, tartarugas em reabilitação e exposição sobre conservação. Complementa perfeitamente uma visita à Barra da Lagoa.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Barra da Lagoa — Florianópolis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Projeto+Tamar+Barra+da+Lagoa+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="atracao">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Fortaleza de São José da Ponta Grossa <span class="badge badge-amber">Histórico</span></div>
+          <div class="card-meta">Séc. XVIII · Restaurada · Vista da baía norte</div>
+        </div>
+        <div class="card-preco">~R$ 15</div>
+      </div>
+      <div class="card-desc">Uma das 3 fortalezas do século XVIII que protegiam Floripa do ataque de piratas. Restaurada e visitável, com exposição sobre a história da colonização açoriana e a defesa da ilha. Vista privilegiada da baía norte. Combine com visita ao Jurerê e Daniela.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Ponta Grossa — Norte da ilha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Fortaleza+Ponta+Grossa+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESTAURANTES -->
+  <div class="secao" id="restaurantes" data-cat="restaurante">
+    <div class="secao-titulo">Restaurantes e gastronomia</div>
+
+    <div class="info-box verde">
+      <strong>🦪 Floripa é a capital brasileira das ostras — coma muito</strong>
+      <p>O Ribeirão da Ilha é o maior produtor de ostras do Brasil — fazendas marinhas cultivam o molusco nas águas limpas do sul da ilha. A ostra de Floripa é fresquíssima, colhida no dia, e servida de dezenas de formas. Além das ostras, a culinária açoriana tem o pastel de camarão, o bolinho de siri, a tainha defumada e o pirão de peixe como ícones.</p>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Ostradamus <span class="badge badge-coral">Referência absoluta em ostras</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Ribeirão da Ilha · Deque sobre o mar</div>
+        </div>
+        <div class="card-preco">~R$ 80–180/pessoa</div>
+      </div>
+      <div class="card-desc">A instituição gastronômica de Floripa. Localizado no Ribeirão da Ilha — o maior produtor de ostras do Brasil — com deque sobre o mar calmo. Ostras fresquíssimas servidas cruas, gratinadas, ao bafo ou em pratos autorais. Vista deslumbrante das fazendas marinhas. Tem decoração temática de barco. Reserve com antecedência — sempre cheio no almoço.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Rod. Baldicero Filomeno, 7640 — Ribeirão da Ilha · Ter–Dom</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Ostradamus+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Freguesia Oyster Bar <span class="badge badge-azul">Ostras em Santo Antônio</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Santo Antônio de Lisboa · Beira-mar</div>
+        </div>
+        <div class="card-preco">~R$ 60–130/pessoa</div>
+      </div>
+      <div class="card-desc">Especialista em ostras no bairro mais charmoso de Floripa — Santo Antônio de Lisboa. Ostras frescas cruas, gratinadas ou ao bafo, mariscos, polvo e camarão. O cenário à beira-mar colonial açoriano é só o toque final perfeito. Ótima opção para combinar gastronomia com passeio cultural.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. Quinze de Novembro, 179 — Santo Antônio de Lisboa</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Freguesia+Oyster+Bar+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Bar do Arante <span class="badge badge-amber">Tradição e bilhetinhos</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Pântano do Sul · Desde 1958</div>
+        </div>
+        <div class="card-preco">~R$ 60–100/pessoa</div>
+      </div>
+      <div class="card-desc">Um dos restaurantes mais tradicionais de Floripa — desde 1958. Famoso pelos "bilhetinhos": as paredes são cobertas de recadinhos de clientes de todo o mundo. Especialidade em tainha grelhada, camarão e frutos do mar com tempero caseiro. Atmosfera de pescador genuína. Leve um bilhetinho para deixar na parede.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. Abelardo Otacílio Gomes, 254 — Pântano do Sul</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Bar+do+Arante+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Rosso — Polvo e frutos do mar <span class="badge badge-azul">Chef autoral</span></div>
+          <div class="card-meta"><span class="estrelas">★★★★★</span> Menu enxuto · Tudo fresquíssimo</div>
+        </div>
+        <div class="card-preco">~R$ 80–160/pessoa</div>
+      </div>
+      <div class="card-desc">Carro-chefe é o polvo preparado no ponto certo em diferentes versões. Chef autodidata Alysson Müller comanda a cozinha com foco em pescados nativos e frutos do mar frescos. Menu enxuto mas tudo de altíssima qualidade. Um dos restaurantes mais aclamados da ilha pelos gourmets.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Florianópolis — confirme localização atual</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Rosso+Restaurante+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="restaurante">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Mercado Público — Pastel de camarão <span class="badge badge-amber">Obrigatório</span></div>
+          <div class="card-meta">Box do Alemão · Box 32 · Frutos do mar acessíveis</div>
+        </div>
+        <div class="card-preco">~R$ 20–60/pessoa</div>
+      </div>
+      <div class="card-desc">Proibido sair de Floripa sem comer um pastel de camarão no Mercado Público. O Box do Alemão e outros boxes servem frutos do mar frescos a preços muito mais acessíveis que os restaurantes formais. O bolinho de siri levemente apimentado é outro clássico. Ambiente animado especialmente à noite.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 R. Conselheiro Mafra — Centro de Florianópolis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Mercado+Público+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOITE -->
+  <div class="secao" id="noite" data-cat="noite">
+    <div class="secao-titulo">Vida noturna</div>
+
+    <div class="info-box azul">
+      <strong>🌙 Floripa tem dois tipos de noite — e são completamente diferentes</strong>
+      <p><strong>Jurerê Internacional no verão:</strong> uma das melhores cenas de beach club e balada do Brasil — P12, Donna, Posh e Milk com DJs internacionais e entradas caríssimas. <strong>Lagoa da Conceição o ano todo:</strong> bares descontraídos, música ao vivo, gastronomia e pôr do sol. O Mercado Público tem noites animadas com shows. Cada perfil encontra a sua Floripa.</p>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Beach clubs de Jurerê Internacional <span class="badge badge-luxo">Top verão</span></div>
+          <div class="card-meta">P12 · Donna · Posh · Milk · Anitta · Alok</div>
+        </div>
+        <div class="card-preco">Entrada R$ 100–500+</div>
+      </div>
+      <div class="card-desc">No verão, Jurerê Internacional tem uma das melhores programações de beach clubs do planeta — P12, Donna, Posh e Milk recebem DJs internacionais e artistas como Anitta e Alok. Ambiente sofisticado, piscinas, open bar e pista de dança na areia. Reserve as mesas com semanas de antecedência no verão.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Jurerê Internacional — Norte da ilha</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Jurerê+Internacional+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Via Gastronômica da Lagoa da Conceição <span class="badge badge-azul">O ano todo</span></div>
+          <div class="card-meta">Bares · Restaurantes · Música ao vivo · Pôr do sol</div>
+        </div>
+      </div>
+      <div class="card-desc">O programa noturno mais consistente de Floripa — funciona o ano todo. A orla da Lagoa da Conceição reúne dezenas de bares e restaurantes com música ao vivo, gastronomia de qualidade e aquela atmosfera boêmia que a ilha tem de melhor. O pôr do sol sobre a lagoa é um espetáculo gratuito todo dia.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Orla da Lagoa da Conceição</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Lagoa+da+Conceição+Via+Gastronômica" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Mercado Público à noite <span class="badge badge-amber">Centro histórico</span></div>
+          <div class="card-meta">Shows ao vivo · Frutos do mar · Animado</div>
+        </div>
+      </div>
+      <div class="card-desc">O Mercado Público ganha vida à noite com shows ao vivo nos boxes, ambiente descontraído e muito animado. Mistura de moradores e turistas. O Box 32 é o mais famoso. Boa opção para quem quer noite animada sem gastar muito. A Feirarte às sextas-feiras na Praça XV de Novembro complementa o programa.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Centro de Florianópolis</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Mercado+Público+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+
+    <div class="card" data-cat="noite">
+      <div class="card-top">
+        <div>
+          <div class="card-nome">Réveillon em Floripa <span class="badge badge-coral">Um dos maiores do Brasil</span></div>
+          <div class="card-meta">Beira-Mar Norte · Jurerê · Festas privadas · Muitos argentinos</div>
+        </div>
+      </div>
+      <div class="card-desc">O Réveillon de Floripa recebe cerca de 3 milhões de pessoas — uma das maiores viradas do Brasil. Queima de fogos na Beira-Mar Norte, festas privadas em Jurerê, shows na Lagoa. Hotel é reservado com meses de antecedência e os preços triplicam. Se for no Réveillon, planeje com pelo menos 3–4 meses de antecedência.</div>
+      <div class="card-footer">
+        <span class="card-endereco">📍 Beira-Mar Norte e Jurerê Internacional</span>
+        <a class="btn-maps" href="https://maps.google.com/?q=Beira+Mar+Norte+Florianópolis" target="_blank">Ver no Maps →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box cinza">
+    <strong>💡 Dica de ouro — como aproveitar Floripa sem estresse</strong>
+    <p>O trânsito de Floripa no verão é caótico — especialmente o acesso às praias do norte. A solução é se hospedar perto das praias que você quer visitar, em vez de cruzar a ilha todo dia. Alugue carro para ter liberdade mas evite as rodovias principais das 10h às 14h no verão. Para praias do sul, estacione no Pântano do Sul e acesse o Matadeiro e a Lagoinha do Leste pela trilha. A Ilha do Campeche esgota as 800 vagas diárias cedo no verão — reserve online no dia anterior.</p>
+  </div>
+
+  <div class="hoteis-cta" id="hoteis">
+    <h3>Onde ficar em Florianópolis?</h3>
+    <p>Hospede-se perto das praias que você quer visitar — a ilha é grande. Jurerê e Canasvieiras para o norte. Lagoa da Conceição para o centro. Campeche e Barra da Lagoa para o leste. No verão, reserve com meses de antecedência.</p>
+    <a class="btn-booking" href="https://www.booking.com/searchresults.pt-br.html?ss=Florianópolis%2C+Santa+Catarina" target="_blank">Ver hotéis disponíveis →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">vai<span>bora</span>.com.br</div>
+    <p>Guias de viagem curados para destinos brasileiros. Conteúdo pesquisado em múltiplas fontes e atualizado regularmente.<br>
+    Este site contém links de afiliados. Se você reservar por aqui, recebo uma comissão sem custo adicional para você.<br>
+    <strong style="color:rgba(255,255,255,0.6)">⚠️ Aviso:</strong> As informações deste site (preços, horários, endereços e disponibilidade) são pesquisadas em fontes públicas e podem estar desatualizadas. O Vaibora não se responsabiliza por alterações, encerramento de estabelecimentos ou divergências em relação ao que for encontrado no local. Sempre confirme diretamente com o estabelecimento antes de visitar.<br>
+    <a href="/privacidade.html">Política de privacidade</a></p>
+  </div>
+</footer>
+
+<script>
+function filtrar(cat, btn) {
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  const map = {praia:'praias',passeio:'passeios',atracao:'atracoes',restaurante:'restaurantes',noite:'noite'};
+  ['praias','passeios','atracoes','restaurantes','noite'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = (cat === 'todos' || map[cat] === id) ? '' : 'none';
+  });
+  document.querySelectorAll('.info-box').forEach(b => {
+    b.style.display = cat === 'todos' ? '' : 'none';
+  });
+}
+function setRegiao(regiao, btn) {
+  document.querySelectorAll('.ptab').forEach(b => b.classList.remove('ativo'));
+  btn.classList.add('ativo');
+  document.querySelectorAll('.praia-card[data-regiao]').forEach(c => {
+    c.classList.toggle('hidden', regiao !== 'todas' && c.dataset.regiao !== regiao);
+  });
+}
+</script>
+</body>
+</html>
