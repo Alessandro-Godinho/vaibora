@@ -22,7 +22,7 @@
   <style>
     :root {
       --verde:#1a6b3c; --amarelo:#e85d26; --azul:#0a3a6b; --texto:#1a1a18;
-      --texto-muted:#6b6b65; --borda:#e0ddd6; --cinza:#f4f2ee; --branco:#fafaf8;
+      --texto-muted:#6b6b65; --borda:#e0ddd6; --cinza:#f0ece4; --branco:#faf7f2;
       --laranja:#e85d26;
     }
     *{box-sizing:border-box;margin:0;padding:0;}
@@ -35,19 +35,28 @@
     nav a.nav-link{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
     @media(max-width:600px){nav a.nav-link{display:none;}}
 
-    /* HERO */
-    .hero{background:linear-gradient(135deg,#0d2d1a 0%,#1a4a2a 60%,#0a2a4a 100%);color:white;padding:4rem 2rem 3.5rem;position:relative;overflow:hidden;text-align:center;}
-    .hero::before{content:'';position:absolute;top:-80px;right:-80px;width:320px;height:320px;background:#e85d26;opacity:0.07;border-radius:50%;}
-    .hero::after{content:'';position:absolute;bottom:-60px;left:-60px;width:260px;height:260px;background:#1a6b3c;opacity:0.15;border-radius:50%;}
+    /* HERO COM FOTO */
+    .hero{
+      position:relative;overflow:hidden;text-align:center;color:white;
+      padding:5rem 2rem 4rem;
+      background:url('img/fernando-de-noronha.jpg') center 30%/cover no-repeat;
+    }
+    .hero::before{
+      content:'';position:absolute;inset:0;
+      background:linear-gradient(to bottom,rgba(5,20,12,0.60) 0%,rgba(5,20,12,0.75) 100%);
+    }
+    .hero::after{display:none;}
     .hero-inner{max-width:640px;margin:0 auto;position:relative;z-index:1;}
     .hero-tag{display:inline-block;background:var(--amarelo);color:white;font-size:0.72rem;font-weight:700;padding:4px 14px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.6px;text-transform:uppercase;}
-    .hero h1{font-family:'Syne',sans-serif;font-size:clamp(1.9rem,5vw,3rem);font-weight:800;line-height:1.1;margin-bottom:0.9rem;}
+    .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:0.9rem;text-shadow:0 2px 8px rgba(0,0,0,0.4);}
     .hero h1 em{color:var(--amarelo);font-style:normal;}
-    .hero p{font-size:0.95rem;opacity:0.75;line-height:1.7;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto;}
+    .hero p{font-size:0.95rem;opacity:0.88;line-height:1.7;margin-bottom:1.6rem;max-width:480px;margin-left:auto;margin-right:auto;text-shadow:0 1px 4px rgba(0,0,0,0.3);}
+    .hero-cta{display:inline-block;background:var(--amarelo);color:white;font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;padding:12px 28px;border-radius:30px;text-decoration:none;margin-bottom:2.2rem;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 16px rgba(232,93,38,0.4);}
+    .hero-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,93,38,0.5);}
     .hero-stats{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;}
     .hero-stat{text-align:center;}
     .hero-stat-n{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--amarelo);}
-    .hero-stat-l{font-size:0.72rem;opacity:0.6;margin-top:1px;}
+    .hero-stat-l{font-size:0.72rem;opacity:0.75;margin-top:1px;}
 
     /* CONTROLES — busca + filtros */
     .controles{background:white;border-bottom:2px solid var(--borda);padding:1rem 1.5rem;position:sticky;top:56px;z-index:100;}
@@ -74,10 +83,10 @@
 
     /* SEÇÕES REGIONAIS */
     .container{max-width:960px;margin:0 auto;padding:0 1.5rem 3rem;}
-    .regiao-secao{margin-top:2rem;}
-    .regiao-titulo{display:flex;align-items:center;gap:10px;margin-bottom:1rem;padding-bottom:0.6rem;border-bottom:2px solid var(--borda);}
+    .regiao-secao{margin-top:2.5rem;}
+    .regiao-titulo{display:flex;align-items:center;gap:10px;margin-bottom:1rem;padding-bottom:0.7rem;border-bottom:2px solid transparent;border-image:linear-gradient(to right,var(--verde),var(--borda)) 1;}
     .regiao-emoji{font-size:1.2rem;}
-    .regiao-nome{font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--texto-muted);}
+    .regiao-nome{font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--texto);}
     .regiao-count{font-size:0.72rem;color:var(--texto-muted);margin-left:auto;}
 
     /* CARDS */
@@ -110,14 +119,15 @@
     .vazio p{font-size:0.85rem;}
 
     /* EM BREVE */
-    .embreve-secao{background:var(--cinza);border-radius:14px;padding:1.5rem;margin-top:2.5rem;}
-    .embreve-titulo{font-family:'Syne',sans-serif;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--texto-muted);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--borda);}
+    .embreve-secao{background:linear-gradient(135deg,#1a1a18 0%,#2a2a26 100%);border-radius:14px;padding:1.5rem;margin-top:2.5rem;}
+    .embreve-titulo{font-family:'Syne',sans-serif;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:rgba(255,255,255,0.45);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(255,255,255,0.08);}
     .embreve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
     @media(max-width:600px){.embreve-grid{grid-template-columns:1fr 1fr;}}
-    .em-breve{background:white;border:1px solid var(--borda);border-radius:10px;padding:0.8rem;display:flex;align-items:flex-start;gap:10px;opacity:0.7;}
-    .em-breve-emoji{font-size:1.3rem;flex-shrink:0;}
-    .em-breve-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem;}
-    .em-breve-tag{font-size:0.68rem;color:var(--texto-muted);margin-top:2px;line-height:1.4;}
+    .em-breve{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:0.9rem;display:flex;align-items:flex-start;gap:10px;transition:background .2s;}
+    .em-breve:hover{background:rgba(255,255,255,0.09);}
+    .em-breve-emoji{font-size:1.6rem;flex-shrink:0;opacity:0.7;}
+    .em-breve-nome{font-family:'Syne',sans-serif;font-weight:700;font-size:0.82rem;color:rgba(255,255,255,0.75);}
+    .em-breve-tag{font-size:0.68rem;color:rgba(255,255,255,0.35);margin-top:2px;line-height:1.4;}
 
     /* SOBRE + FOOTER */
     .sobre{background:var(--texto);color:white;padding:2.5rem 1.5rem;margin-top:0.5rem;}
@@ -149,6 +159,7 @@
     <div class="hero-tag">Guia de viagem · Brasil</div>
     <h1>O guia de viagem<br>que você <em>precisava</em></h1>
     <p>Preços reais pesquisados, atrações verificadas e dicas práticas de quem conhece cada destino.</p>
+    <a href="#destinos" class="hero-cta">Explorar destinos →</a>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="hero-stat-n">42</div>
