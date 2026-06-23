@@ -34,8 +34,12 @@
     .logo span{color:var(--laranja);}
     nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
     nav a:hover{color:var(--verde);}
-    .hero{background:linear-gradient(150deg,#0a2a0a 0%,#1a5a1a 50%,#3a7a2a 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
-    .hero::before{content:'🐆';position:absolute;top:15px;right:60px;font-size:110px;opacity:0.08;}
+    .hero{position:relative;color:white;padding:5rem 2rem 4rem;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(150deg,rgba(10,42,10,0.72) 0%,rgba(26,90,26,0.55) 60%,rgba(58,122,42,0.45) 100%);z-index:1;}
+    .photo-credit{position:absolute;bottom:8px;right:10px;z-index:3;font-size:0.65rem;color:rgba(255,255,255,0.7);}
+    .photo-credit a{color:rgba(255,255,255,0.7);text-decoration:none;}
+    .photo-credit a:hover{color:white;}
     .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
     .hero-tag{display:inline-block;background:rgba(255,255,255,0.15);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);}
     .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
@@ -154,8 +158,22 @@
 
 
 <div class="hero">
-  <div class="hero-inner">
+  <img class="hero-bg" src="img/pantanal.jpg" alt="Vitórias-régias flutuando em lagoa do Pantanal com vegetação exuberante e serra ao fundo" loading="eager" fetchpriority="high">
+  <div class="hero-overlay"></div>
+  <span class="photo-credit">📷 <a href="https://flickr.com/photos/rosanetur/" target="_blank" rel="noopener">Rosanetur</a> · CC BY 2.0</span>
+  <div class="hero-inner" style="position:relative;z-index:2;">
     <div class="hero-tag">Guia completo · Mato Grosso e Mato Grosso do Sul · UNESCO</div>
+    <h1>Pantanal, MT/MS<br><span>O maior santuário de vida selvagem do planeta</span></h1>
+    <p>150.000 km² de planície inundada sazonalmente com a maior concentração de fauna selvagem do mundo. Onças pintadas, 650 espécies de aves, jacarés, antas, ariranhas e a natureza mais bruta e honesta que o Brasil tem a oferecer.</p>
+    <div class="hero-chips">
+      <div class="chip">🐆 Onça pintada</div>
+      <div class="chip">🌍 Patrimônio UNESCO</div>
+      <div class="chip">🐊 650 esp. de aves</div>
+      <div class="chip">📅 5–7 dias ideais</div>
+      <div class="chip">🛥 Safári de barco</div>
+    </div>
+  </div>
+</div>
 
 <!-- Índice do guia -->
 <div style="background:white;border-bottom:1px solid #e0ddd6;padding:0.9rem 1.5rem;">
@@ -168,17 +186,6 @@
       <a href="#dormir" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Onde ficar</a>
       <a href="#como-ir" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Como ir</a>
       <a href="#faq" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">❓ Perguntas frequentes</a>
-    </div>
-  </div>
-</div>
-    <h1>Pantanal, MT/MS<br><span>O maior santuário de vida selvagem do planeta</span></h1>
-    <p>150.000 km² de planície inundada sazonalmente com a maior concentração de fauna selvagem do mundo. Onças pintadas, 650 espécies de aves, jacarés, antas, ariranhas e a natureza mais bruta e honesta que o Brasil tem a oferecer.</p>
-    <div class="hero-chips">
-      <div class="chip">🐆 Onça pintada</div>
-      <div class="chip">🌍 Patrimônio UNESCO</div>
-      <div class="chip">🐊 650 esp. de aves</div>
-      <div class="chip">📅 5–7 dias ideais</div>
-      <div class="chip">🛥 Safári de barco</div>
     </div>
   </div>
 </div>

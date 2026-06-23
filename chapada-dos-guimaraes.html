@@ -32,9 +32,13 @@
     .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#1a6b3c;text-decoration:none;}
     .logo span{color:#e85d26;}
     nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
-    .hero{background:linear-gradient(135deg,#2a1800 0%,#6a4010 40%,#1a4a2a 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
-    .hero::before{content:'🦜';position:absolute;top:10px;right:50px;font-size:120px;opacity:0.08;}
-    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero{position:relative;color:white;padding:5rem 2rem 4rem;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:0;}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(42,24,0,0.72) 0%,rgba(106,64,16,0.55) 40%,rgba(26,74,42,0.50) 100%);z-index:1;}
+    .photo-credit{position:absolute;bottom:8px;right:10px;z-index:3;font-size:0.65rem;color:rgba(255,255,255,0.7);}
+    .photo-credit a{color:rgba(255,255,255,0.7);text-decoration:none;}
+    .photo-credit a:hover{color:white;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:2;}
     .hero-tag{display:inline-block;background:rgba(255,255,255,0.15);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);}
     .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
     .hero h1 span{color:#fcd34d;}
@@ -129,8 +133,22 @@
 
 
 <div class="hero">
+  <img class="hero-bg" src="img/chapada-dos-guimaraes.jpg" alt="Vista aérea da Cachoeira Véu de Noiva na Chapada dos Guimarães, Mato Grosso, com vegetação de cerrado ao redor" loading="eager" fetchpriority="high">
+  <div class="hero-overlay"></div>
+  <span class="photo-credit">📷 <a href="https://www.flickr.com/photos/mturdestinos/" target="_blank" rel="noopener">MTur Destinos</a> · Domínio público</span>
   <div class="hero-inner">
     <div class="hero-tag">🏔 Mato Grosso · Parque Nacional · 70km de Cuiabá</div>
+    <h1>Chapada dos<br><span>Guimarães</span></h1>
+    <p>Cerrado elevado com cachoeiras de 86m, cânions de arenito vermelho, araras vermelhas e o Centro Geodésico da América do Sul. Tudo isso a 70 km de Cuiabá — e com horários que você precisa respeitar para entrar.</p>
+    <div class="hero-chips">
+      <div class="chip">💧 Véu de Noiva 86m</div>
+      <div class="chip">🦜 Araras vermelhas</div>
+      <div class="chip">🪨 Cidade de Pedra</div>
+      <div class="chip">🌍 Centro Geodésico</div>
+      <div class="chip">⚠️ Entrada só até 12h</div>
+    </div>
+  </div>
+</div>
 
 <!-- Índice do guia -->
 <div style="background:white;border-bottom:1px solid #e0ddd6;padding:0.9rem 1.5rem;">
@@ -143,17 +161,6 @@
       <a href="#comer" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Onde comer</a>
       <a href="#dormir" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Onde ficar</a>
       <a href="#faq" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">❓ Perguntas frequentes</a>
-    </div>
-  </div>
-</div>
-    <h1>Chapada dos<br><span>Guimarães</span></h1>
-    <p>Cerrado elevado com cachoeiras de 86m, cânions de arenito vermelho, araras vermelhas e o Centro Geodésico da América do Sul. Tudo isso a 70 km de Cuiabá — e com horários que você precisa respeitar para entrar.</p>
-    <div class="hero-chips">
-      <div class="chip">💧 Véu de Noiva 86m</div>
-      <div class="chip">🦜 Araras vermelhas</div>
-      <div class="chip">🪨 Cidade de Pedra</div>
-      <div class="chip">🌍 Centro Geodésico</div>
-      <div class="chip">⚠️ Entrada só até 12h</div>
     </div>
   </div>
 </div>

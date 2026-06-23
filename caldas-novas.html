@@ -50,10 +50,13 @@
     .logo span{color:var(--laranja);}
     nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
     nav a:hover{color:var(--azul);}
-    .hero{background:linear-gradient(135deg,#c0390f 0%,#e85d26 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
-    .hero::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;background:rgba(255,255,255,0.1);border-radius:50%;}
-    .hero::after{content:'';position:absolute;bottom:-40px;left:20%;width:250px;height:250px;background:rgba(255,200,100,0.1);border-radius:50%;}
-    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero{position:relative;color:white;padding:5rem 2rem 4rem;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:0;}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(192,57,15,0.72) 0%,rgba(232,93,38,0.55) 100%);z-index:1;}
+    .photo-credit{position:absolute;bottom:8px;right:10px;z-index:3;font-size:0.65rem;color:rgba(255,255,255,0.7);}
+    .photo-credit a{color:rgba(255,255,255,0.7);text-decoration:none;}
+    .photo-credit a:hover{color:white;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:2;}
     .hero-tag{display:inline-block;background:rgba(255,255,255,0.2);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.3);}
     .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
     .hero h1 span{color:#ffd080;}
@@ -168,8 +171,22 @@
 
 
 <div class="hero">
+  <img class="hero-bg" src="img/caldas-novas.jpg" alt="Piscina termal com fonte e palmeiras em parque aquático de Caldas Novas, Goiás" loading="eager" fetchpriority="high">
+  <div class="hero-overlay"></div>
+  <span class="photo-credit">📷 <a href="https://www.flickr.com/photos/rosanetur/" target="_blank" rel="noopener">Rosanetur</a> · CC BY 2.0</span>
   <div class="hero-inner">
     <div class="hero-tag">Guia completo · Goiás · Maior estância hidrotermal do mundo</div>
+    <h1>Caldas Novas, GO<br><span>Águas quentes o ano inteiro</span></h1>
+    <p>A maior estância hidrotermal do mundo abriga águas que brotam naturalmente a até 57°C. Parques aquáticos épicos, trilhas no cerrado, culinária goiana e uma noite agitada com forró e sertanejo.</p>
+    <div class="hero-chips">
+      <div class="chip">🌡 20–27°C em junho</div>
+      <div class="chip">♨️ Água termal até 57°C</div>
+      <div class="chip">🚗 170km de Goiânia · 330km de Brasília</div>
+      <div class="chip">📅 3–5 dias ideais</div>
+      <div class="chip">👨‍👩‍👧 Família · Casal · Grupos</div>
+    </div>
+  </div>
+</div>
 
 <!-- Índice do guia -->
 <div style="background:white;border-bottom:1px solid #e0ddd6;padding:0.9rem 1.5rem;">
@@ -182,17 +199,6 @@
       <a href="#comer" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Onde comer</a>
       <a href="#dormir" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Onde ficar</a>
       <a href="#faq" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">❓ Perguntas frequentes</a>
-    </div>
-  </div>
-</div>
-    <h1>Caldas Novas, GO<br><span>Águas quentes o ano inteiro</span></h1>
-    <p>A maior estância hidrotermal do mundo abriga águas que brotam naturalmente a até 57°C. Parques aquáticos épicos, trilhas no cerrado, culinária goiana e uma noite agitada com forró e sertanejo.</p>
-    <div class="hero-chips">
-      <div class="chip">🌡 20–27°C em junho</div>
-      <div class="chip">♨️ Água termal até 57°C</div>
-      <div class="chip">🚗 170km de Goiânia · 330km de Brasília</div>
-      <div class="chip">📅 3–5 dias ideais</div>
-      <div class="chip">👨‍👩‍👧 Família · Casal · Grupos</div>
     </div>
   </div>
 </div>

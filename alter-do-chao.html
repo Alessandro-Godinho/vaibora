@@ -34,9 +34,13 @@
     .logo span{color:var(--laranja);}
     nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
     nav a:hover{color:var(--azul);}
-    .hero{background:linear-gradient(150deg,#001a3a 0%,#0a4a8a 50%,#0a5a20 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
-    .hero::before{content:'🌊';position:absolute;top:10px;right:55px;font-size:120px;opacity:0.07;}
-    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero{position:relative;color:white;padding:5rem 2rem 4rem;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;z-index:0;}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(150deg,rgba(0,26,58,0.65) 0%,rgba(10,74,138,0.45) 50%,rgba(10,90,32,0.42) 100%);z-index:1;}
+    .photo-credit{position:absolute;bottom:8px;right:10px;z-index:3;font-size:0.65rem;color:rgba(255,255,255,0.7);}
+    .photo-credit a{color:rgba(255,255,255,0.7);text-decoration:none;}
+    .photo-credit a:hover{color:white;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:2;}
     .hero-tag{display:inline-block;background:rgba(255,255,255,0.15);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);}
     .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
     .hero h1 span{color:#80e8c0;}
@@ -147,8 +151,22 @@
 
 
 <div class="hero">
+  <img class="hero-bg" src="img/alter-do-chao.jpg" alt="Pôr do sol sobre as águas esmeralda do Rio Tapajós em Alter do Chão, Pará" loading="eager" fetchpriority="high">
+  <div class="hero-overlay"></div>
+  <span class="photo-credit">📷 <a href="https://www.flickr.com/photos/125958634@N07/" target="_blank" rel="noopener">Arakin Monteiro</a> · CC BY 2.0</span>
   <div class="hero-inner">
     <div class="hero-tag">Guia completo · Pará · Rio Tapajós · Caribe Amazônico</div>
+    <h1>Alter do Chão, PA<br><span>Praias de água doce na floresta amazônica</span></h1>
+    <p>Uma vila ribeirinha a 30km de Santarém onde praias de areia branca surgem no meio da floresta amazônica, banhadas pelas águas transparentes e mornas do Rio Tapajós. A Ilha do Amor, o Lago Verde, a Floresta Encantada e o pôr do sol sobre o rio — Alter do Chão é um lugar que não parece real até você estar dentro.</p>
+    <div class="hero-chips">
+      <div class="chip">🏖 Ilha do Amor</div>
+      <div class="chip">💚 Lago Verde</div>
+      <div class="chip">🌳 Floresta Encantada</div>
+      <div class="chip">✈️ Voo para Santarém</div>
+      <div class="chip">📅 3–5 dias ideais</div>
+    </div>
+  </div>
+</div>
 
 <!-- Índice do guia -->
 <div style="background:white;border-bottom:1px solid #e0ddd6;padding:0.9rem 1.5rem;">
@@ -161,17 +179,6 @@
       <a href="#comer" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Onde comer</a>
       <a href="#hoteis" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Onde ficar</a>
       <a href="#faq" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">❓ Perguntas frequentes</a>
-    </div>
-  </div>
-</div>
-    <h1>Alter do Chão, PA<br><span>Praias de água doce na floresta amazônica</span></h1>
-    <p>Uma vila ribeirinha a 30km de Santarém onde praias de areia branca surgem no meio da floresta amazônica, banhadas pelas águas transparentes e mornas do Rio Tapajós. A Ilha do Amor, o Lago Verde, a Floresta Encantada e o pôr do sol sobre o rio — Alter do Chão é um lugar que não parece real até você estar dentro.</p>
-    <div class="hero-chips">
-      <div class="chip">🏖 Ilha do Amor</div>
-      <div class="chip">💚 Lago Verde</div>
-      <div class="chip">🌳 Floresta Encantada</div>
-      <div class="chip">✈️ Voo para Santarém</div>
-      <div class="chip">📅 3–5 dias ideais</div>
     </div>
   </div>
 </div>

@@ -24,9 +24,13 @@
     nav{position:sticky;top:0;z-index:100;background:var(--branco);border-bottom:1px solid var(--borda);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:56px;}
     .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#1a6b3c;text-decoration:none;}.logo span{color:#e85d26;}
     nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
-    .hero{background:linear-gradient(135deg,#0a2a0a 0%,#1a5a1a 55%,#2a3a00 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
-    .hero::before{content:'💧';position:absolute;top:10px;right:50px;font-size:120px;opacity:0.08;}
-    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero{position:relative;color:white;padding:5rem 2rem 4rem;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:0;}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,42,10,0.70) 0%,rgba(26,90,26,0.52) 55%,rgba(42,58,0,0.48) 100%);z-index:1;}
+    .photo-credit{position:absolute;bottom:8px;right:10px;z-index:3;font-size:0.65rem;color:rgba(255,255,255,0.7);}
+    .photo-credit a{color:rgba(255,255,255,0.7);text-decoration:none;}
+    .photo-credit a:hover{color:white;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:2;}
     .hero-tag{display:inline-block;background:rgba(255,255,255,0.15);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);}
     .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
     .hero h1 span{color:var(--acento);}
@@ -108,8 +112,22 @@
 
 
 <div class="hero">
+  <img class="hero-bg" src="img/chapada-dos-veadeiros.jpg" alt="Rio de águas esmeralda entre paredões de pedra negra na Chapada dos Veadeiros, Goiás" loading="eager" fetchpriority="high">
+  <div class="hero-overlay"></div>
+  <span class="photo-credit">📷 <a href="https://www.flickr.com/photos/14117112@N04/" target="_blank" rel="noopener">Ricardo Pipo</a> · CC BY-SA 2.0</span>
   <div class="hero-inner">
     <div class="hero-tag">🌿 Goiás · Cerrado · Patrimônio Mundial UNESCO</div>
+    <h1>Chapada dos Veadeiros<br><span>Cerrado, cristais e cachoeiras</span></h1>
+    <p>Rochas com 1,8 bilhão de anos, a maior concentração de nascentes do Brasil, cachoeiras de água tão cristalina que parece azul e um cerrado que sobreviveu intacto quando todo o Brasil central foi desmatado. A Chapada dos Veadeiros é o destino de ecoturismo mais completo do país — e ainda um segredo para a maioria dos brasileiros.</p>
+    <div class="hero-chips">
+      <div class="chip">💧 Cachoeiras cristalinas</div>
+      <div class="chip">🌙 Vale da Lua</div>
+      <div class="chip">🌿 Cerrado preservado</div>
+      <div class="chip">🌍 UNESCO</div>
+      <div class="chip">🔮 Cristais e energia</div>
+    </div>
+  </div>
+</div>
 
 <!-- Índice do guia -->
 <div style="background:white;border-bottom:1px solid #e0ddd6;padding:0.9rem 1.5rem;">
@@ -122,17 +140,6 @@
       <a href="#comer" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Onde comer</a>
       <a href="#dormir" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Onde ficar</a>
       <a href="#faq" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">❓ Perguntas frequentes</a>
-    </div>
-  </div>
-</div>
-    <h1>Chapada dos Veadeiros<br><span>Cerrado, cristais e cachoeiras</span></h1>
-    <p>Rochas com 1,8 bilhão de anos, a maior concentração de nascentes do Brasil, cachoeiras de água tão cristalina que parece azul e um cerrado que sobreviveu intacto quando todo o Brasil central foi desmatado. A Chapada dos Veadeiros é o destino de ecoturismo mais completo do país — e ainda um segredo para a maioria dos brasileiros.</p>
-    <div class="hero-chips">
-      <div class="chip">💧 Cachoeiras cristalinas</div>
-      <div class="chip">🌙 Vale da Lua</div>
-      <div class="chip">🌿 Cerrado preservado</div>
-      <div class="chip">🌍 UNESCO</div>
-      <div class="chip">🔮 Cristais e energia</div>
     </div>
   </div>
 </div>

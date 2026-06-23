@@ -34,9 +34,13 @@
     .logo span{color:var(--laranja);}
     nav a{font-size:0.85rem;color:var(--texto-muted);text-decoration:none;margin-left:1.2rem;}
     nav a:hover{color:var(--verde);}
-    .hero{background:linear-gradient(150deg,#001a05 0%,#0a3a10 50%,#003a30 100%);color:white;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
-    .hero::before{content:'🦜';position:absolute;top:15px;right:60px;font-size:110px;opacity:0.08;}
-    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:1;}
+    .hero{position:relative;color:white;padding:5rem 2rem 4rem;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:0;}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(150deg,rgba(0,26,5,0.70) 0%,rgba(10,58,16,0.52) 50%,rgba(0,58,48,0.48) 100%);z-index:1;}
+    .photo-credit{position:absolute;bottom:8px;right:10px;z-index:3;font-size:0.65rem;color:rgba(255,255,255,0.7);}
+    .photo-credit a{color:rgba(255,255,255,0.7);text-decoration:none;}
+    .photo-credit a:hover{color:white;}
+    .hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:2;}
     .hero-tag{display:inline-block;background:rgba(255,255,255,0.15);color:white;font-size:0.75rem;font-weight:500;padding:4px 12px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);}
     .hero h1{font-family:'Syne',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:1rem;}
     .hero h1 span{color:#80f090;}
@@ -149,8 +153,22 @@
 
 
 <div class="hero">
+  <img class="hero-bg" src="img/amazonia.jpg" alt="Vista aérea do Lago Tarumã em Manaus, Amazonas, com floresta amazônica densa e casa flutuante" loading="eager" fetchpriority="high">
+  <div class="hero-overlay"></div>
+  <span class="photo-credit">📷 Ana Claudia Jatahy · <a href="https://www.flickr.com/photos/mturdestinos/" target="_blank" rel="noopener">MTUR</a> · Domínio público</span>
   <div class="hero-inner">
     <div class="hero-tag">Guia completo · Amazonas · Manaus · A maior floresta do planeta</div>
+    <h1>Amazônia, AM<br><span>Selva, botos e o fim do mundo verde</span></h1>
+    <p>5,5 milhões de km² de floresta tropical — o pulmão do planeta. O Rio Negro encontra o Solimões e os dois correm lado a lado por 6km sem se misturar. Teatro Amazonas dourado no coração de Manaus. Botos rosa que nadam entre os visitantes. Jacarés à luz da lanterna. A Amazônia é a viagem mais transformadora que o Brasil oferece.</p>
+    <div class="hero-chips">
+      <div class="chip">🌊 Encontro das Águas</div>
+      <div class="chip">🐬 Botos rosa</div>
+      <div class="chip">🏛 Teatro Amazonas</div>
+      <div class="chip">✈️ Aeroporto MAO</div>
+      <div class="chip">📅 4–7 dias ideais</div>
+    </div>
+  </div>
+</div>
 
 <!-- Índice do guia -->
 <div style="background:white;border-bottom:1px solid #e0ddd6;padding:0.9rem 1.5rem;">
@@ -163,17 +181,6 @@
       <a href="#como-ir" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Como ir</a>
       <a href="#hoteis" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">Onde ficar</a>
       <a href="#faq" style="font-size:0.78rem;padding:4px 12px;border-radius:20px;background:#f4f2ee;color:#1a1a18;text-decoration:none;white-space:nowrap;">❓ Perguntas frequentes</a>
-    </div>
-  </div>
-</div>
-    <h1>Amazônia, AM<br><span>Selva, botos e o fim do mundo verde</span></h1>
-    <p>5,5 milhões de km² de floresta tropical — o pulmão do planeta. O Rio Negro encontra o Solimões e os dois correm lado a lado por 6km sem se misturar. Teatro Amazonas dourado no coração de Manaus. Botos rosa que nadam entre os visitantes. Jacarés à luz da lanterna. A Amazônia é a viagem mais transformadora que o Brasil oferece.</p>
-    <div class="hero-chips">
-      <div class="chip">🌊 Encontro das Águas</div>
-      <div class="chip">🐬 Botos rosa</div>
-      <div class="chip">🏛 Teatro Amazonas</div>
-      <div class="chip">✈️ Aeroporto MAO</div>
-      <div class="chip">📅 4–7 dias ideais</div>
     </div>
   </div>
 </div>
