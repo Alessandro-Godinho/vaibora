@@ -379,4 +379,5 @@
 <script>
 function filtrar(cat,btn){document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('ativo'));btn.classList.add('ativo');document.querySelectorAll('[data-cat]').forEach(el=>{if(cat==='tudo'){el.style.display='';}else{el.style.display=el.getAttribute('data-cat').includes(cat)?'':'none';}});}
 </script>
+<script src="/hotels-rec.js"></script>
 </body></html>
