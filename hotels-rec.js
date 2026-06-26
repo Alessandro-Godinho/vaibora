@@ -63,10 +63,10 @@
     },
     'porto-de-galinhas': {
       t: 'Onde Ficar em Porto de Galinhas',
-      s: 'Centro de Porto de Galinhas para os arrecifes · Muro Alto para resorts all-inclusive · Maracaípe para surf',
-      eco: { n:'Pousada dos Girassóis', st:3, nt:'8.4', b:'Centro de Porto de Galinhas', p:'A partir de R$ 200/noite', f:['Piscina','Café da manhã','A 300m dos arrecifes'], d:'Pousada aconchegante no coração de Porto de Galinhas, a poucos passos das jangadas para os arrecifes naturais.' },
-      mid: { n:'Vila Galé Marés', st:4, nt:'8.8', b:'Muro Alto', p:'A partir de R$ 580/noite', f:['Frente ao mar','All-inclusive disponível','Múltiplas piscinas','Esportes aquáticos'], d:'Resort à beira-mar em Muro Alto com acesso direto à praia e estrutura completa de lazer. Excelente para famílias.' },
-      lux: { n:'Nannai Resort & Spa', st:5, nt:'9.5', b:'Muro Alto', p:'A partir de R$ 1.800/noite', f:['Bangalôs privativos','Piscinas particulares','SPA premiado','Gastronomia de autor'], d:'Eleito diversas vezes o melhor resort do Brasil, com bangalôs exclusivos, piscinas privadas e experiência de altíssimo padrão frente ao mar de Muro Alto.' }
+      s: 'Centro de Porto de Galinhas para os arrecifes · Praia do Cupe para hotéis beira-mar · Muro Alto para resorts exclusivos',
+      eco: { n:'Laguna Beach Flat', st:3, nt:'9.1', b:'Centro de Porto de Galinhas', p:'A partir de R$ 200/noite', f:['Piscina','Próximo aos arrecifes','Boa localização'], d:'Flat bem avaliado no centro de Porto de Galinhas, perto das jangadas para os arrecifes naturais e das melhores pousadas da vila.' },
+      mid: { n:'Kembali Hotel', st:4, nt:'9.1', b:'Praia do Cupe — beira-mar', p:'A partir de R$ 1.130/noite', f:['Frente ao mar','Design exclusivo','Piscina','Café da manhã'], d:'Um dos hotéis mais charmosos e bem avaliados de Porto de Galinhas, localizado de frente para o mar na Praia do Cupe. Ambiente sofisticado e aconchegante.' },
+      lux: { n:'Nannai Muro Alto Resort & Spa', st:5, nt:'9.5', b:'Muro Alto', p:'A partir de R$ 2.500/noite', f:['Bangalôs com piscina privativa','SPA premiado','Gastronomia de autor','Frente ao mar'], d:'Eleito diversas vezes o melhor resort do Brasil. Bangalôs exclusivos com piscina particular, SPA de alto padrão e experiência gastronômica premiada frente ao mar de Muro Alto.' }
     },
     'maragogi': {
       t: 'Onde Ficar em Maragogi',
